@@ -1,0 +1,226 @@
+{
+    "sourceFile": "Bài2/style.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 52,
+            "patches": [
+                {
+                    "date": 1634311608686,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1634311836367,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,6 +74,37 @@\n color: blanchedalmond;\r\n   }\r\n   .form{\r\n     margin-top: 40px;\r\n-    \r\n+    position: relative;\r\n+    background-image: url(./Image/DN-Trien-lam-anh-Viet-Nam-o-Phu-Quoc-BaiDN-251217-40.jpg);\r\n   }\r\n+  .formdangnhap{\r\n+  \r\n+  }\r\n+  input{\r\n+\r\n+  }\r\n+  .button{\r\n+\r\n+  }\r\n+  .butonlogin{\r\n+\r\n+  }\r\n+  .icon{\r\n+\r\n+  }\r\n+  .icon .fabook{\r\n+\r\n+  }\r\n+  .fabook i{\r\n+\r\n+  }\r\n+  .google{\r\n+\r\n+  }\r\n+  .google i{\r\n+\r\n+  }\r\n+  .signup{\r\n+\r\n+  }\r\n"
+                },
+                {
+                    "date": 1634311872539,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -73,9 +73,13 @@\n   .submid i{\r\n color: blanchedalmond;\r\n   }\r\n   .form{\r\n-    margin-top: 40px;\r\n+    \r\n+    width: 378px;\r\n+    height: 420px;\r\n+    margin: auto;\r\n+    \r\n     position: relative;\r\n     background-image: url(./Image/DN-Trien-lam-anh-Viet-Nam-o-Phu-Quoc-BaiDN-251217-40.jpg);\r\n   }\r\n   .formdangnhap{\r\n"
+                },
+                {
+                    "date": 1634311971152,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,9 +85,9 @@\n   .formdangnhap{\r\n   \r\n   }\r\n   input{\r\n-\r\n+display: block;\r\n   }\r\n   .button{\r\n \r\n   }\r\n"
+                },
+                {
+                    "date": 1634312006251,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n     width: 378px;\r\n     height: 420px;\r\n     margin: auto;\r\n     border: 10px solid #ccc9;\r\n+    padding-bottom: 40px;\r\n }\r\n \r\n \r\n   \r\n"
+                },
+                {
+                    "date": 1634312022316,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n     width: 378px;\r\n     height: 420px;\r\n     margin: auto;\r\n     border: 10px solid #ccc9;\r\n-    padding-bottom: 40px;\r\n+    padding-bottom: 100px;\r\n }\r\n \r\n \r\n   \r\n"
+                },
+                {
+                    "date": 1634312060964,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n     width: 378px;\r\n     height: 420px;\r\n     margin: auto;\r\n     border: 10px solid #ccc9;\r\n-    padding-bottom: 100px;\r\n+    \r\n }\r\n \r\n \r\n   \r\n@@ -74,9 +74,9 @@\n   .submid i{\r\n color: blanchedalmond;\r\n   }\r\n   .form{\r\n-    \r\n+    padding-top: 40px;\r\n     width: 378px;\r\n     height: 420px;\r\n     margin: auto;\r\n     \r\n"
+                },
+                {
+                    "date": 1634312271054,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,12 +74,12 @@\n   .submid i{\r\n color: blanchedalmond;\r\n   }\r\n   .form{\r\n-    padding-top: 40px;\r\n+    \r\n     width: 378px;\r\n     height: 420px;\r\n-    margin: auto;\r\n+    margin: 40px auto 0 auto;\r\n     \r\n     position: relative;\r\n     background-image: url(./Image/DN-Trien-lam-anh-Viet-Nam-o-Phu-Quoc-BaiDN-251217-40.jpg);\r\n   }\r\n"
+                },
+                {
+                    "date": 1634312303507,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,9 +83,9 @@\n     position: relative;\r\n     background-image: url(./Image/DN-Trien-lam-anh-Viet-Nam-o-Phu-Quoc-BaiDN-251217-40.jpg);\r\n   }\r\n   .formdangnhap{\r\n-  \r\n+  position: absolute;\r\n   }\r\n   input{\r\n display: block;\r\n   }\r\n"
+                },
+                {
+                    "date": 1634312355530,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -84,8 +84,9 @@\n     background-image: url(./Image/DN-Trien-lam-anh-Viet-Nam-o-Phu-Quoc-BaiDN-251217-40.jpg);\r\n   }\r\n   .formdangnhap{\r\n   position: absolute;\r\n+  top: 20ox;\r\n   }\r\n   input{\r\n display: block;\r\n   }\r\n"
+                },
+                {
+                    "date": 1634312365289,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -84,9 +84,9 @@\n     background-image: url(./Image/DN-Trien-lam-anh-Viet-Nam-o-Phu-Quoc-BaiDN-251217-40.jpg);\r\n   }\r\n   .formdangnhap{\r\n   position: absolute;\r\n-  top: 20ox;\r\n+  top: 20px;\r\n   }\r\n   input{\r\n display: block;\r\n   }\r\n"
+                },
+                {
+                    "date": 1634312374042,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,8 +85,9 @@\n   }\r\n   .formdangnhap{\r\n   position: absolute;\r\n   top: 20px;\r\n+  left: auto;\r\n   }\r\n   input{\r\n display: block;\r\n   }\r\n"
+                },
+                {
+                    "date": 1634312382445,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -86,8 +86,9 @@\n   .formdangnhap{\r\n   position: absolute;\r\n   top: 20px;\r\n   left: auto;\r\n+  right: auto;\r\n   }\r\n   input{\r\n display: block;\r\n   }\r\n"
+                },
+                {
+                    "date": 1634312397254,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -86,9 +86,9 @@\n   .formdangnhap{\r\n   position: absolute;\r\n   top: 20px;\r\n   left: auto;\r\n-  right: auto;\r\n+  right: 30px;\r\n   }\r\n   input{\r\n display: block;\r\n   }\r\n"
+                },
+                {
+                    "date": 1634312407683,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,9 +85,9 @@\n   }\r\n   .formdangnhap{\r\n   position: absolute;\r\n   top: 20px;\r\n-  left: auto;\r\n+  left: 30px;\r\n   right: 30px;\r\n   }\r\n   input{\r\n display: block;\r\n"
+                },
+                {
+                    "date": 1634312444499,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -87,8 +87,9 @@\n   position: absolute;\r\n   top: 20px;\r\n   left: 30px;\r\n   right: 30px;\r\n+  background-color: #ccc9;\r\n   }\r\n   input{\r\n display: block;\r\n   }\r\n"
+                },
+                {
+                    "date": 1634312490555,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -88,8 +88,9 @@\n   top: 20px;\r\n   left: 30px;\r\n   right: 30px;\r\n   background-color: #ccc9;\r\n+  height: 80%;\r\n   }\r\n   input{\r\n display: block;\r\n   }\r\n"
+                },
+                {
+                    "date": 1634312500850,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -84,9 +84,9 @@\n     background-image: url(./Image/DN-Trien-lam-anh-Viet-Nam-o-Phu-Quoc-BaiDN-251217-40.jpg);\r\n   }\r\n   .formdangnhap{\r\n   position: absolute;\r\n-  top: 20px;\r\n+  top: 40px;\r\n   left: 30px;\r\n   right: 30px;\r\n   background-color: #ccc9;\r\n   height: 80%;\r\n"
+                },
+                {
+                    "date": 1634312577935,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -92,8 +92,9 @@\n   height: 80%;\r\n   }\r\n   input{\r\n display: block;\r\n+margin-top: 20px;\r\n   }\r\n   .button{\r\n \r\n   }\r\n"
+                },
+                {
+                    "date": 1634312601915,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -93,8 +93,10 @@\n   }\r\n   input{\r\n display: block;\r\n margin-top: 20px;\r\n+margin-left: auto;\r\n+margin-right: auto;\r\n   }\r\n   .button{\r\n \r\n   }\r\n"
+                },
+                {
+                    "date": 1634312651541,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,9 +97,9 @@\n margin-left: auto;\r\n margin-right: auto;\r\n   }\r\n   .button{\r\n-\r\n+ height: 20px;\r\n   }\r\n   .butonlogin{\r\n \r\n   }\r\n"
+                },
+                {
+                    "date": 1634312685441,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -98,8 +98,9 @@\n margin-right: auto;\r\n   }\r\n   .button{\r\n  height: 20px;\r\n+ width: 33%;\r\n   }\r\n   .butonlogin{\r\n \r\n   }\r\n"
+                },
+                {
+                    "date": 1634312706100,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -99,8 +99,9 @@\n   }\r\n   .button{\r\n  height: 20px;\r\n  width: 33%;\r\n+ margin: 20px auto 0 auto;\r\n   }\r\n   .butonlogin{\r\n \r\n   }\r\n"
+                },
+                {
+                    "date": 1634312761294,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -100,8 +100,9 @@\n   .button{\r\n  height: 20px;\r\n  width: 33%;\r\n  margin: 20px auto 0 auto;\r\n+ background-color: wheat;\r\n   }\r\n   .butonlogin{\r\n \r\n   }\r\n"
+                },
+                {
+                    "date": 1634312785126,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -101,8 +101,9 @@\n  height: 20px;\r\n  width: 33%;\r\n  margin: 20px auto 0 auto;\r\n  background-color: wheat;\r\n+ border-radius: 2px ;\r\n   }\r\n   .butonlogin{\r\n \r\n   }\r\n"
+                },
+                {
+                    "date": 1634312796236,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -101,9 +101,9 @@\n  height: 20px;\r\n  width: 33%;\r\n  margin: 20px auto 0 auto;\r\n  background-color: wheat;\r\n- border-radius: 2px ;\r\n+ border-radius: 5spx ;\r\n   }\r\n   .butonlogin{\r\n \r\n   }\r\n"
+                },
+                {
+                    "date": 1634312804700,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -101,9 +101,9 @@\n  height: 20px;\r\n  width: 33%;\r\n  margin: 20px auto 0 auto;\r\n  background-color: wheat;\r\n- border-radius: 5spx ;\r\n+ border-radius: 5px ;\r\n   }\r\n   .butonlogin{\r\n \r\n   }\r\n"
+                },
+                {
+                    "date": 1634312814598,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,9 +97,9 @@\n margin-left: auto;\r\n margin-right: auto;\r\n   }\r\n   .button{\r\n- height: 20px;\r\n+ height: 40px;\r\n  width: 33%;\r\n  margin: 20px auto 0 auto;\r\n  background-color: wheat;\r\n  border-radius: 5px ;\r\n"
+                },
+                {
+                    "date": 1634312833101,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -101,9 +101,9 @@\n  height: 40px;\r\n  width: 33%;\r\n  margin: 20px auto 0 auto;\r\n  background-color: wheat;\r\n- border-radius: 5px ;\r\n+ border-radius: 10px ;\r\n   }\r\n   .butonlogin{\r\n \r\n   }\r\n"
+                },
+                {
+                    "date": 1634312872961,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -102,8 +102,9 @@\n  width: 33%;\r\n  margin: 20px auto 0 auto;\r\n  background-color: wheat;\r\n  border-radius: 10px ;\r\n+ text-align: center;\r\n   }\r\n   .butonlogin{\r\n \r\n   }\r\n"
+                },
+                {
+                    "date": 1634312884876,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -103,8 +103,9 @@\n  margin: 20px auto 0 auto;\r\n  background-color: wheat;\r\n  border-radius: 10px ;\r\n  text-align: center;\r\n+ line-height: 40px;\r\n   }\r\n   .butonlogin{\r\n \r\n   }\r\n"
+                },
+                {
+                    "date": 1634312917545,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,8 +95,9 @@\n display: block;\r\n margin-top: 20px;\r\n margin-left: auto;\r\n margin-right: auto;\r\n+height: 40px;\r\n   }\r\n   .button{\r\n  height: 40px;\r\n  width: 33%;\r\n"
+                },
+                {
+                    "date": 1634312959524,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -76,9 +76,9 @@\n   }\r\n   .form{\r\n     \r\n     width: 378px;\r\n-    height: 420px;\r\n+    height: 500px;\r\n     margin: 40px auto 0 auto;\r\n     \r\n     position: relative;\r\n     background-image: url(./Image/DN-Trien-lam-anh-Viet-Nam-o-Phu-Quoc-BaiDN-251217-40.jpg);\r\n"
+                },
+                {
+                    "date": 1634312981063,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -96,8 +96,9 @@\n margin-top: 20px;\r\n margin-left: auto;\r\n margin-right: auto;\r\n height: 40px;\r\n+border-radius: 4px;\r\n   }\r\n   .button{\r\n  height: 40px;\r\n  width: 33%;\r\n"
+                },
+                {
+                    "date": 1634313011397,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -100,9 +100,9 @@\n border-radius: 4px;\r\n   }\r\n   .button{\r\n  height: 40px;\r\n- width: 33%;\r\n+ width: 45%;\r\n  margin: 20px auto 0 auto;\r\n  background-color: wheat;\r\n  border-radius: 10px ;\r\n  text-align: center;\r\n"
+                },
+                {
+                    "date": 1634313096523,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -108,9 +108,9 @@\n  text-align: center;\r\n  line-height: 40px;\r\n   }\r\n   .butonlogin{\r\n-\r\n+background-color: slateblue!important;\r\n   }\r\n   .icon{\r\n \r\n   }\r\n"
+                },
+                {
+                    "date": 1634313178335,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -108,9 +108,9 @@\n  text-align: center;\r\n  line-height: 40px;\r\n   }\r\n   .butonlogin{\r\n-background-color: slateblue!important;\r\n+background-color: rgb(197, 90, 205)!important;\r\n   }\r\n   .icon{\r\n \r\n   }\r\n"
+                },
+                {
+                    "date": 1634313222373,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -107,9 +107,9 @@\n  border-radius: 10px ;\r\n  text-align: center;\r\n  line-height: 40px;\r\n   }\r\n-  .butonlogin{\r\n+  .butonsigin{\r\n background-color: rgb(197, 90, 205)!important;\r\n   }\r\n   .icon{\r\n \r\n"
+                },
+                {
+                    "date": 1634313279814,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -111,9 +111,9 @@\n   .butonsigin{\r\n background-color: rgb(197, 90, 205)!important;\r\n   }\r\n   .icon{\r\n-\r\n+margin: 20px auto 0 auto;\r\n   }\r\n   .icon .fabook{\r\n \r\n   }\r\n@@ -128,4 +128,7 @@\n   }\r\n   .signup{\r\n \r\n   }\r\n+.fagl{\r\n+\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1634313332316,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -129,6 +129,7 @@\n   .signup{\r\n \r\n   }\r\n .fagl{\r\n-\r\n+height: 20px;\r\n+width: 20px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1634313361323,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -131,5 +131,6 @@\n   }\r\n .fagl{\r\n height: 20px;\r\n width: 20px;\r\n+background-color: white;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1634313401727,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -132,5 +132,6 @@\n .fagl{\r\n height: 20px;\r\n width: 20px;\r\n background-color: white;\r\n+display: flex;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1634313431675,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -112,8 +112,9 @@\n background-color: rgb(197, 90, 205)!important;\r\n   }\r\n   .icon{\r\n margin: 20px auto 0 auto;\r\n+overflow: hidden;\r\n   }\r\n   .icon .fabook{\r\n \r\n   }\r\n"
+                },
+                {
+                    "date": 1634313800592,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -111,10 +111,13 @@\n   .butonsigin{\r\n background-color: rgb(197, 90, 205)!important;\r\n   }\r\n   .icon{\r\n-margin: 20px auto 0 auto;\r\n-overflow: hidden;\r\n+    justify-content: center;\r\n+    margin: 20px auto 0 auto;\r\n+    display: flex;\r\n+    overflow: hidden;\r\n+}\r\n   }\r\n   .icon .fabook{\r\n \r\n   }\r\n"
+                },
+                {
+                    "date": 1634313846255,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -137,5 +137,7 @@\n height: 20px;\r\n width: 20px;\r\n background-color: white;\r\n display: flex;\r\n+margin-left: 5px;\r\n+border-radius: 4px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1634313895019,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -134,9 +134,9 @@\n \r\n   }\r\n .fagl{\r\n height: 20px;\r\n-width: 20px;\r\n+width: 40px;\r\n background-color: white;\r\n display: flex;\r\n margin-left: 5px;\r\n border-radius: 4px;\r\n"
+                },
+                {
+                    "date": 1634313913962,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -133,9 +133,9 @@\n   .signup{\r\n \r\n   }\r\n .fagl{\r\n-height: 20px;\r\n+height: 40px;\r\n width: 40px;\r\n background-color: white;\r\n display: flex;\r\n margin-left: 5px;\r\n"
+                },
+                {
+                    "date": 1634313936654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -139,5 +139,6 @@\n background-color: white;\r\n display: flex;\r\n margin-left: 5px;\r\n border-radius: 4px;\r\n+line-height: 40px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1634313959124,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -121,9 +121,9 @@\n   .icon .fabook{\r\n \r\n   }\r\n   .fabook i{\r\n-\r\n+line-height: 40px;\r\n   }\r\n   .google{\r\n \r\n   }\r\n"
+                },
+                {
+                    "date": 1634313983646,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -122,8 +122,9 @@\n \r\n   }\r\n   .fabook i{\r\n line-height: 40px;\r\n+text-align: center;\r\n   }\r\n   .google{\r\n \r\n   }\r\n"
+                },
+                {
+                    "date": 1634314003244,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -128,9 +128,10 @@\n   .google{\r\n \r\n   }\r\n   .google i{\r\n-\r\n+    line-height: 40px;\r\n+    text-align: center;\r\n   }\r\n   .signup{\r\n \r\n   }\r\n"
+                },
+                {
+                    "date": 1634314048802,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -132,9 +132,9 @@\n     line-height: 40px;\r\n     text-align: center;\r\n   }\r\n   .signup{\r\n-\r\n+ margin: 40px  auto 0 auto;\r\n   }\r\n .fagl{\r\n height: 40px;\r\n width: 40px;\r\n"
+                },
+                {
+                    "date": 1634314308716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,8 +83,9 @@\n     position: relative;\r\n     background-image: url(./Image/DN-Trien-lam-anh-Viet-Nam-o-Phu-Quoc-BaiDN-251217-40.jpg);\r\n   }\r\n   .formdangnhap{\r\n+    border-radius: 5px;\r\n   position: absolute;\r\n   top: 40px;\r\n   left: 30px;\r\n   right: 30px;\r\n@@ -132,9 +133,15 @@\n     line-height: 40px;\r\n     text-align: center;\r\n   }\r\n   .signup{\r\n- margin: 40px  auto 0 auto;\r\n+    margin: 40px auto 0 auto;\r\n+    text-align: center;\r\n+    /* width: 100%; */\r\n+    background: white;\r\n+    width: 70px;\r\n+    border-radius: 60px;\r\n+    height: 20px;\r\n   }\r\n .fagl{\r\n height: 40px;\r\n width: 40px;\r\n"
+                }
+            ],
+            "date": 1634311608686,
+            "name": "Commit-0",
+            "content": "html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p{\r\n    margin: 0;\r\n    padding: 0;\r\n    border: 0;\r\n    font-size: 100%;\r\n  }\r\n  \r\n  ol, ul {\r\n    list-style: none;\r\n  }\r\n  .Contact{\r\n   \r\n    width: 378px;\r\n    height: 420px;\r\n    margin: auto;\r\n    border: 10px solid #ccc9;\r\n}\r\n\r\n\r\n  \r\n  .name{\r\n    height: 50px;\r\n    margin-bottom: 20px;\r\n    background-color: rgb(204 204 204 / 15%);\r\n    margin-top: 20px;\r\n  }\r\n  .formcontact{\r\n    width: 90%;\r\n    margin: auto;\r\n  }\r\n  .headerh3{\r\n text-align: center;\r\n font-size: 1.4rem;\r\n  }\r\n  .headerinput{\r\n\r\n  }\r\n  .Enter{\r\n    opacity: 0.5;\r\n  }\r\n  .email-fhone{\r\ndisplay: flex;\r\njustify-content: space-between;\r\n  }\r\n  .email{\r\n    background-color: rgb(204 204 204 / 15%);\r\n    ;\r\nflex: 1;\r\n  }\r\n  .Phone{\r\n      margin-left: 20px;\r\n    background-color: rgb(204 204 204 / 15%);\r\n\r\nflex: 1;\r\n  }\r\n  .chooses{\r\n\r\n  }\r\n  .Please{\r\n\r\n  }\r\n  .message{\r\n height: 100px;\r\n  }\r\n  .submid{\r\nbackground-color: black;\r\ntext-align: center;\r\nborder-radius: 20px;\r\n  }\r\n  .submid p{\r\ncolor: blanchedalmond;\r\n  }\r\n  .submid i{\r\ncolor: blanchedalmond;\r\n  }\r\n  .form{\r\n    margin-top: 40px;\r\n    \r\n  }\r\n"
+        }
+    ]
+}
