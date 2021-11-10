@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <style>
+     .emailError, .passwordError {
+	color: rgb(245, 107, 107);
+	
+	padding-left: 30px;
+	border-radius: 4px;
+	margin-top: 1px;
+    }
+    </style>
+    <script>
+        function isEmail(inputEmail) {
+    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+	return regex.test(inputEmail);
+}
+function validatePassword(inputPassword) {
+	return inputPassword.length > 7;
+}
+
+$(document).ready(function(){
+    $('#email').change(function(){
+        var email = $(this).val().trim();
+        // alert(`email = ${JSON.stringify(email)}`)
+        if(!isEmail(email)) {
+            //Error ?
+            $(".emailError").html("Email is not valid format");
+        } else {
+            $(".emailError").html("");
+        }
+    });
+    $('#password').change(function(){
+        var password = $(this).val();	
+        if(!validatePassword(password)) {
+			$(".passwordError").html("Password must be at least 8 characters");
+		} else {
+			$(".passwordError").html("");
+		}
+    });
+});
+    </script>
+</head>
+<body>
+    <div id="container">
+        <form action="" class="container-form">
+            <Span class="signin">Sign In</Span> <br>
+            <div class="input-forom">
+               <div>
+                <input type="text" placeholder="  username or mail" id="email" style="width: 80%;height:40px;margin-top: 20px;">
+                <p class="emailError"></p>
+               </div>
+               <div>
+                <input type="password" placeholder="  password" style="width: 80%;height:40px;" id="password">
+                <p class="passwordError"></p>
+               </div>
+            </div>
+            <div>
+                <button class="btn">SIGN IN</button><br>
+                <span class="sp">Or login width</span><br>
+            </div>
+            <div class="icons">
+              <a href=""><img src="fb.png" alt="" srcset="" class="fb"></a> <br>
+              <a href=""><img src="new-google-logo.jpg" alt="" srcset="" class="gg"></a> 
+
+            </div>
+           
+
+            <span class="end">sign up</span>
+
+
+        </form>
+    </div>
+    
+    
+</body>
+
+</html>
