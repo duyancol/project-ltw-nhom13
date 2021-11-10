@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Bai 2</title>
+
+    <style>
+        body {
+            display: flex;
+        }
+
+        .containt {
+            width: 500px;
+            height: 350px;
+            margin: auto;
+
+        }
+
+        .content {
+            display: flex;
+        }
+
+        .input {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+        }
+
+        label {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        input {
+            width: 180px;
+            height: 30px;
+            font-size: 15px;
+        }
+
+        h3 {
+            font-size: 30px;
+        }
+
+        .output {
+            border: 2px solid black;
+            width: 300px;
+            padding: 0 20px;
+            margin-left: 10px;
+        }
+
+        button {
+            margin: 30px;
+            padding: 5px 15px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+<div class="containt">
+    <h3>Giải phương trình bật II</h3>
+    <div class="content">
+        <div class="input">
+            <label for="a">a:</label>
+            <input type="text" name="a" id="a">
+            <label for="b">b:</label>
+            <input type="text" name="b" id="b">
+            <label for="c">c:</label>
+            <input type="text" name="c" id="c">
+        </div>
+        <div class="output">
+            <p id="output">Kết quả</p>
+        </div>
+    </div>
+    <button class="submit">Giải</button>
+</div>
+
+<script>
+    $(document).ready(function () {
+        let cal = function () {
+            var a = $("#a").val();
+            var b = $("#b").val();
+            var c = $("#c").val();
+            var delta = b * b - 4 * a * c;
+            console.log(a );
+            console.log(b );
+            console.log(delta );
+           // var output = $("#output");
+            var output = document.querySelector("#output");
+            if (isNaN(a) || isNaN(b) || isNaN(c)) {
+                output.innerText = "hãy nhập đẩy đủ các thuộc tính";
+            } else if (delta < 0) {
+                output.innerText = "Phương trình vô nghiệm!";
+            } else if (delta === 0) {
+                x = -b / (2 * a)
+                output.innerText = "Phương trình có nghiệm kép là x1 = " + "x2 = " + x;
+            } else if (delta > 0) {
+                x1 = (-b + Math.sqrt(delta)) / (2 * a)
+                x2 = (-b - Math.sqrt(delta)) / (2 * a)
+                output.innerText = "Phương trình có hai nghiệm phân biệt là x1 = " + x1 + " và x2 = " + x2;
+            }
+        }
+
+        $(".submit").click(function () {
+            cal();
+        })
+    });
+
+
+</script>
+</body>
+</html>

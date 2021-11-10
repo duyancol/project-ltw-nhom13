@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .containt {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        .containt button {
+            width: 17%;
+            height: 200px;
+            margin-top: 50px;
+            font-weight: bold;
+            font-size: 2rem;
+            color: aliceblue;
+            border: 3px solid black;
+        }
+    </style>
+
+</head>
+<body>
+<div class="containt">
+    <button>black</button>
+    <button>green</button>
+    <button>blue</button>
+    <button>yellow</button>
+    <button>pink</button>
+    <button>orange</button>
+    <button>gray</button>
+    <button>purple</button>
+    <button>brown</button>
+    <button>red</button>
+</div>
+
+<script>
+    $(document).ready(function () {
+        var button = $("button");
+        for (let i = 0; i < button.length; i++) {
+            button[i].style.backgroundColor = button[i].textContent;
+            button[i].onclick = function () {
+                $("body").css("background-color", button[i].textContent);
+            }
+        }
+    });</script>
+</body>
+</html>

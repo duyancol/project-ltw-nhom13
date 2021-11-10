@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 4</title>
+    <style>
+        body {
+            display: flex;
+        }
+
+        .containt {
+            display: flex;
+            flex-direction: column;
+            margin: 100px auto;
+            align-items: center;
+        }
+
+        input {
+            margin: 20px 0;
+            height: 35px;
+            line-height: 25px;
+            font-size: 15px;
+            width: 100%;
+            border-radius: 10px;
+            background-color: aliceblue;  padding: 0 10px;
+            box-sizing: border-box;
+        }
+
+        #textarea {
+            font-size: 15px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: aliceblue;
+
+        }
+
+        button {
+            width: 100px;
+            height: 30px;
+            border-radius: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="containt">
+    <textarea name="textarea" id="textarea" cols="50" rows="10"></textarea>
+    <input type="text">
+    <button>Check</button>
+</div>
+
+<script>
+    let textarea = document.querySelector("textarea");
+    let textline = document.querySelector("input");
+    let check = document.querySelector("button");
+    check.onclick=function(){
+        alert(countString(textarea.value, textline.value));
+    };
+
+    function countString(str, sub) {
+        let count = 0;
+        for (let i = 0; i < str.length; i++) {
+            if (str.substring(i, i + sub.length) == sub)
+                count++;
+        }
+        return count;
+    }
+</script>
+</body>
+</html>

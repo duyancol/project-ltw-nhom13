@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Bai 3</title>
+    <style>
+        body {
+            display: flex;
+            align-items: start;
+        }
+
+        #greeting {
+            width: 300px;
+            height: 100px;
+            margin: 200px auto;
+            background-color: #6bc46b;
+            border-radius: 20px;
+            display: flex;
+            cursor: pointer;
+            opacity: 0.8;
+        }
+
+        p {
+            font-family: 'Mochiy Pop P One', sans-serif;
+            font-weight: bold;
+            color: aliceblue;
+            font-size: 40px;
+            margin: auto;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+<div id="greeting" onclick="click()">
+    <p>Welcom to us</p>
+</div>
+<script>
+
+    $(document).ready(function () {
+        $("#greeting").click(function () {
+            $(this).hide();
+        })
+    });
+
+</script>
+
+</body>
+</html>
