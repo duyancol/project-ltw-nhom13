@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #backroungdtong{
+            width: 1200px;
+            height: 600px;
+            background-color:rgb(224, 210, 210);
+            margin: auto;
+          
+
+         }
+         #btn{
+             margin-top:30px ;
+             margin-left: 600px;
+         }
+        
+    </style>
+    <script>
+        function doimaudo(){
+            document.getElementById('backroungdtong').style.backgroundColor="red";
+        }
+        function doimauxanh(){
+            document.getElementById('backroungdtong').style.backgroundColor="green";
+        }
+        function doimauvang(){
+            document.getElementById('backroungdtong').style.backgroundColor="yellow";
+        }
+        function doimauden(){
+            document.getElementById('backroungdtong').style.backgroundColor="black";
+        }
+        function doimaucam(){
+            document.getElementById('backroungdtong').style.backgroundColor="orange";
+        }
+       
+    </script>
+</head>
+<body>
+    <div id="backroungdtong">
+       
+      
+    </div>
+    <div id="btn">
+        <button id="btn1" onclick="doimaudo()">red</button>
+        <button id="btn1" onclick="doimauxanh()">green</button>
+        <button id="btn1" onclick="doimauvang()">yellow</button>
+        <button id="btn1" onclick="doimauden()">black</button>
+        <button id="btn1" onclick="doimaucam()">orange</button>
+    </div>
+   
+   
+</body>
+
+</html>

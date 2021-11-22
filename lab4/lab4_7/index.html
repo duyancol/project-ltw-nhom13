@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<button type="button">Click here</button>
+    
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <title>Document</title>
+    <!-- <script>
+        $(function(){
+          $('button').click(function(event) {
+        /* copy phần tử đầu tiên */
+            var elm = $('.box:eq(0)').clone();
+        /* thêm phần copy vào sau phần tử cuối */
+            $('.box').last().after(elm);
+          });
+        });
+        </script> -->
+        <style>
+            .tong{
+                display: flex;
+                justify-content: center;
+            }
+            button{
+                background-color: rgb(165, 165, 212);
+                
+                
+                width: 50px;
+                height: 25px;
+            }
+        </style>
+</head>
+<body>
+   <div class="tong">
+       <div>
+        <div class="box">
+            <div class="trong" style="width: 50px;height:25px ;background-color: black;"></div>
+           <button type="button " class="info info1">1</button>
+     
+        </div>
+           <div  class="box"> 
+            <div class="trong2" style="width: 50px;height:25px ;background-color: black;"></div>
+           <button type="button" class="info info2">2</button>
+           </div>
+           <!-- <div>
+             <button type="button" class="info info3">3</button>
+           </div> -->
+          <div  class="box"> 
+              <div class="trong1" style="width: 50px;height:25px ;background-color: black;"></div>
+             <button type="button" class="info info3">3</button>
+          </div>
+          <div  class="box"> 
+            <div class="trong4" style="width: 50px;height:25px ;background-color: black;"></div>
+           <button type="button" class="info info4">4</button>
+           </div>
+
+       </div>
+       <div>
+        <div  class="box"> 
+            <div class="trong5" style="width: 50px;height:25px ;background-color: black;"></div>
+           <button type="button" class="info info5">5</button>
+        </div>
+        <div  class="box"> 
+            <div class="trong6" style="width: 50px;height:25px ;background-color: black;"></div>
+           <button type="button" class="info info6">6</button>
+        </div>
+        <div  class="box"> 
+            <div class="trong7" style="width: 50px;height:25px ;background-color: black;"></div>
+           <button type="button" class="info info7">7</button>
+        </div>
+        <div  class="box"> 
+            <div class="trong8" style="width: 50px;height:25px ;background-color: black;"></div>
+           <button type="button" class="info info8">8</button>
+        </div>
+
+       </div>
+       <div>
+        <div  class="box"> 
+            <div class="trong9" style="width: 50px;height:25px ;background-color: black;"></div>
+           <button type="button" class="info info9">9</button>
+        </div>
+        <div  class="box"> 
+            <div class="trong10" style="width: 50px;height:25px ;background-color: black;"></div>
+           <button type="button" class="info info10">10</button>
+        </div>
+
+        <div  class="box"> 
+            <div class="trong11" style="width: 50px;height:25px ;background-color: black;"></div>
+           <button type="button" class="info info11">11</button>
+        </div>
+
+        <div  class="box"> 
+            <div class="trong12" style="width: 50px;height:25px ;background-color: black;"></div>
+           <button type="button" class="info info12">12</button>
+        </div>
+
+
+       </div>
+
+       <div>
+        <div  class="box"> 
+            <div class="trong13" style="width: 50px;height:25px ;background-color: black;"></div>
+           <button type="button" class="info info13">13</button>
+        </div>
+        <div  class="box"> 
+            <div class="trong14" style="width: 50px;height:25px ;background-color: black;"></div>
+           <button type="button" class="info info14">14</button>
+        </div>
+
+        <div  class="box"> 
+            <div class="trong15" style="width: 50px;height:25px ;background-color: black;"></div>
+           <button type="button" class="info info15">15</button>
+        </div>
+
+        <div  class="box"> 
+            <div class="trong16" style="width: 50px;height:25px ;background-color: black;"></div>
+           <button type="button" class="info info16">16</button>
+        </div>
+
+
+       </div>
+   
+   
+      
+   
+   
+
+       
+   </div>
+   
+    <script>
+        $(document).ready(function(){
+            $(".info1").click(function(){
+                $(".info1").remove();
+                var elm = $('.trong:eq(0)').clone();
+                $('.trong').last().after(elm);
+            });
+        });
+        $(document).ready(function(){
+            $(".info2").click(function(){
+                $(".info2").remove();
+                var elm = $('.trong2:eq(0)').clone();
+                $('.trong2').last().after(elm);
+            });
+        });
+        $(document).ready(function(){
+            $(".info3").click(function(){
+                $(".info3").remove();
+                var elm = $('.trong1:eq(0)').clone();
+                $('.trong1').last().after(elm);
+            });
+        });
+        $(document).ready(function(){
+            $(".info4").click(function(){
+                $(".info4").remove();
+                var elm = $('.trong4:eq(0)').clone();
+                $('.trong4').last().after(elm);
+            });
+        });
+        $(document).ready(function(){
+            $(".info5").click(function(){
+                $(".info5").remove();
+                var elm = $('.trong5:eq(0)').clone();
+                $('.trong5').last().after(elm);
+            });
+        });
+        $(document).ready(function(){
+            $(".info6").click(function(){
+                $(".info6").remove();
+                var elm = $('.trong6:eq(0)').clone();
+                $('.trong6').last().after(elm);
+            });
+        });
+        $(document).ready(function(){
+            $(".info7").click(function(){
+                $(".info7").remove();
+                var elm = $('.trong7:eq(0)').clone();
+                $('.trong7').last().after(elm);
+            });
+        });
+        $(document).ready(function(){
+            $(".info8").click(function(){
+                $(".info8").remove();
+                var elm = $('.trong8:eq(0)').clone();
+                $('.trong8').last().after(elm);
+            });
+        });
+        $(document).ready(function(){
+            $(".info9").click(function(){
+                $(".info9").remove();
+                var elm = $('.trong9:eq(0)').clone();
+                $('.trong9').last().after(elm);
+            });
+        });
+        $(document).ready(function(){
+            $(".info10").click(function(){
+                $(".info10").remove();
+                var elm = $('.trong10:eq(0)').clone();
+                $('.trong10').last().after(elm);
+            });
+        });
+        $(document).ready(function(){
+            $(".info11").click(function(){
+                $(".info11").remove();
+                var elm = $('.trong11:eq(0)').clone();
+                $('.trong11').last().after(elm);
+            });
+        });
+        $(document).ready(function(){
+            $(".info12").click(function(){
+                $(".info12").remove();
+                var elm = $('.trong12:eq(0)').clone();
+                $('.trong12').last().after(elm);
+            });
+        });
+        // nut sai-----------------------------------------------------------------------------------------
+        $(document).ready(function(){
+            $(".info15").click(function(){
+                
+                $(".info15").remove();
+                var elm = $('.trong15:eq(0)').clone();
+                $('.trong15').last().after(elm);
+                alert('ban da chon sai !');
+            });
+        });
+        $(document).ready(function(){
+            $(".info13").click(function(){
+                $(".info13").remove();
+                var elm = $('.trong13:eq(0)').clone();
+                $('.trong13').last().after(elm);
+            });
+        });
+        $(document).ready(function(){
+            $(".info14").click(function(){
+                $(".info14").remove();
+                var elm = $('.trong14:eq(0)').clone();
+                $('.trong14').last().after(elm);
+            });
+        });
+        $(document).ready(function(){
+            $(".info16").click(function(){
+                $(".info16").remove();
+                var elm = $('.trong16:eq(0)').clone();
+                $('.trong16').last().after(elm);
+            });
+        });
+
+
+
+    </script>
+   
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #tong{
+           width: 600px;
+           height: 250px;
+           background-color: #cccccccc;
+           margin: auto;
+           border-radius: 12px;
+       } 
+       .font{
+           color: black;
+           font-size: 30px;
+           margin-top: 20px;
+           margin-left: 200px;
+           padding-top:40px ;
+       }
+       #f{
+           margin-top: 30px;
+       }
+
+    </style>
+</head>
+<body>
+    <div id="tong">
+        <form action="" id="f">
+            <div class="font" id="gioithieu">xin chao</div>
+            <div class="font" id="gioithieu1">Lai gap nhau r</div>
+            <div class="font" id="gioithieu2">chao ban moi</div>
+            <div class="font" id="gioithieu3">chao ban da den vs trang web cua chung toi</div>
+        </form>
+    </div>
+    
+</body>
+<script>
+    var sum =Math.floor(Math.random()*4)
+    // if(sum==0){
+    //      window.alert("chao ban da den voi website")
+
+    // }else{
+    //      window.alert("chao ban da quay tro lai")
+    // }
+    box1= document.getElementById('gioithieu').style.display="none";
+    box2= document.getElementById('gioithieu1').style.display="none";
+    box3= document.getElementById('gioithieu2').style.display="none";
+    box4= document.getElementById('gioithieu3').style.display="none";
+    if (sum==0) {
+        box1= document.getElementById('gioithieu').style.display="block";
+
+        
+    }else if(sum==1){
+
+        box2= document.getElementById('gioithieu1').style.display="block";
+   
+    }else if(sum==2){
+        box3= document.getElementById('gioithieu2').style.display="block";
+    }else{
+        box4= document.getElementById('gioithieu3').style.display="block"; 
+    }
+   
+</script>
+</html>
