@@ -6,10 +6,23 @@ var giohang = new Array();
          var hinh = boxsp[0].children[0].src;
         var gia = boxsp[1].children[0].innerText;
         var tensp = boxsp[2].innerText;
-         var soluong = boxsp[3].value;
+         var soluong = parseInt(boxsp[3].value);
         var sp = new Array( hinh,gia, tensp,soluong);
 
-        giohang.push(sp);
+        var kt =0;
+        for(let i=0;i<giohang.length;i++){
+            if(giohang[i][2]==tensp){
+                kt=1;
+              soluong+=parseInt(giohang[i][3]);
+              giohang[i][3]=soluong;
+              break;
+            }
+        }
+        if(kt==0){
+            giohang.push(sp);
+        }
+
+      
 
         console.log(giohang);
         showcountsp();
@@ -38,18 +51,41 @@ var giohang = new Array();
             '<td>'+
                 '<div>'+tt+'</div>'+
             '</td>'+
+            '<td>'+
+            '<button  onclick="xoasp(this)">Xóa</button>'+
+        '</td>'+
         '</tr>';
         
         }
         ttgh +='<tr>'+
-        '<th colspan="5">Tổng đơn hàng</th>'+
+        '<th colspan="6">Tổng đơn hàng</th>'+
         '<th>'+
             '<div>' + tong + '</div>'+
         '</th>'+
 
     '</tr>';
          document.getElementById("myCart").innerHTML=ttgh;
-         console.log(parseInt(giohang[i][1]));
+        
+    }
+    function xoasp(x){
+        var tr = x.parentElement.parentElement;
+        var tensp= tr.children[2].innerText;
+        tr.remove();
+        for(let i=0;i<giohang.length;i++){
+            if(giohang[i][2]==tensp){
+                giohang.splice(i,1);
+            }
+            
+        }
+       showMyCart();
+        showcountsp();
+ 
+     
+    }
+    function xoatatca() {
+        giohang=[];
+        showMyCart();
+        showcountsp();
     }
     function showcart(){
        
@@ -131,3 +167,4 @@ var giohang = new Array();
    function thongbao(){
     alert("Đặt hàng thành công !");
    }
+   
