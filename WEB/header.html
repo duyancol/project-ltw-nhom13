@@ -26,9 +26,26 @@
 <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css"> 
 <link rel="stylesheet" href="css/style_product.css">
 <link rel="stylesheet" href="">
+<link rel="stylesheet" href="cart/css/style.css">
 </head>
 
 <body>
+    <div id="showcart" style="margin-top: 400px;margin-right: 200px;z-index: 99;"> 
+        <table>
+            <tr>
+                <th>STT</th>
+                <th>Hình</th>
+                <th>Tên sản phẩm</th>
+                <th>Đơn giá</th>
+                <th>Số lượng</th>
+                <th>Thành tiền ($)</th>
+            </tr>
+            <tbody id="myCart">
+
+            </tbody>
+        </table>
+        <a  href="cart.html" style="text-decoration: none;">Thanh toán >>></a>
+    </div>
     <div class="search_cake undisplay">
        
         <input 
@@ -92,9 +109,11 @@
                         <i class="fas fa-search" style="font-size: 40px;color: rgb(68, 67, 67);"></i>
                     </a>
                 </div>
-                <div class="header--logo_item">
-                    <a href="">
+                <div class="giohang header--logo_item" >
+                    <!-- <a href="cart/cart.html"><img src="cart/images/cart.png"></a> -->
+                    <a onclick="showcart()">
                         <i class="fas fa-shopping-cart" style="font-size: 40px;color: rgb(68, 67, 67);"></i>
+                        <span id="countsp">0</span>
                     </a>
                 </div>
             </div>
@@ -265,7 +284,7 @@
                                     <li><a href="">menu 2.4</a></li>
                                 </ul>
                             </li>
-                            <li><a href="">Cart</a></li>
+                            <li><a href="cart.html">Cart</a></li>
                         </ul>
                     </nav>
         
@@ -471,14 +490,14 @@
                     <div class="zoom play-on-scroll delay-2">
                         <button data-food-type="salad">
                            <!-- <span data-food-type="salad" class="text_product"> Từ 120$-300$</span> -->
-                           Từ 120$-300$
+                           Van Ý
                         </button>
                     </div>
                     <div class="zoom play-on-scroll delay-4">
                         <button data-food-type="lorem">
                             
                             <!-- <span data-food-type="lorem" class="text_product"> Từ 300$-1000$</span> -->
-                            Từ 300$-1000$
+                            Van Pháp
                         </button>
                     </div>
                 </div>
@@ -488,12 +507,12 @@
                <div class="product_right" >
                 <div class="zoom play-on-scroll delay-6">
                     <button data-food-type="ipsum">
-                        Từ 1000$-2000$
+                        Van Đức
                     </button>
                 </div>
                 <div class="zoom play-on-scroll delay-8">
                     <button data-food-type="dolor">
-                        Hơn 2000$
+                        Van Nhật
                     </button>
                 </div>
                </div>
@@ -504,221 +523,277 @@
                
                 <div class="drink-item salad-type">
                     <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img" style="height: 340px;">
-                            <div class="img-holder bg-img"
-                                style="background-image: url(assets/product/Rượu-Vang-F-Gold.jpg);"></div>
-                        </div>
-                        <div class="item-info">
-                            <div>
-                                <h6 style="margin-top: -60px;margin-left:20px ;">
-                                    Guilty Pleasure by Anna Ropalo
-                                </h6>
-                                <span class="price" style="margin-left: 120px;">
-                                    120$
-                                </span>
-                            </div>
-                            <div class="cart-btn">
-                                
-                                <i class='bx bx-cart-alt'></i>
-                            </div>
+                        <div class="item-img " style="height: 300px;">
+                            <!-- <div class="img-holder bg-img"> -->
+                                <img src="assets/product/y-pd1.jpg" alt="" class="img-holder bg-img">
+                            <!-- </div> -->
+                            <!-- <div class="item-img " style="height: 300px;">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('assets/home/ads/home11_1.jpg');"></div>
+                            </div> -->
+                           
                             
                         </div>
-                        <div class="card_action">
-                            <button>By Now</button>
-                            <button><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
+                      
+                            
+                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">40</span></p>
+                        
+                        
+                        <div>
+                            <div>
+                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Guilty Pleasure by Anna Ropalo</a>
+                               </div>
                         </div>
+                       
+                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                           
+                        
+                       
+                            <button>By Now</button>
+                            <button onclick="themvaogiohang(this)" 
+                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
+                       
+                    </div>
+                </div>
+                
+                <div class="drink-item salad-type">
+                    <div class="item-wrap bottom-up play-on-scroll">
+                        <div class="item-img " style="height: 300px;">
+                            <!-- <div class="img-holder bg-img"> -->
+                                <img src="assets/product/y-pd2.jpg" alt="" class="img-holder bg-img">
+                            <!-- </div> -->
+                            <!-- <div class="item-img " style="height: 300px;">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('assets/home/ads/home11_1.jpg');"></div>
+                            </div> -->
+                           
+                            
+                        </div>
+                      
+                            
+                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">40</span></p>
+                        
+                        
+                        <div>
+                            <div>
+                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Guilty Pleasure by Anna Ropalo</a>
+                               </div>
+                        </div>
+                       
+                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                           
+                        
+                       
+                            <button>By Now</button>
+                            <button onclick="themvaogiohang(this)" 
+                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
+                       
                     </div>
                 </div>
 
                 <div class="drink-item salad-type">
                     <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img" style="height: 340px;">
-                            <div class="img-holder bg-img"
-                                style="background-image: url(assets/product/y-pd1.jpg);"></div>
-                        </div>
-                        <div class="item-info">
-                            <div>
-                                <h6 style="margin-top: -60px;margin-left:20px ;">
-                                    Guilty Pleasure by Anna Ropalo
-                                </h6>
-                                <span class="price" style="margin-left: 120px;">
-                                    120$
-                                </span>
-                            </div>
-                            <div class="cart-btn">
-                                
-                                <i class='bx bx-cart-alt'></i>
-                            </div>
+                        <div class="item-img " style="height: 300px;">
+                            <!-- <div class="img-holder bg-img"> -->
+                                <img src="assets/product/y-pd3.jpg" alt="" class="img-holder bg-img">
+                            <!-- </div> -->
+                            <!-- <div class="item-img " style="height: 300px;">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('assets/home/ads/home11_1.jpg');"></div>
+                            </div> -->
+                           
                             
                         </div>
-                        <div class="card_action">
-                            <button>By Now</button>
-                            <button><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="drink-item salad-type">
-                    <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img" style="height: 340px;">
-                            <div class="img-holder bg-img"
-                                style="background-image: url(assets/product/y-pd2.jpg);"></div>
-                        </div>
-                        <div class="item-info">
-                            <div>
-                                <h6 style="margin-top: -60px;margin-left:20px ;">
-                                    Guilty Pleasure by Anna Ropalo
-                                </h6>
-                                <span class="price" style="margin-left: 120px;">
-                                    120$
-                                </span>
-                            </div>
-                            <div class="cart-btn">
-                                
-                                <i class='bx bx-cart-alt'></i>
-                            </div>
+                      
                             
+                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">40</span></p>
+                        
+                        
+                        <div>
+                            <div>
+                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Guilty Pleasure by Anna Ropalo</a>
+                               </div>
                         </div>
-                        <div class="card_action">
+                       
+                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                           
+                        
+                       
                             <button>By Now</button>
-                            <button><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
-                        </div>
+                            <button onclick="themvaogiohang(this)" 
+                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
+                       
                     </div>
                 </div>
                  
                 <div class="drink-item salad-type">
                     <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img" style="height: 340px;">
-                            <div class="img-holder bg-img"
-                                style="background-image: url(assets/product/y-pd3.jpg);"></div>
-                        </div>
-                        <div class="item-info">
-                            <div>
-                                <h6 style="margin-top: -60px;margin-left:20px ;">
-                                    Guilty Pleasure by Anna Ropalo
-                                </h6>
-                                <span class="price" style="margin-left: 120px;">
-                                    120$
-                                </span>
-                            </div>
-                            <div class="cart-btn">
-                                
-                                <i class='bx bx-cart-alt'></i>
-                            </div>
+                        <div class="item-img " style="height: 300px;">
+                            <!-- <div class="img-holder bg-img"> -->
+                                <img src="assets/product/y-pd4.jpg" alt="" class="img-holder bg-img">
+                            <!-- </div> -->
+                            <!-- <div class="item-img " style="height: 300px;">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('assets/home/ads/home11_1.jpg');"></div>
+                            </div> -->
+                           
                             
                         </div>
-                        <div class="card_action">
-                            <button>By Now</button>
-                            <button><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
+                      
+                            
+                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">40</span></p>
+                        
+                        
+                        <div>
+                            <div>
+                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Guilty Pleasure by Anna Ropalo</a>
+                               </div>
                         </div>
+                       
+                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                           
+                        
+                       
+                            <button>By Now</button>
+                            <button onclick="themvaogiohang(this)" 
+                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
+                       
                     </div>
                 </div>
                 <div class="drink-item salad-type">
                     <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img" style="height: 340px;">
-                            <div class="img-holder bg-img"
-                                style="background-image: url(assets/product/y-pd4.jpg);"></div>
-                        </div>
-                        <div class="item-info">
-                            <div>
-                                <h6 style="margin-top: -60px;margin-left:20px ;">
-                                    Guilty Pleasure by Anna Ropalo
-                                </h6>
-                                <span class="price" style="margin-left: 120px;">
-                                    120$
-                                </span>
-                            </div>
-                            <div class="cart-btn">
-                                
-                                <i class='bx bx-cart-alt'></i>
-                            </div>
+                        <div class="item-img " style="height: 300px;">
+                            <!-- <div class="img-holder bg-img"> -->
+                                <img src="assets/product/y-pd5.jpg" alt="" class="img-holder bg-img">
+                            <!-- </div> -->
+                            <!-- <div class="item-img " style="height: 300px;">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('assets/home/ads/home11_1.jpg');"></div>
+                            </div> -->
+                           
                             
                         </div>
-                        <div class="card_action">
-                            <button>By Now</button>
-                            <button><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
+                      
+                            
+                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">40</span></p>
+                        
+                        
+                        <div>
+                            <div>
+                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Guilty Pleasure by Anna Ropalo</a>
+                               </div>
                         </div>
+                       
+                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                           
+                        
+                       
+                            <button>By Now</button>
+                            <button onclick="themvaogiohang(this)" 
+                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
+                       
                     </div>
                 </div>
                 <div class="drink-item salad-type">
                     <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img" style="height: 340px;">
-                            <div class="img-holder bg-img"
-                                style="background-image: url(assets/product/y-pd5.jpg);"></div>
-                        </div>
-                        <div class="item-info">
-                            <div>
-                                <h6 style="margin-top: -60px;margin-left:20px ;">
-                                    Guilty Pleasure by Anna Ropalo
-                                </h6>
-                                <span class="price" style="margin-left: 120px;">
-                                    120$
-                                </span>
-                            </div>
-                            <div class="cart-btn">
-                                
-                                <i class='bx bx-cart-alt'></i>
-                            </div>
+                        <div class="item-img " style="height: 300px;">
+                            <!-- <div class="img-holder bg-img"> -->
+                                <img src="assets/product/y-pd6.jpg" alt="" class="img-holder bg-img">
+                            <!-- </div> -->
+                            <!-- <div class="item-img " style="height: 300px;">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('assets/home/ads/home11_1.jpg');"></div>
+                            </div> -->
+                           
                             
                         </div>
-                        <div class="card_action">
-                            <button>By Now</button>
-                            <button><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
+                      
+                            
+                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">40</span></p>
+                        
+                        
+                        <div>
+                            <div>
+                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Guilty Pleasure by Anna Ropalo</a>
+                               </div>
                         </div>
+                       
+                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                           
+                        
+                       
+                            <button>By Now</button>
+                            <button onclick="themvaogiohang(this)" 
+                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
+                       
                     </div>
                 </div>
                 <div class="drink-item salad-type">
                     <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img" style="height: 340px;">
-                            <div class="img-holder bg-img"
-                                style="background-image: url(assets/product/y-pd6.jpg);"></div>
-                        </div>
-                        <div class="item-info">
-                            <div>
-                                <h6 style="margin-top: -60px;margin-left:20px ;">
-                                    Guilty Pleasure by Anna Ropalo
-                                </h6>
-                                <span class="price" style="margin-left: 120px;">
-                                    120$
-                                </span>
-                            </div>
-                            <div class="cart-btn">
-                                
-                                <i class='bx bx-cart-alt'></i>
-                            </div>
+                        <div class="item-img " style="height: 300px;">
+                            <!-- <div class="img-holder bg-img"> -->
+                                <img src="assets/product/y-pd7.jpg" alt="" class="img-holder bg-img">
+                            <!-- </div> -->
+                            <!-- <div class="item-img " style="height: 300px;">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('assets/home/ads/home11_1.jpg');"></div>
+                            </div> -->
+                           
                             
                         </div>
-                        <div class="card_action">
-                            <button>By Now</button>
-                            <button><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
+                      
+                            
+                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">40</span></p>
+                        
+                        
+                        <div>
+                            <div>
+                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Guilty Pleasure by Anna Ropalo</a>
+                               </div>
                         </div>
+                       
+                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                           
+                        
+                       
+                            <button>By Now</button>
+                            <button onclick="themvaogiohang(this)" 
+                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
+                       
                     </div>
                 </div>
                 <div class="drink-item salad-type">
                     <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img" style="height: 340px;">
-                            <div class="img-holder bg-img"
-                                style="background-image: url(assets/product/y-pd7.jpg);"></div>
-                        </div>
-                        <div class="item-info">
-                            <div>
-                                <h6 style="margin-top: -60px;margin-left:20px ;">
-                                    Guilty Pleasure by Anna Ropalo
-                                </h6>
-                                <span class="price" style="margin-left: 120px;">
-                                    120$
-                                </span>
-                            </div>
-                            <div class="cart-btn">
-                                
-                                <i class='bx bx-cart-alt'></i>
-                            </div>
+                        <div class="item-img " style="height: 300px;">
+                            <!-- <div class="img-holder bg-img"> -->
+                                <img src="assets/product/y-pd8.jpg" alt="" class="img-holder bg-img">
+                            <!-- </div> -->
+                            <!-- <div class="item-img " style="height: 300px;">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('assets/home/ads/home11_1.jpg');"></div>
+                            </div> -->
+                           
                             
                         </div>
-                        <div class="card_action">
-                            <button>By Now</button>
-                            <button><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
+                      
+                            
+                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">40</span></p>
+                        
+                        
+                        <div>
+                            <div>
+                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Guilty Pleasure by Anna Ropalo</a>
+                               </div>
                         </div>
+                       
+                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                           
+                        
+                       
+                            <button>By Now</button>
+                            <button onclick="themvaogiohang(this)" 
+                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
+                       
                     </div>
                 </div>
 
@@ -727,874 +802,740 @@
 
                 <div class="drink-item lorem-type">
                     <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img" style="height: 340px;">
-                            <div class="img-holder bg-img"
-                                style="background-image: url('assets/product/cd-pd1.jpg');"></div>
+                        <div class="item-img " style="height: 300px;">
+                            <!-- <div class="img-holder bg-img"> -->
+                                <img src="assets/product/cd-pd1.jpg" alt="" class="img-holder bg-img">
+                          
                         </div>
-                        <div class="item-info">
+                      
+                            
+                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">40</span></p>
+                        
+                        
+                        <div>
                             <div>
-                                <h6 style="margin-top: -60px;margin-left:20px ;">
-                                    Marble Mountain by Fanakalo
-
-                                </h6>
-                                <span style="margin-left: 120px;">
-                                    320$
-                                </span>
-                            </div>
-                            <div class="cart-btn">
-                                <i class='bx bx-cart-alt'></i>
-                            </div>
+                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Guilty Pleasure by Anna Ropalo</a>
+                               </div>
                         </div>
-                        <div class="card_action">
+                       
+                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                           
+                        
+                       
                             <button>By Now</button>
-                            <button>Add Cart</button>
-                        </div>
+                            <button onclick="themvaogiohang(this)" 
+                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
                 </div>
                 <div class="drink-item lorem-type">
                     <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img" style="height: 340px;">
-                            <div class="img-holder bg-img"
-                                style="background-image: url('assets/product/cd-pd2.jpg');"></div>
+                        <div class="item-img " style="height: 300px;">
+                            <!-- <div class="img-holder bg-img"> -->
+                                <img src="assets/product/cd-pd2.jpg" alt="" class="img-holder bg-img">
+                          
                         </div>
-                        <div class="item-info">
+                      
+                            
+                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">40</span></p>
+                        
+                        
+                        <div>
                             <div>
-                                <h6 style="margin-top: -60px;margin-left:20px ;">
-                                    Marble Mountain by Fanakalo
-
-                                </h6>
-                                <span style="margin-left: 120px;">
-                                    320$
-                                </span>
-                            </div>
-                            <div class="cart-btn">
-                                <i class='bx bx-cart-alt'></i>
-                            </div>
+                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Guilty Pleasure by Anna Ropalo</a>
+                               </div>
                         </div>
-                        <div class="card_action">
+                       
+                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                           
+                        
+                       
                             <button>By Now</button>
-                            <button>Add Cart</button>
-                        </div>
+                            <button onclick="themvaogiohang(this)" 
+                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
                 </div>
                 <div class="drink-item lorem-type">
                     <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img" style="height: 340px;">
-                            <div class="img-holder bg-img"
-                                style="background-image: url('assets/product/cd-pd3.jpg');"></div>
+                        <div class="item-img " style="height: 300px;">
+                            <!-- <div class="img-holder bg-img"> -->
+                                <img src="assets/product/cd-pd3.jpg" alt="" class="img-holder bg-img">
+                          
                         </div>
-                        <div class="item-info">
+                      
+                            
+                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">40</span></p>
+                        
+                        
+                        <div>
                             <div>
-                                <h6 style="margin-top: -60px;margin-left:20px ;">
-                                    Marble Mountain by Fanakalo
-
-                                </h6>
-                                <span style="margin-left: 120px;">
-                                    320$
-                                </span>
-                            </div>
-                            <div class="cart-btn">
-                                <i class='bx bx-cart-alt'></i>
-                            </div>
+                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Guilty Pleasure by Anna Ropalo</a>
+                               </div>
                         </div>
-                        <div class="card_action">
+                       
+                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                           
+                        
+                       
                             <button>By Now</button>
-                            <button>Add Cart</button>
-                        </div>
+                            <button onclick="themvaogiohang(this)" 
+                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
                 </div>
                 <div class="drink-item lorem-type">
                     <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img" style="height: 340px;">
-                            <div class="img-holder bg-img"
-                                style="background-image: url('assets/product/cd-pd4.jpg');"></div>
+                        <div class="item-img " style="height: 300px;">
+                            <!-- <div class="img-holder bg-img"> -->
+                                <img src="assets/product/cd-pd4.jpg" alt="" class="img-holder bg-img">
+                          
                         </div>
-                        <div class="item-info">
+                      
+                            
+                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">40</span></p>
+                        
+                        
+                        <div>
                             <div>
-                                <h6 style="margin-top: -60px;margin-left:20px ;">
-                                    Marble Mountain by Fanakalo
-
-                                </h6>
-                                <span style="margin-left: 120px;">
-                                    320$
-                                </span>
-                            </div>
-                            <div class="cart-btn">
-                                <i class='bx bx-cart-alt'></i>
-                            </div>
+                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Guilty Pleasure by Anna Ropalo</a>
+                               </div>
                         </div>
-                        <div class="card_action">
+                       
+                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                           
+                        
+                       
                             <button>By Now</button>
-                            <button>Add Cart</button>
-                        </div>
+                            <button onclick="themvaogiohang(this)" 
+                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
                 </div>
                 <div class="drink-item lorem-type">
                     <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img" style="height: 340px;">
-                            <div class="img-holder bg-img"
-                                style="background-image: url('assets/product/cd-pd5.jpg');"></div>
+                        <div class="item-img " style="height: 300px;">
+                            <!-- <div class="img-holder bg-img"> -->
+                                <img src="assets/product/cd-pd5.jpg" alt="" class="img-holder bg-img">
+                          
                         </div>
-                        <div class="item-info">
+                      
+                            
+                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">40</span></p>
+                        
+                        
+                        <div>
                             <div>
-                                <h6 style="margin-top: -60px;margin-left:20px ;">
-                                    Marble Mountain by Fanakalo
-
-                                </h6>
-                                <span style="margin-left: 120px;">
-                                    320$
-                                </span>
-                            </div>
-                            <div class="cart-btn">
-                                <i class='bx bx-cart-alt'></i>
-                            </div>
+                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Guilty Pleasure by Anna Ropalo</a>
+                               </div>
                         </div>
-                        <div class="card_action">
+                       
+                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                           
+                        
+                       
                             <button>By Now</button>
-                            <button>Add Cart</button>
-                        </div>
+                            <button onclick="themvaogiohang(this)" 
+                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
                 </div>
                 <div class="drink-item lorem-type">
                     <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img" style="height: 340px;">
-                            <div class="img-holder bg-img"
-                                style="background-image: url('assets/product/cd-pd6.jpg');"></div>
+                        <div class="item-img " style="height: 300px;">
+                            <!-- <div class="img-holder bg-img"> -->
+                                <img src="assets/product/cd-pd6.jpg" alt="" class="img-holder bg-img">
+                          
                         </div>
-                        <div class="item-info">
+                      
+                            
+                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">40</span></p>
+                        
+                        
+                        <div>
                             <div>
-                                <h6 style="margin-top: -60px;margin-left:20px ;">
-                                    Marble Mountain by Fanakalo
-
-                                </h6>
-                                <span style="margin-left: 120px;">
-                                    320$
-                                </span>
-                            </div>
-                            <div class="cart-btn">
-                                <i class='bx bx-cart-alt'></i>
-                            </div>
+                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Guilty Pleasure by Anna Ropalo</a>
+                               </div>
                         </div>
-                        <div class="card_action">
+                       
+                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                           
+                        
+                       
                             <button>By Now</button>
-                            <button>Add Cart</button>
-                        </div>
+                            <button onclick="themvaogiohang(this)" 
+                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
                 </div>
                 <div class="drink-item lorem-type">
                     <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img" style="height: 340px;">
-                            <div class="img-holder bg-img"
-                                style="background-image: url('assets/product/cd-pd7.jpg');"></div>
+                        <div class="item-img " style="height: 300px;">
+                            <!-- <div class="img-holder bg-img"> -->
+                                <img src="assets/product/cd-pd7.jpg" alt="" class="img-holder bg-img">
+                          
                         </div>
-                        <div class="item-info">
+                      
+                            
+                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">40</span></p>
+                        
+                        
+                        <div>
                             <div>
-                                <h6 style="margin-top: -60px;margin-left:20px ;">
-                                    Marble Mountain by Fanakalo
-
-                                </h6>
-                                <span style="margin-left: 120px;">
-                                    320$
-                                </span>
-                            </div>
-                            <div class="cart-btn">
-                                <i class='bx bx-cart-alt'></i>
-                            </div>
+                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Guilty Pleasure by Anna Ropalo</a>
+                               </div>
                         </div>
-                        <div class="card_action">
+                       
+                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                           
+                        
+                       
                             <button>By Now</button>
-                            <button>Add Cart</button>
-                        </div>
+                            <button onclick="themvaogiohang(this)" 
+                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
                 </div>
                 <div class="drink-item lorem-type">
                     <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img" style="height: 340px;">
-                            <div class="img-holder bg-img"
-                                style="background-image: url('assets/product/cd-pd8.jpg');"></div>
+                        <div class="item-img " style="height: 300px;">
+                            <!-- <div class="img-holder bg-img"> -->
+                                <img src="assets/product/cd-pd8.jpg" alt="" class="img-holder bg-img">
+                          
                         </div>
-                        <div class="item-info">
+                      
+                            
+                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">40</span></p>
+                        
+                        
+                        <div>
                             <div>
-                                <h6 style="margin-top: -60px;margin-left:20px ;">
-                                    Marble Mountain by Fanakalo
-
-                                </h6>
-                                <span style="margin-left: 120px;">
-                                    320$
-                                </span>
-                            </div>
-                            <div class="cart-btn">
-                                <i class='bx bx-cart-alt'></i>
-                            </div>
+                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Guilty Pleasure by Anna Ropalo</a>
+                               </div>
                         </div>
-                        <div class="card_action">
+                       
+                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                           
+                        
+                       
                             <button>By Now</button>
-                            <button>Add Cart</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="drink-item lorem-type">
-                    <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img" style="height: 340px;">
-                            <div class="img-holder bg-img"
-                                style="background-image: url('assets/product/d-pd1.jpg');"></div>
-                        </div>
-                        <div class="item-info">
-                            <div>
-                                <h6 style="margin-top: -55px;margin-left:20px ;">
-                                    Bulleit Rye Whiskey Stroube
-                                </h6>
-                                <span style="margin-left: 120px;">
-                                    750$
-                                </span>
-                            </div>
-                            <div class="cart-btn">
-                                <i class='bx bx-cart-alt'></i>
-                            </div>
-                        </div>
-                        <div class="card_action">
-                            <button>By Now</button>
-                            <button>Add Cart</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="drink-item lorem-type">
-                    <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img" style="height: 340px;">
-                            <div class="img-holder bg-img"
-                                style="background-image: url('assets/product/d-pd2.jpg');"></div>
-                        </div>
-                        <div class="item-info">
-                            <div>
-                                <h6 style="margin-top: -55px;margin-left:20px ;">
-                                    Bulleit Rye Whiskey Stroube
-                                </h6>
-                                <span style="margin-left: 120px;">
-                                    750$
-                                </span>
-                            </div>
-                            <div class="cart-btn">
-                                <i class='bx bx-cart-alt'></i>
-                            </div>
-                        </div>
-                        <div class="card_action">
-                            <button>By Now</button>
-                            <button>Add Cart</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="drink-item lorem-type">
-                    <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img" style="height: 340px;">
-                            <div class="img-holder bg-img"
-                                style="background-image: url('assets/product/d-pd3.jpg');"></div>
-                        </div>
-                        <div class="item-info">
-                            <div>
-                                <h6 style="margin-top: -55px;margin-left:20px ;">
-                                    Bulleit Rye Whiskey Stroube
-                                </h6>
-                                <span style="margin-left: 120px;">
-                                    750$
-                                </span>
-                            </div>
-                            <div class="cart-btn">
-                                <i class='bx bx-cart-alt'></i>
-                            </div>
-                        </div>
-                        <div class="card_action">
-                            <button>By Now</button>
-                            <button>Add Cart</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="drink-item lorem-type">
-                    <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img" style="height: 340px;">
-                            <div class="img-holder bg-img"
-                                style="background-image: url('assets/product/d-pd4.jpg');"></div>
-                        </div>
-                        <div class="item-info">
-                            <div>
-                                <h6 style="margin-top: -55px;margin-left:20px ;">
-                                    Bulleit Rye Whiskey Stroube
-                                </h6>
-                                <span style="margin-left: 120px;">
-                                    750$
-                                </span>
-                            </div>
-                            <div class="cart-btn">
-                                <i class='bx bx-cart-alt'></i>
-                            </div>
-                        </div>
-                        <div class="card_action">
-                            <button>By Now</button>
-                            <button>Add Cart</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="drink-item lorem-type">
-                    <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img" style="height: 340px;">
-                            <div class="img-holder bg-img"
-                                style="background-image: url('assets/product/d-pd5.jpg');"></div>
-                        </div>
-                        <div class="item-info">
-                            <div>
-                                <h6 style="margin-top: -55px;margin-left:20px ;">
-                                    Bulleit Rye Whiskey Stroube
-                                </h6>
-                                <span style="margin-left: 120px;">
-                                    750$
-                                </span>
-                            </div>
-                            <div class="cart-btn">
-                                <i class='bx bx-cart-alt'></i>
-                            </div>
-                        </div>
-                        <div class="card_action">
-                            <button>By Now</button>
-                            <button>Add Cart</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="drink-item lorem-type">
-                    <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img" style="height: 340px;">
-                            <div class="img-holder bg-img"
-                                style="background-image: url('assets/product/d-pd6.jpg');"></div>
-                        </div>
-                        <div class="item-info">
-                            <div>
-                                <h6 style="margin-top: -55px;margin-left:20px ;">
-                                    Bulleit Rye Whiskey Stroube
-                                </h6>
-                                <span style="margin-left: 120px;">
-                                    750$
-                                </span>
-                            </div>
-                            <div class="cart-btn">
-                                <i class='bx bx-cart-alt'></i>
-                            </div>
-                        </div>
-                        <div class="card_action">
-                            <button>By Now</button>
-                            <button>Add Cart</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="drink-item lorem-type">
-                    <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img" style="height: 340px;">
-                            <div class="img-holder bg-img"
-                                style="background-image: url('assets/product/d-pd7.jpg');"></div>
-                        </div>
-                        <div class="item-info">
-                            <div>
-                                <h6 style="margin-top: -55px;margin-left:20px ;">
-                                    Bulleit Rye Whiskey Stroube
-                                </h6>
-                                <span style="margin-left: 120px;">
-                                    750$
-                                </span>
-                            </div>
-                            <div class="cart-btn">
-                                <i class='bx bx-cart-alt'></i>
-                            </div>
-                        </div>
-                        <div class="card_action">
-                            <button>By Now</button>
-                            <button>Add Cart</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="drink-item lorem-type">
-                    <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img" style="height: 340px;">
-                            <div class="img-holder bg-img"
-                                style="background-image: url('assets/product/d-pd8.jpg');"></div>
-                        </div>
-                        <div class="item-info">
-                            <div>
-                                <h6 style="margin-top: -55px;margin-left:20px ;">
-                                    Bulleit Rye Whiskey Stroube
-                                </h6>
-                                <span style="margin-left: 120px;">
-                                    750$
-                                </span>
-                            </div>
-                            <div class="cart-btn">
-                                <i class='bx bx-cart-alt'></i>
-                            </div>
-                        </div>
-                        <div class="card_action">
-                            <button>By Now</button>
-                            <button>Add Cart</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="drink-item ipsum-type">
-                    <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img" style="height: 340px;">
-                            <div class="img-holder bg-img"
-                                style="background-image: url('assets/product/a-pd1.jpg');">
-                            </div>
-                        </div>
-                        <div class="item-info">
-                            <div>
-                                <h6 style="margin-top: -55px;margin-left:20px ;">
-                                    Pink and Red Sparkling
-                                </h6>
-                                <span>
-                                    1920$
-                                </span>
-                            </div>
-                            <div class="cart-btn">
-                                <i class='bx bx-cart-alt'></i>
-                            </div>
-                        </div>
-                        <div class="card_action">
-                            <button>By Now</button>
-                            <button>Add Cart</button>
-                        </div>
+                            <button onclick="themvaogiohang(this)" 
+                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
                 </div>
                 <div class="drink-item ipsum-type">
                     <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img" style="height: 340px;">
-                            <div class="img-holder bg-img"
-                                style="background-image: url('assets/product/a-pd2.jpg');">
-                            </div>
+                        <div class="item-img " style="height: 300px;">
+                            <!-- <div class="img-holder bg-img"> -->
+                                <img src="assets/product/a-pd1.jpg" alt="" class="img-holder bg-img">
+                          
                         </div>
-                        <div class="item-info">
+                      
+                            
+                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">40</span></p>
+                        
+                        
+                        <div>
                             <div>
-                                <h6 style="margin-top: -55px;margin-left:20px ;">
-                                    Pink and Red Sparkling
-                                </h6>
-                                <span>
-                                    1920$
-                                </span>
-                            </div>
-                            <div class="cart-btn">
-                                <i class='bx bx-cart-alt'></i>
-                            </div>
+                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Guilty Pleasure by Anna Ropalo</a>
+                               </div>
                         </div>
-                        <div class="card_action">
+                       
+                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                           
+                        
+                       
                             <button>By Now</button>
-                            <button>Add Cart</button>
+                            <button onclick="themvaogiohang(this)" 
+                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
+                    </div>
+                </div>
+
+                
+
+                <div class="drink-item ipsum-type">
+                    <div class="item-wrap bottom-up play-on-scroll">
+                        <div class="item-img " style="height: 300px;">
+                            <!-- <div class="img-holder bg-img"> -->
+                                <img src="assets/product/a-pd2.jpg" alt="" class="img-holder bg-img">
+                          
                         </div>
+                      
+                            
+                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">40</span></p>
+                        
+                        
+                        <div>
+                            <div>
+                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Guilty Pleasure by Anna Ropalo</a>
+                               </div>
+                        </div>
+                       
+                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                           
+                        
+                       
+                            <button>By Now</button>
+                            <button onclick="themvaogiohang(this)" 
+                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
                 </div>
                 <div class="drink-item ipsum-type">
                     <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img" style="height: 340px;">
-                            <div class="img-holder bg-img"
-                                style="background-image: url('assets/product/a-pd3.jpg');">
-                            </div>
+                        <div class="item-img " style="height: 300px;">
+                            <!-- <div class="img-holder bg-img"> -->
+                                <img src="assets/product/a-pd3.jpg" alt="" class="img-holder bg-img">
+                          
                         </div>
-                        <div class="item-info">
+                      
+                            
+                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">40</span></p>
+                        
+                        
+                        <div>
                             <div>
-                                <h6 style="margin-top: -55px;margin-left:20px ;">
-                                    Pink and Red Sparkling
-                                </h6>
-                                <span>
-                                    1920$
-                                </span>
-                            </div>
-                            <div class="cart-btn">
-                                <i class='bx bx-cart-alt'></i>
-                            </div>
+                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Guilty Pleasure by Anna Ropalo</a>
+                               </div>
                         </div>
-                        <div class="card_action">
+                       
+                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                           
+                        
+                       
                             <button>By Now</button>
-                            <button>Add Cart</button>
-                        </div>
+                            <button onclick="themvaogiohang(this)" 
+                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
                 </div>
                 <div class="drink-item ipsum-type">
                     <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img" style="height: 340px;">
-                            <div class="img-holder bg-img"
-                                style="background-image: url('assets/product/a-pd4.jpg');">
-                            </div>
+                        <div class="item-img " style="height: 300px;">
+                            <!-- <div class="img-holder bg-img"> -->
+                                <img src="assets/product/a-pd4.jpg" alt="" class="img-holder bg-img">
+                          
                         </div>
-                        <div class="item-info">
+                      
+                            
+                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">40</span></p>
+                        
+                        
+                        <div>
                             <div>
-                                <h6 style="margin-top: -55px;margin-left:20px ;">
-                                    Pink and Red Sparkling
-                                </h6>
-                                <span>
-                                    1920$
-                                </span>
-                            </div>
-                            <div class="cart-btn">
-                                <i class='bx bx-cart-alt'></i>
-                            </div>
+                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Guilty Pleasure by Anna Ropalo</a>
+                               </div>
                         </div>
-                        <div class="card_action">
+                       
+                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                           
+                        
+                       
                             <button>By Now</button>
-                            <button>Add Cart</button>
-                        </div>
+                            <button onclick="themvaogiohang(this)" 
+                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
                 </div>
                 <div class="drink-item ipsum-type">
                     <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img" style="height: 340px;">
-                            <div class="img-holder bg-img"
-                                style="background-image: url('assets/product/a-pd5.jpg');">
-                            </div>
+                        <div class="item-img " style="height: 300px;">
+                            <!-- <div class="img-holder bg-img"> -->
+                                <img src="assets/product/a-pd5.jpg" alt="" class="img-holder bg-img">
+                          
                         </div>
-                        <div class="item-info">
+                      
+                            
+                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">40</span></p>
+                        
+                        
+                        <div>
                             <div>
-                                <h6 style="margin-top: -55px;margin-left:20px ;">
-                                    Pink and Red Sparkling
-                                </h6>
-                                <span>
-                                    1920$
-                                </span>
-                            </div>
-                            <div class="cart-btn">
-                                <i class='bx bx-cart-alt'></i>
-                            </div>
+                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Guilty Pleasure by Anna Ropalo</a>
+                               </div>
                         </div>
-                        <div class="card_action">
+                       
+                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                           
+                        
+                       
                             <button>By Now</button>
-                            <button>Add Cart</button>
-                        </div>
+                            <button onclick="themvaogiohang(this)" 
+                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
                 </div>
                 <div class="drink-item ipsum-type">
                     <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img" style="height: 340px;">
-                            <div class="img-holder bg-img"
-                                style="background-image: url('assets/product/a-pd6.jpg');">
-                            </div>
+                        <div class="item-img " style="height: 300px;">
+                            <!-- <div class="img-holder bg-img"> -->
+                                <img src="assets/product/a-pd6.jpg" alt="" class="img-holder bg-img">
+                          
                         </div>
-                        <div class="item-info">
+                      
+                            
+                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">40</span></p>
+                        
+                        
+                        <div>
                             <div>
-                                <h6 style="margin-top: -55px;margin-left:20px ;">
-                                    Pink and Red Sparkling
-                                </h6>
-                                <span>
-                                    1920$
-                                </span>
-                            </div>
-                            <div class="cart-btn">
-                                <i class='bx bx-cart-alt'></i>
-                            </div>
+                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Guilty Pleasure by Anna Ropalo</a>
+                               </div>
                         </div>
-                        <div class="card_action">
+                       
+                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                           
+                        
+                       
                             <button>By Now</button>
-                            <button>Add Cart</button>
-                        </div>
+                            <button onclick="themvaogiohang(this)" 
+                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
                 </div>
                 <div class="drink-item ipsum-type">
                     <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img" style="height: 340px;">
-                            <div class="img-holder bg-img"
-                                style="background-image: url('assets/product/a-pd7.jpg');">
-                            </div>
+                        <div class="item-img " style="height: 300px;">
+                            <!-- <div class="img-holder bg-img"> -->
+                                <img src="assets/product/a-pd7.jpg" alt="" class="img-holder bg-img">
+                          
                         </div>
-                        <div class="item-info">
+                      
+                            
+                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">40</span></p>
+                        
+                        
+                        <div>
                             <div>
-                                <h6 style="margin-top: -55px;margin-left:20px ;">
-                                    Pink and Red Sparkling
-                                </h6>
-                                <span>
-                                    1920$
-                                </span>
-                            </div>
-                            <div class="cart-btn">
-                                <i class='bx bx-cart-alt'></i>
-                            </div>
+                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Guilty Pleasure by Anna Ropalo</a>
+                               </div>
                         </div>
-                        <div class="card_action">
+                       
+                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                           
+                        
+                       
                             <button>By Now</button>
-                            <button>Add Cart</button>
-                        </div>
+                            <button onclick="themvaogiohang(this)" 
+                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
                 </div>
                 <div class="drink-item ipsum-type">
                     <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img" style="height: 340px;">
-                            <div class="img-holder bg-img"
-                                style="background-image: url('assets/product/a-pd8.jpg');">
-                            </div>
+                        <div class="item-img " style="height: 300px;">
+                            <!-- <div class="img-holder bg-img"> -->
+                                <img src="assets/product/a-pd8.jpg" alt="" class="img-holder bg-img">
+                          
                         </div>
-                        <div class="item-info">
+                      
+                            
+                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">40</span></p>
+                        
+                        
+                        <div>
                             <div>
-                                <h6 style="margin-top: -55px;margin-left:20px ;">
-                                    Pink and Red Sparkling
-                                </h6>
-                                <span>
-                                    1920$
-                                </span>
-                            </div>
-                            <div class="cart-btn">
-                                <i class='bx bx-cart-alt'></i>
-                            </div>
+                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Guilty Pleasure by Anna Ropalo</a>
+                               </div>
                         </div>
-                        <div class="card_action">
+                       
+                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                           
+                        
+                       
                             <button>By Now</button>
-                            <button>Add Cart</button>
-                        </div>
+                            <button onclick="themvaogiohang(this)" 
+                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
                 </div>
               
                
                 <div class="drink-item dolor-type">
                     <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img"  style="height: 340px;">
-                            <div class="img-holder bg-img"
-                                style="background-image: url('assets/product/j-pd1.jpg');"></div>
+                        <div class="item-img " style="height: 300px;">
+                            <!-- <div class="img-holder bg-img"> -->
+                                <img src="assets/product/j-pd1.jpg" alt="" class="img-holder bg-img">
+                          
                         </div>
-                        <div class="item-info">
+                      
+                            
+                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">40</span></p>
+                        
+                        
+                        <div>
                             <div>
-                                <h6 style="margin-top: -55px;margin-left:20px ;">
-                                    Tucumen
-                                </h6>
-                                <span style="margin-left: 120px;">
-                                2500$
-                                </span>
-                            </div>
-                            <div class="cart-btn">
-                                <i class='bx bx-cart-alt'></i>
-                            </div>
+                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Guilty Pleasure by Anna Ropalo</a>
+                               </div>
                         </div>
-                        <div class="card_action">
+                       
+                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                           
+                        
+                       
                             <button>By Now</button>
-                            <button>Add Cart</button>
-                        </div>
+                            <button onclick="themvaogiohang(this)" 
+                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
+                    
+                
+                
                 </div>
                 <div class="drink-item dolor-type">
                     <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img"  style="height: 340px;">
-                            <div class="img-holder bg-img"
-                                style="background-image: url('assets/product/j-pd2.jpg');"></div>
+                        <div class="item-img " style="height: 300px;">
+                            <!-- <div class="img-holder bg-img"> -->
+                                <img src="assets/product/j-pd2.jpg" alt="" class="img-holder bg-img">
+                          
                         </div>
-                        <div class="item-info">
+                      
+                            
+                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">40</span></p>
+                        
+                        
+                        <div>
                             <div>
-                                <h6 style="margin-top: -55px;margin-left:20px ;">
-                                    Tucumen
-                                </h6>
-                                <span style="margin-left: 120px;">
-                                2500$
-                                </span>
-                            </div>
-                            <div class="cart-btn">
-                                <i class='bx bx-cart-alt'></i>
-                            </div>
+                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Guilty Pleasure by Anna Ropalo</a>
+                               </div>
                         </div>
-                        <div class="card_action">
+                       
+                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                           
+                        
+                       
                             <button>By Now</button>
-                            <button>Add Cart</button>
-                        </div>
+                            <button onclick="themvaogiohang(this)" 
+                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
+                    
+                
+                
                 </div>
                 <div class="drink-item dolor-type">
                     <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img"  style="height: 340px;">
-                            <div class="img-holder bg-img"
-                                style="background-image: url('assets/product/j-pd3.jpg');"></div>
+                        <div class="item-img " style="height: 300px;">
+                            <!-- <div class="img-holder bg-img"> -->
+                                <img src="assets/product/j-pd3.jpg" alt="" class="img-holder bg-img">
+                          
                         </div>
-                        <div class="item-info">
+                      
+                            
+                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">40</span></p>
+                        
+                        
+                        <div>
                             <div>
-                                <h6 style="margin-top: -55px;margin-left:20px ;">
-                                    Tucumen
-                                </h6>
-                                <span style="margin-left: 120px;">
-                                2500$
-                                </span>
-                            </div>
-                            <div class="cart-btn">
-                                <i class='bx bx-cart-alt'></i>
-                            </div>
+                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Guilty Pleasure by Anna Ropalo</a>
+                               </div>
                         </div>
-                        <div class="card_action">
+                       
+                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                           
+                        
+                       
                             <button>By Now</button>
-                            <button>Add Cart</button>
-                        </div>
+                            <button onclick="themvaogiohang(this)" 
+                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
+                    
+                
+                
                 </div>
                 <div class="drink-item dolor-type">
                     <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img"  style="height: 340px;">
-                            <div class="img-holder bg-img"
-                                style="background-image: url('assets/product/j-pd4.jpg');"></div>
+                        <div class="item-img " style="height: 300px;">
+                            <!-- <div class="img-holder bg-img"> -->
+                                <img src="assets/product/j-pd4.jpg" alt="" class="img-holder bg-img">
+                          
                         </div>
-                        <div class="item-info">
+                      
+                            
+                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">40</span></p>
+                        
+                        
+                        <div>
                             <div>
-                                <h6 style="margin-top: -55px;margin-left:20px ;">
-                                    Tucumen
-                                </h6>
-                                <span style="margin-left: 120px;">
-                                2500$
-                                </span>
-                            </div>
-                            <div class="cart-btn">
-                                <i class='bx bx-cart-alt'></i>
-                            </div>
+                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Guilty Pleasure by Anna Ropalo</a>
+                               </div>
                         </div>
-                        <div class="card_action">
+                       
+                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                           
+                        
+                       
                             <button>By Now</button>
-                            <button>Add Cart</button>
-                        </div>
+                            <button onclick="themvaogiohang(this)" 
+                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
+                    
+                
+                
                 </div>
                 <div class="drink-item dolor-type">
                     <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img"  style="height: 340px;">
-                            <div class="img-holder bg-img"
-                                style="background-image: url('assets/product/j-pd5.jpg');"></div>
+                        <div class="item-img " style="height: 300px;">
+                            <!-- <div class="img-holder bg-img"> -->
+                                <img src="assets/product/j-pd5.jpg" alt="" class="img-holder bg-img">
+                          
                         </div>
-                        <div class="item-info">
+                      
+                            
+                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">40</span></p>
+                        
+                        
+                        <div>
                             <div>
-                                <h6 style="margin-top: -55px;margin-left:20px ;">
-                                    Tucumen
-                                </h6>
-                                <span style="margin-left: 120px;">
-                                2500$
-                                </span>
-                            </div>
-                            <div class="cart-btn">
-                                <i class='bx bx-cart-alt'></i>
-                            </div>
+                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Guilty Pleasure by Anna Ropalo</a>
+                               </div>
                         </div>
-                        <div class="card_action">
+                       
+                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                           
+                        
+                       
                             <button>By Now</button>
-                            <button>Add Cart</button>
-                        </div>
+                            <button onclick="themvaogiohang(this)" 
+                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
+                    
+                
+                
                 </div>
                 <div class="drink-item dolor-type">
                     <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img"  style="height: 340px;">
-                            <div class="img-holder bg-img"
-                                style="background-image: url('assets/product/j-pd6.jpg');"></div>
+                        <div class="item-img " style="height: 300px;">
+                            <!-- <div class="img-holder bg-img"> -->
+                                <img src="assets/product/j-pd6.jpg" alt="" class="img-holder bg-img">
+                          
                         </div>
-                        <div class="item-info">
+                      
+                            
+                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">40</span></p>
+                        
+                        
+                        <div>
                             <div>
-                                <h6 style="margin-top: -55px;margin-left:20px ;">
-                                    Tucumen
-                                </h6>
-                                <span style="margin-left: 120px;">
-                                2500$
-                                </span>
-                            </div>
-                            <div class="cart-btn">
-                                <i class='bx bx-cart-alt'></i>
-                            </div>
+                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Guilty Pleasure by Anna Ropalo</a>
+                               </div>
                         </div>
-                        <div class="card_action">
+                       
+                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                           
+                        
+                       
                             <button>By Now</button>
-                            <button>Add Cart</button>
-                        </div>
+                            <button onclick="themvaogiohang(this)" 
+                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
+                    
+                
+                
                 </div>
                 <div class="drink-item dolor-type">
                     <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img"  style="height: 340px;">
-                            <div class="img-holder bg-img"
-                                style="background-image: url('assets/product/j-pd7.jpg');"></div>
+                        <div class="item-img " style="height: 300px;">
+                            <!-- <div class="img-holder bg-img"> -->
+                                <img src="assets/product/j-pd7.jpg" alt="" class="img-holder bg-img">
+                          
                         </div>
-                        <div class="item-info">
+                      
+                            
+                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">40</span></p>
+                        
+                        
+                        <div>
                             <div>
-                                <h6 style="margin-top: -55px;margin-left:20px ;">
-                                    Tucumen
-                                </h6>
-                                <span style="margin-left: 120px;">
-                                2500$
-                                </span>
-                            </div>
-                            <div class="cart-btn">
-                                <i class='bx bx-cart-alt'></i>
-                            </div>
+                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Guilty Pleasure by Anna Ropalo</a>
+                               </div>
                         </div>
-                        <div class="card_action">
+                       
+                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                           
+                        
+                       
                             <button>By Now</button>
-                            <button>Add Cart</button>
-                        </div>
+                            <button onclick="themvaogiohang(this)" 
+                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
+                    
+                
+                
                 </div>
                 <div class="drink-item dolor-type">
                     <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img"  style="height: 340px;">
-                            <div class="img-holder bg-img"
-                                style="background-image: url('assets/product/j-pd8.jpg');"></div>
+                        <div class="item-img " style="height: 300px;">
+                            <!-- <div class="img-holder bg-img"> -->
+                                <img src="assets/product/j-pd8.jpg" alt="" class="img-holder bg-img">
+                          
                         </div>
-                        <div class="item-info">
+                      
+                            
+                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">40</span></p>
+                        
+                        
+                        <div>
                             <div>
-                                <h6 style="margin-top: -55px;margin-left:20px ;">
-                                    Tucumen
-                                </h6>
-                                <span style="margin-left: 120px;">
-                                2500$
-                                </span>
-                            </div>
-                            <div class="cart-btn">
-                                <i class='bx bx-cart-alt'></i>
-                            </div>
+                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Guilty Pleasure by Anna Ropalo</a>
+                               </div>
                         </div>
-                        <div class="card_action">
+                       
+                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                           
+                        
+                       
                             <button>By Now</button>
-                            <button>Add Cart</button>
-                        </div>
+                            <button onclick="themvaogiohang(this)" 
+                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
+                    
+                
+                
                 </div>
                 <div class="drink-item dolor-type">
                     <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img"  style="height: 340px;">
-                            <div class="img-holder bg-img"
-                                style="background-image: url('assets/product/j-pd9.jpg');"></div>
+                        <div class="item-img " style="height: 300px;">
+                            <!-- <div class="img-holder bg-img"> -->
+                                <img src="assets/product/j-pd9.jpg" alt="" class="img-holder bg-img">
+                          
                         </div>
-                        <div class="item-info">
+                      
+                            
+                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">40</span></p>
+                        
+                        
+                        <div>
                             <div>
-                                <h6 style="margin-top: -55px;margin-left:20px ;">
-                                    Tucumen
-                                </h6>
-                                <span style="margin-left: 120px;">
-                                2500$
-                                </span>
-                            </div>
-                            <div class="cart-btn">
-                                <i class='bx bx-cart-alt'></i>
-                            </div>
+                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Guilty Pleasure by Anna Ropalo</a>
+                               </div>
                         </div>
-                        <div class="card_action">
+                       
+                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                           
+                        
+                       
                             <button>By Now</button>
-                            <button>Add Cart</button>
-                        </div>
+                            <button onclick="themvaogiohang(this)" 
+                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
+                    
+                
+                
                 </div>
                 <div class="drink-item dolor-type">
                     <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img"  style="height: 340px;">
-                            <div class="img-holder bg-img"
-                                style="background-image: url('assets/product/j-pd10.jpg');"></div>
+                        <div class="item-img " style="height: 300px;">
+                            <!-- <div class="img-holder bg-img"> -->
+                                <img src="assets/product/j-pd10.jpg" alt="" class="img-holder bg-img">
+                          
                         </div>
-                        <div class="item-info">
+                      
+                            
+                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">40</span></p>
+                        
+                        
+                        <div>
                             <div>
-                                <h6 style="margin-top: -55px;margin-left:20px ;">
-                                    Tucumen
-                                </h6>
-                                <span style="margin-left: 120px;">
-                                2500$
-                                </span>
-                            </div>
-                            <div class="cart-btn">
-                                <i class='bx bx-cart-alt'></i>
-                            </div>
+                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Guilty Pleasure by Anna Ropalo</a>
+                               </div>
                         </div>
-                        <div class="card_action">
+                       
+                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                           
+                        
+                       
                             <button>By Now</button>
-                            <button>Add Cart</button>
-                        </div>
+                            <button onclick="themvaogiohang(this)" 
+                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
+                    
+                
+                
                 </div>
 
                 
@@ -1905,6 +1846,7 @@
  <script src="js/home.js"></script>
     <script src="js/header.js"></script>
     <script src="js/index.js"></script>
+    <script src="cart/index.js"></script>
 </body>
 
 </html>
