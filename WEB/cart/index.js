@@ -52,7 +52,7 @@ var giohang = new Array();
                 '<div>'+tt+'</div>'+
             '</td>'+
             '<td>'+
-            '<button  onclick="xoasp(this)">Xóa</button>'+
+            '<button  onclick="xoasp(this)" style="border-radius: 5px;">Xóa</button>'+
         '</td>'+
         '</tr>';
         

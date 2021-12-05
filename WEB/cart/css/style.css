@@ -17,7 +17,8 @@
 
 .giohang span {
     font-weight: bold;
-    font-size: 2vw;
+    font-size: 20px;
+    margin-right: 5px;
     color: red;
     height: 40px;
     line-height: 40px;
@@ -294,7 +295,7 @@ td img {
 }
 
 .top10 img {
-    width: 30%;
+    
     height: 50px;
   
     margin-right: 10px;
