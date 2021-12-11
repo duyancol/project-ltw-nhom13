@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 2,
+            "activePatchIndex": 3,
             "patches": [
                 {
                     "date": 1639238065821,
@@ -16,6 +16,10 @@
                 {
                     "date": 1639238143310,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -522,9 +522,9 @@\n \n             <div class=\"drink-item-wrap all\">\n                \n                 <div class=\"drink-item salad-type\">\n-                  <a href=\"\">\n+                  <a href=\"./thongtinsanpham.html\">\n                     <div class=\"item-wrap bottom-up play-on-scroll\">\n                         <div class=\"item-img \" style=\"height: 300px;\">\n                             <!-- <div class=\"img-holder bg-img\"> -->\n                                 <img src=\"assets/product/y-pd1.jpg\" alt=\"\" class=\"img-holder bg-img\">\n"
+                },
+                {
+                    "date": 1639244325887,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -522,9 +522,9 @@\n \n             <div class=\"drink-item-wrap all\">\n                \n                 <div class=\"drink-item salad-type\">\n-                  <a href=\"./thongtinsanpham.html\">\n+                  <a href=\"./sanpham.html\">\n                     <div class=\"item-wrap bottom-up play-on-scroll\">\n                         <div class=\"item-img \" style=\"height: 300px;\">\n                             <!-- <div class=\"img-holder bg-img\"> -->\n                                 <img src=\"assets/product/y-pd1.jpg\" alt=\"\" class=\"img-holder bg-img\">\n"
                 }
             ],
             "date": 1639238065821,
