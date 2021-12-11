@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 48,
+            "activePatchIndex": 49,
             "patches": [
                 {
                     "date": 1639230831588,
@@ -200,6 +200,10 @@
                 {
                     "date": 1639235474266,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -300,9 +300,9 @@\n     things to do and find best deals for your next adventure.\r\n      It may sound incredible, but you can accurately count the exact number of grapes to produce a perfect bottle of wine.\r\n       Accordingly, we need about 600-800 grapes (equivalent  11 bunches with each grape weighing about 2g, on average a bunch of grapes with 50-80 fruits) to make a bottle\r\n        of 750ml wine. Thus, each ton of grapes will produce 2 barrels of 60 gallon wine , equivalent to about 720 bottles of 750ml wine.\r\n-      <div class=\"bu\"> <button><a href=\"\">Home</a></button></div>\r\n+      <div class=\"bu\"> <button><a href=\"./header.html\">Home</a></button></div>\r\n      </div>\r\n         \r\n     </div>\r\n   </div>\r\n"
+                },
+                {
+                    "date": 1639237914198,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -300,9 +300,9 @@\n     things to do and find best deals for your next adventure.\r\n      It may sound incredible, but you can accurately count the exact number of grapes to produce a perfect bottle of wine.\r\n       Accordingly, we need about 600-800 grapes (equivalent  11 bunches with each grape weighing about 2g, on average a bunch of grapes with 50-80 fruits) to make a bottle\r\n        of 750ml wine. Thus, each ton of grapes will produce 2 barrels of 60 gallon wine , equivalent to about 720 bottles of 750ml wine.\r\n-      <div class=\"bu\"> <button><a href=\"./header.html\">Home</a></button></div>\r\n+      <div class=\"bu\"> <button><a href=\"./index.html\">Home</a></button></div>\r\n      </div>\r\n         \r\n     </div>\r\n   </div>\r\n"
                 }
             ],
             "date": 1639230831588,
