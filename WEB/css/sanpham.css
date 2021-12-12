@@ -1,0 +1,208 @@
+/* @media (min-width: 992px){
+    .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
+        float: left;
+    } 
+} */
+:root{
+    --primary-color:#4daf54;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+.tong{
+  margin: 40px;
+  
+}
+.tong h1{
+    font-size: 20px;
+}
+.tong .phai{
+    background-color: white;
+    border-radius: 6px;
+    width: 350px;
+    color: black;
+    
+    /* height: 150px; */
+
+}
+.tong .phai h2{
+color: black;
+padding: 10px;
+font-size: 12px;
+}
+.tong .phai button{
+    border: none;
+    background-color: #1d1c1c;
+    border-radius: 4px;
+    justify-content: space-between;
+    width: 100px;
+    height: 40px;
+}
+.tong .phai button:hover{
+background-color: green;
+
+}
+.tong .phai input{
+    width: 50px;
+    height: 35px;
+     margin-left: 100px; 
+    
+    
+    color: #000;
+}
+.tong .buttonbuy{
+    margin: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    margin-left: 80px;
+}
+/* .nopadding{
+    background-color: white;
+    border-radius: 4px;
+    border: blue;
+} */
+.col-xs-6{
+    border: blue;
+}
+.left {
+    border: white;
+
+}
+.right{
+    margin: 10px;
+    margin-left: 5px;
+}
+.drink-item-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 3rem;
+    
+}
+
+.drink-item {
+    width: 25%;
+    height: 30rem;
+    padding: 1rem;
+    
+}
+
+.item-wrap {
+    height: 100%;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+    border-radius: 2rem;
+}
+.item-wrap:hover {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+        rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.item-img {
+    height: 60%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 2rem;
+}
+
+.img-holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease-in-out;
+    border-radius: 2rem;
+}
+
+.img-holder:hover {
+    transform: scale(2) rotate(45deg);
+}
+.item-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    padding: 0 1rem;
+}
+
+.item-info h3 {
+    color: var(--grey);
+}
+
+.item-info>div:first-child {
+    text-align: left;
+}
+.bg-img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.product_left{
+    display:flex;
+    justify-content: center;
+}
+.product_right{
+    display:flex;
+    justify-content: center;
+}
+
+element.style {
+}
+.bottom-up.start {
+    transform: translateY(0);
+}
+.bottom-up {
+    transform: translateY(30%);
+    transition: .8s ease-in-out;
+}
+.item-wrap {
+    height: 100%;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+    border-radius: 2rem;
+}
+.bottom-up {
+    margin: 120px auto;
+    background: #272d40;
+    color: white;
+    position: relative;
+}
+.ttsp h1{
+    font-weight: 900;
+    margin: 30px;
+}
+
+.ttsp .h2 h2{
+    margin-left: 50px;
+}
+.ttsp h2{
+    margin: 30px;
+}
+.drink-item-wrap .drink-item .item-wrap button{
+    background: var(--primary-color);
+    border: none;
+    outline: none;
+    color: white;
+    padding:10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 0px;
+    visibility: hidden;
+    opacity: 0;
+
+}
+/* .card:hover .card_img{
+    transform: rotate(-20deg) ;
+
+} */
+.drink-item-wrap .drink-item:hover button{
+    visibility:visible;
+    opacity: 100;
+    transition: 0.5s;
+    transition-delay:0.4s ;
+}
+.card_greens{
+    background: green;
+}
