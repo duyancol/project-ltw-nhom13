@@ -424,10 +424,7 @@ margin-bottom: 10px;
     opacity: 0;
 
 }
-/* .card:hover .card_img{
-    transform: rotate(-20deg) ;
 
-} */
 .drink-item-wrap .drink-item:hover button{
     visibility:visible;
     opacity: 100;
