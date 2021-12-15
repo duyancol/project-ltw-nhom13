@@ -1,0 +1,26 @@
+@media screen and (max-width: 1032px) {
+   .boxtrai{
+       height: 1500px !important;
+       margin-left: -160px;
+   }
+   button{
+       padding: 0!important;
+   }
+   .bg-img{
+       height:100%;
+   }
+   .bottom-up{
+       height: 250px;
+   }
+   .item-img{
+       height: 30%;
+   }
+   .drink-item{
+    width: 30%;
+    height: 70%;
+   }
+   .boxcontent{
+    width: 275%;
+
+   }
+}
