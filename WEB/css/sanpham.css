@@ -206,3 +206,29 @@ element.style {
 .card_greens{
     background: green;
 }
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em){
+    .boxtrai {
+        width: 100%;
+    }
+    .boxtrai .center{
+        display: none;
+    }
+    .boxtrai .ttsp{
+        width: 100%;
+    }
+    .boxtrai .ttsp h1{
+        display: none;
+    }
+    .boxtrai .ttsp .drink-item{
+        display: none;
+    }
+
+    .boxtrai .center .phai{
+        display: none;
+
+    }
+    .boxphai .row{
+        display: none;
+        margin: 0;
+    }
+}
