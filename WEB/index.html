@@ -53,10 +53,11 @@
         <input 
             type="text" id="search_cake_query" placeholder="Enter name of cake !">
     </div>
-  <div class="header">
+    <div class="header boxcenter">
         <div class="header--contact padding-content">
             <div class="header--contact__phone">
-                <i class="fas fa-phone-alt " style="font-size: 16px;"></i>
+               
+                <i class='bx bx-phone-call'style="font-size: 20px;"></i>
                 call us 03-087-0976
                 <img src="assets/icon/email.png" style="height: 20px;width: 20px;margin-left: 2%;margin-right: 10px;" alt="">
                 nn@gmail.com
@@ -65,23 +66,23 @@
             <div class="header--contact__">
                 <a href="">
                     <div class="header--contact__about" >
-                    <a href="" style="margin-right: 6px"><i class="fas fa-user" style="font-size: 16px;"></i></a>
-                       <span class="header--contact__span" style="position: relative; top:0px;"> My Account</span>
+                    <a href="" style="margin-right: 6px"><i class='bx bxs-user' style="font-size: 20px;"></i></a>
+                       <a href="about.html" class="header--contact__span" style="position: relative; top:5px;"> My Account</a>
                     </div>
                 </a>
                 <a href="">
-	                <div class="header--contact__careers">
-                        <i class="fas fa-file-alt" style="font-size: 16px;margin-right: 6px;"></i>
-	                    <span style="position: relative; top:0px;">Orders</span>
-	                </div>
+                    <div class="header--contact__careers">
+                        <i class='bx bxs-note' style="font-size: 20px;"></i>
+                        <span style="position: relative; top:-3px;margin-left: 10px;">Orders</span>
+                    </div>
                 </a>
                 <a class="header--contact__locations"
                    href="">
                    <!-- <i class="fas fa-globe-americas" style="font-size: 16px;"></i> -->
                    <img src="assets/icon/location.png" style="height: 20px; width: 20px;"  alt="">
-                    <span style="position: relative; top: 1px;margin-left: 10px;">
+                    <a href="https://www.google.com/maps/place/313+S+Maclay+Ave,+San+Fernando,+CA+91340,+Hoa+K%E1%BB%B3/@34.2823229,-118.4451155,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2904a5eb192a1:0x73f25f3cf0de68ba!8m2!3d34.2823229!4d-118.4429268" style="position: relative; top: 1px;margin-left: 10px;">
                         location
-                    </span>
+                    </a>
                 </a>
                 
             </div>
@@ -91,12 +92,14 @@
             <div class="header--logo_large">
                 <div class="header--logo_item">
                     <a href="">
-                        <i class="far fa-clipboard" style="font-size: 40px;color: rgb(68, 67, 67);"></i>
+                        
+                        <i class='bx bx-notepad' style="font-size: 40px;color: rgb(68, 67, 67);"></i>
                     </a>
                 </div>
                 <div class="header--logo_item">
                     <a href="">
-                        <i class="fas fa-globe-americas "style="font-size: 40px;color: rgb(68, 67, 67);" ></i>
+                        
+                        <i class='bx bx-globe' style="font-size: 40px;color: rgb(68, 67, 67);"></i>
                     </a>
                 </div>
                 <div class="header--logo_logo">
@@ -108,13 +111,15 @@
                 </div>
                 <div class="header--logo_item">
                     <a id="search_icon_button">
-                        <i class="fas fa-search" style="font-size: 40px;color: rgb(68, 67, 67);"></i>
+                        
+                        <i class='bx bx-search-alt-2'style="font-size: 40px;color: rgb(68, 67, 67);" ></i>
                     </a>
                 </div>
                 <div class="giohang header--logo_item" >
                     <!-- <a href="cart/cart.html"><img src="cart/images/cart.png"></a> -->
                     <a onclick="showcart()">
-                        <i class="fas fa-shopping-cart" style="font-size: 40px;color: rgb(68, 67, 67);"></i>
+                       
+                        <i class='bx bxs-cart-alt'style="font-size: 40px;color: rgb(68, 67, 67);" ></i>
                         <span id="countsp">0</span>
                     </a>
                 </div>
@@ -267,19 +272,15 @@
                             <img src="" alt="">
                         </a>
                         <ul id="main-menu">
-                            <li><a href="">Home</a></li>
-                            <li><a href="">About</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
                            
-                            <li><a href="">Shop</a></li>
+
                             <li><a href="">Product</a>
                                 <ul class="sub-menu">
                                     <li><a href="ds_spY.html">Rượu vang Ý</a></li>
                                         <li><a href="ds_spD.html">Rượu vang Đức</a>
-                                            <!-- <ul class="sub-menu">
-                                                <li><a href="">menu 2.1</a></li>
-                                                <li><a href="">menu 2.2</a></li>
-                                               
-                                            </ul> -->
+
                                         </li>
                                         <li><a href="ds_spP.html">Rượu vang Pháp</a></li>
                                         <li><a href="ds_spN.html">Rượu Nhật</a></li>
@@ -489,17 +490,24 @@
                         </button>
                     </div>
                     <div class="zoom play-on-scroll delay-2">
-                        <button data-food-type="salad">
-                           <!-- <span data-food-type="salad" class="text_product"> Từ 120$-300$</span> -->
-                           Vang Ý
-                        </button>
+                        <a href="./ds_spY.html">
+                            <button data-food-type="salad">
+                                <!-- <span data-food-type="salad" class="text_product"> Từ 120$-300$</span> -->
+                                Vang Ý
+                             </button>
+                        </a>
+
+                       
                     </div>
                     <div class="zoom play-on-scroll delay-4">
-                        <button data-food-type="lorem">
+                        <a href="./ds_spP.html">
+                            <button data-food-type="lorem">
                             
-                            <!-- <span data-food-type="lorem" class="text_product"> Từ 300$-1000$</span> -->
-                            Vang Pháp
-                        </button>
+                                <!-- <span data-food-type="lorem" class="text_product"> Từ 300$-1000$</span> -->
+                                Vang Pháp
+                            </button>
+                        </a>
+                       
                     </div>
                 </div>
                 
@@ -507,14 +515,18 @@
                 
                <div class="product_right" >
                 <div class="zoom play-on-scroll delay-6">
+                  <a href="./ds_spD.html">
                     <button data-food-type="ipsum">
                         Vang Đức
                     </button>
+                  </a>
                 </div>
                 <div class="zoom play-on-scroll delay-8">
+                  <a href="./ds_spN.html">
                     <button data-food-type="dolor">
                         Vang Nhật
                     </button>
+                  </a>
                 </div>
                </div>
             </div>
@@ -522,245 +534,267 @@
 
             <div class="drink-item-wrap all">
                
-                <div class="drink-item salad-type">
-                    <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img " style="height: 300px;">
-                            <!-- <div class="img-holder bg-img"> -->
-                                <img src="assets/product/y-pd1.jpg" alt="" class="img-holder bg-img">
-                            <!-- </div> -->
-                            <!-- <div class="item-img " style="height: 300px;">
-                                <div class="img-holder bg-img"
-                                    style="background-image: url('assets/home/ads/home11_1.jpg');"></div>
-                            </div> -->
-                           
+                <div class="drink-item salad-type"  >
+                    
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img " style="height: 300px;" >
+                                <!-- <div class="img-holder bg-img"> -->
+                                    <img src="assets/product/y-pd1.jpg" alt="" class="img-holder bg-img">
+                                <!-- </div> -->
+                                <!-- <div class="item-img " style="height: 300px;">
+                                    <div class="img-holder bg-img"
+                                        style="background-image: url('assets/home/ads/home11_1.jpg');"></div>
+                                </div> -->
+                               
+                                
+                            </div>
+                          
+                                
+                            <p>$<span style="padding: 0;margin: 10px 0px;color: white;">550</span></p>
                             
-                        </div>
-                      
                             
-                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">550</span></p>
-                        
-                        
-                        <div>
                             <div>
-                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">  Rượu Champagne Armand De Brignac Gold – Champagne Át Bích
-                                </a>
-                               </div>
-                        </div>
-                       
-                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                                <div>
+                                    <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">  Rượu Champagne Armand De Brignac Gold – Champagne Át Bích
+                                    </a>
+                                   </div>
+                            </div>
                            
-                        
-                       
-                            <button>By Now</button>
-                            <button onclick="themvaogiohang(this)" 
-                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
-                       
-                    </div>
+                                 <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                               
+                            
+                           
+                                <a href="sanpham.html"><button>Xem</button></a>
+                                <button onclick="themvaogiohang(this)" 
+                               ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
+                           
+                        </div>
+                   
+                   
                 </div>
                 
                 <div class="drink-item salad-type">
-                    <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img " style="height: 300px;">
-                            <!-- <div class="img-holder bg-img"> -->
-                                <img src="assets/product/y-pd2.jpg" alt="" class="img-holder bg-img">
-                            <!-- </div> -->
-                            <!-- <div class="item-img " style="height: 300px;">
-                                <div class="img-holder bg-img"
-                                    style="background-image: url('assets/home/ads/home11_1.jpg');"></div>
-                            </div> -->
-                           
+                   
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img " style="height: 300px;">
+                                <!-- <div class="img-holder bg-img"> -->
+                                    <img src="assets/product/y-pd2.jpg" alt="" class="img-holder bg-img">
+                                <!-- </div> -->
+                                <!-- <div class="item-img " style="height: 300px;">
+                                    <div class="img-holder bg-img"
+                                        style="background-image: url('assets/home/ads/home11_1.jpg');"></div>
+                                </div> -->
+                               
+                                
+                            </div>
+                          
+                                
+                            <p>$<span style="padding: 0;margin: 10px 0px;color: white;">349</span></p>
                             
-                        </div>
-                      
                             
-                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">349</span></p>
-                        
-                        
-                        <div>
                             <div>
-                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Rượu Champagne Moet & Chandon Rose Imperial</a>
-                               </div>
-                        </div>
-                       
-                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                                <div>
+                                    <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Rượu Champagne Moet & Chandon Rose Imperial</a>
+                                   </div>
+                            </div>
                            
-                        
-                       
-                            <button>By Now</button>
-                            <button onclick="themvaogiohang(this)" 
-                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
-                       
-                    </div>
+                                 <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                               
+                            
+                           
+                                 <a href="sanpham.html"><button>Xem</button></a>
+                                <button onclick="themvaogiohang(this)" 
+                               ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
+                           
+                        </div>
+                    
+                    
                 </div>
 
                 <div class="drink-item salad-type">
-                    <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img " style="height: 300px;">
-                           
-                                <img src="assets/product/y-pd3.jpg" alt="" class="img-holder bg-img">
-                         
-                           
+                   
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img " style="height: 300px;">
+                               
+                                    <img src="assets/product/y-pd3.jpg" alt="" class="img-holder bg-img">
+                             
+                               
+                                
+                            </div>
+                          
+                                
+                            <p>$<span style="padding: 0;margin: 10px 0px;color: white;">999</span></p>
                             
-                        </div>
-                      
                             
-                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">999</span></p>
-                        
-                        
-                        <div>
                             <div>
-                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Rượu Champagne Moet & Chandon Imperial</a>
-                               </div>
-                        </div>
-                       
-                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                                <div>
+                                    <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Rượu Champagne Moet & Chandon Imperial</a>
+                                   </div>
+                            </div>
                            
-                        
-                       
-                            <button>By Now</button>
-                            <button onclick="themvaogiohang(this)" 
-                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
-                       
-                    </div>
+                                 <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                               
+                            
+                           
+                                 <a href="sanpham.html"><button>Xem</button></a>
+                                <button onclick="themvaogiohang(this)" 
+                               ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
+                           
+                        </div>
+                   
+                  
                 </div>
                  
                 <div class="drink-item salad-type">
-                    <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img " style="height: 300px;">
-                            <!-- <div class="img-holder bg-img"> -->
-                                <img src="assets/product/y-pd4.jpg" alt="" class="img-holder bg-img">
-                            <!-- </div> -->
-                            <!-- <div class="item-img " style="height: 300px;">
-                                <div class="img-holder bg-img"
-                                    style="background-image: url('assets/home/ads/home11_1.jpg');"></div>
-                            </div> -->
-                           
+                    
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img " style="height: 300px;">
+                                <!-- <div class="img-holder bg-img"> -->
+                                    <img src="assets/product/y-pd4.jpg" alt="" class="img-holder bg-img">
+                                <!-- </div> -->
+                                <!-- <div class="item-img " style="height: 300px;">
+                                    <div class="img-holder bg-img"
+                                        style="background-image: url('assets/home/ads/home11_1.jpg');"></div>
+                                </div> -->
+                               
+                                
+                            </div>
+                          
+                                
+                            <p>$<span style="padding: 0;margin: 10px 0px;color: white;">180</span></p>
                             
-                        </div>
-                      
                             
-                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">180</span></p>
-                        
-                        
-                        <div>
                             <div>
-                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;"> Rượu Champagne Dom Perignon Luminous</a>
-                               </div>
-                        </div>
-                       
-                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                                <div>
+                                    <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;"> Rượu Champagne Dom Perignon Luminous</a>
+                                   </div>
+                            </div>
                            
-                        
-                       
-                            <button>By Now</button>
-                            <button onclick="themvaogiohang(this)" 
-                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
-                       
-                    </div>
+                                 <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                               
+                            
+                           
+                                 <a href="sanpham.html"><button>Xem</button></a>
+                                <button onclick="themvaogiohang(this)" 
+                               ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
+                           
+                        </div>
+                   
+                    
                 </div>
                 <div class="drink-item salad-type">
-                    <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img " style="height: 300px;">
-                            <!-- <div class="img-holder bg-img"> -->
-                                <img src="assets/product/y-pd5.jpg" alt="" class="img-holder bg-img">
-                            <!-- </div> -->
-                            <!-- <div class="item-img " style="height: 300px;">
-                                <div class="img-holder bg-img"
-                                    style="background-image: url('assets/home/ads/home11_1.jpg');"></div>
-                            </div> -->
-                           
+                   
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img " style="height: 300px;">
+                                <!-- <div class="img-holder bg-img"> -->
+                                    <img src="assets/product/y-pd5.jpg" alt="" class="img-holder bg-img">
+                                <!-- </div> -->
+                                <!-- <div class="item-img " style="height: 300px;">
+                                    <div class="img-holder bg-img"
+                                        style="background-image: url('assets/home/ads/home11_1.jpg');"></div>
+                                </div> -->
+                               
+                                
+                            </div>
+                          
+                                
+                            <p>$<span style="padding: 0;margin: 10px 0px;color: white;">680</span></p>
                             
-                        </div>
-                      
                             
-                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">680</span></p>
-                        
-                        
-                        <div>
                             <div>
-                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Rượu Champagne Bottega Gold</a>
-                               </div>
-                        </div>
-                       
-                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                                <div>
+                                    <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Rượu Champagne Bottega Gold</a>
+                                   </div>
+                            </div>
                            
-                        
-                       
-                            <button>By Now</button>
-                            <button onclick="themvaogiohang(this)" 
-                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
-                       
-                    </div>
+                                 <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                               
+                            
+                           
+                                 <a href="sanpham.html"><button>Xem</button></a>
+                                <button onclick="themvaogiohang(this)" 
+                               ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
+                           
+                        </div>
+                   
+                   
                 </div>
                 <div class="drink-item salad-type">
-                    <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img " style="height: 300px;">
-                            <!-- <div class="img-holder bg-img"> -->
-                                <img src="assets/product/y-pd6.jpg" alt="" class="img-holder bg-img">
-                            <!-- </div> -->
-                            <!-- <div class="item-img " style="height: 300px;">
-                                <div class="img-holder bg-img"
-                                    style="background-image: url('assets/home/ads/home11_1.jpg');"></div>
-                            </div> -->
-                           
+                   
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img " style="height: 300px;">
+                                <!-- <div class="img-holder bg-img"> -->
+                                    <img src="assets/product/y-pd6.jpg" alt="" class="img-holder bg-img">
+                                <!-- </div> -->
+                                <!-- <div class="item-img " style="height: 300px;">
+                                    <div class="img-holder bg-img"
+                                        style="background-image: url('assets/home/ads/home11_1.jpg');"></div>
+                                </div> -->
+                               
+                                
+                            </div>
+                          
+                                
+                            <p>$<span style="padding: 0;margin: 10px 0px;color: white;">140</span></p>
                             
-                        </div>
-                      
                             
-                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">140</span></p>
-                        
-                        
-                        <div>
                             <div>
-                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Rượu Champagne Dom Perignon Rose</a>
-                               </div>
-                        </div>
-                       
-                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                                <div>
+                                    <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Rượu Champagne Dom Perignon Rose</a>
+                                   </div>
+                            </div>
                            
-                        
-                       
-                            <button>By Now</button>
-                            <button onclick="themvaogiohang(this)" 
-                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
-                       
-                    </div>
+                                 <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                               
+                            
+                           
+                                 <a href="sanpham.html"><button>Xem</button></a>
+                                <button onclick="themvaogiohang(this)" 
+                               ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
+                           
+                        </div>
+                   
+                   
                 </div>
                 <div class="drink-item salad-type">
-                    <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img " style="height: 300px;"> 
-                            <!-- <div class="img-holder bg-img"> -->
-                                <img src="assets/product/y-pd7.jpg" alt="" class="img-holder bg-img">
-                            <!-- </div> -->
-                            <!-- <div class="item-img " style="height: 300px;">
-                                <div class="img-holder bg-img"
-                                    style="background-image: url('assets/home/ads/home11_1.jpg');"></div>
-                            </div> -->
-                           
+                   
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img " style="height: 300px;"> 
+                                <!-- <div class="img-holder bg-img"> -->
+                                    <img src="assets/product/y-pd7.jpg" alt="" class="img-holder bg-img">
+                                <!-- </div> -->
+                                <!-- <div class="item-img " style="height: 300px;">
+                                    <div class="img-holder bg-img"
+                                        style="background-image: url('assets/home/ads/home11_1.jpg');"></div>
+                                </div> -->
+                               
+                                
+                            </div>
+                          
+                                
+                            <p>$<span style="padding: 0;margin: 10px 0px;color: white;">440</span></p>
                             
-                        </div>
-                      
                             
-                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">440</span></p>
-                        
-                        
-                        <div>
                             <div>
-                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Rượu Champagne Taittinger Nocturne Rose City Lights</a>
-                               </div>
-                        </div>
-                       
-                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                                <div>
+                                    <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Rượu Champagne Taittinger Nocturne Rose City Lights</a>
+                                   </div>
+                            </div>
                            
-                        
-                       
-                            <button>By Now</button>
-                            <button onclick="themvaogiohang(this)" 
-                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
-                       
-                    </div>
+                                 <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                               
+                            
+                           
+                                 <a href="sanpham.html"><button>Xem</button></a>
+                                <button onclick="themvaogiohang(this)" 
+                               ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
+                           
+                        </div>
+                   
+                    
                 </div>
                 <div class="drink-item salad-type">
+                 
                     <div class="item-wrap bottom-up play-on-scroll">
                         <div class="item-img " style="height: 300px;">
                             <!-- <div class="img-holder bg-img"> -->
@@ -788,71 +822,73 @@
                            
                         
                        
-                            <button>By Now</button>
+                             <a href="sanpham.html"><button>Xem</button></a>
                             <button onclick="themvaogiohang(this)" 
                            ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                        
                     </div>
+                  
                 </div>
 
                 
                
 
                 <div class="drink-item lorem-type">
-                    <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img " style="height: 300px;">
-                            <!-- <div class="img-holder bg-img"> -->
-                                <img src="assets/product/cd-pd1.jpg" alt="" class="img-holder bg-img">
-                          
-                        </div>
+                  <a href="./ds_spP.html">  <div class="item-wrap bottom-up play-on-scroll">
+                    <div class="item-img " style="height: 300px;">
+                        <!-- <div class="img-holder bg-img"> -->
+                            <img src="assets/product/cd-pd1.jpg" alt="" class="img-holder bg-img">
                       
-                            
-                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">590</span></p>
-                        
-                        
-                        <div>
-                            <div>
-                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Rượu Vang F Gold Negroamaro Limited Edition – San Marzano</a>
-                               </div>
-                        </div>
-                       
-                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
-                           
-                        
-                       
-                            <button>By Now</button>
-                            <button onclick="themvaogiohang(this)" 
-                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
+                  
+                        
+                    <p>$<span style="padding: 0;margin: 10px 0px;color: white;">590</span></p>
+                    
+                    
+                    <div>
+                        <div>
+                            <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Rượu Vang F Gold Negroamaro Limited Edition – San Marzano</a>
+                           </div>
+                    </div>
+                   
+                         <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                       
+                    
+                   
+                        <button>By Now</button>
+                        <button onclick="themvaogiohang(this)" 
+                       ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
+                </div></a>
                 </div>
                 <div class="drink-item lorem-type">
-                    <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img " style="height: 300px;">
-                            <!-- <div class="img-holder bg-img"> -->
-                                <img src="assets/product/cd-pd2.jpg" alt="" class="img-holder bg-img">
-                          
-                        </div>
+                   <a href="./ds_spY.html"> <div class="item-wrap bottom-up play-on-scroll">
+                    <div class="item-img " style="height: 300px;">
+                        <!-- <div class="img-holder bg-img"> -->
+                            <img src="assets/product/cd-pd2.jpg" alt="" class="img-holder bg-img">
                       
-                            
-                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">270</span></p>
-                        
-                        
-                        <div>
-                            <div>
-                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Rượu Vang Vindoro Negroamaro </a>
-                               </div>
-                        </div>
-                       
-                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
-                           
-                        
-                       
-                            <button>By Now</button>
-                            <button onclick="themvaogiohang(this)" 
-                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
+                  
+                        
+                    <p>$<span style="padding: 0;margin: 10px 0px;color: white;">270</span></p>
+                    
+                    
+                    <div>
+                        <div>
+                            <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Rượu Vang Vindoro Negroamaro </a>
+                           </div>
+                    </div>
+                   
+                         <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                       
+                    
+                   
+                        <button>By Now</button>
+                        <button onclick="themvaogiohang(this)" 
+                       ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
+                </div></a>
                 </div>
                 <div class="drink-item lorem-type">
+                  <a href="./ds_spP.html">
                     <div class="item-wrap bottom-up play-on-scroll">
                         <div class="item-img " style="height: 300px;">
                             <!-- <div class="img-holder bg-img"> -->
@@ -878,8 +914,10 @@
                             <button onclick="themvaogiohang(this)" 
                            ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
+                  </a>
                 </div>
                 <div class="drink-item lorem-type">
+                   <a href="./ds_spY.html">
                     <div class="item-wrap bottom-up play-on-scroll">
                         <div class="item-img " style="height: 300px;">
                             <!-- <div class="img-holder bg-img"> -->
@@ -905,8 +943,10 @@
                             <button onclick="themvaogiohang(this)" 
                            ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
+                   </a>
                 </div>
                 <div class="drink-item lorem-type">
+                   <a href="./ds_spN.html">
                     <div class="item-wrap bottom-up play-on-scroll">
                         <div class="item-img " style="height: 300px;">
                             <!-- <div class="img-holder bg-img"> -->
@@ -932,8 +972,10 @@
                             <button onclick="themvaogiohang(this)" 
                            ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
+                   </a>
                 </div>
                 <div class="drink-item lorem-type">
+                 <a href="./ds_spP.html">
                     <div class="item-wrap bottom-up play-on-scroll">
                         <div class="item-img " style="height: 300px;">
                             <!-- <div class="img-holder bg-img"> -->
@@ -959,62 +1001,64 @@
                             <button onclick="themvaogiohang(this)" 
                            ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
+                 </a>
                 </div>
                 <div class="drink-item lorem-type">
-                    <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img " style="height: 300px;">
-                            <!-- <div class="img-holder bg-img"> -->
-                                <img src="assets/product/cd-pd7.jpg" alt="" class="img-holder bg-img">
-                          
-                        </div>
+                  <a href="./ds_spY.html">   <div class="item-wrap bottom-up play-on-scroll">
+                    <div class="item-img " style="height: 300px;">
+                        <!-- <div class="img-holder bg-img"> -->
+                            <img src="assets/product/cd-pd7.jpg" alt="" class="img-holder bg-img">
                       
-                            
-                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">49</span></p>
-                        
-                        
-                        <div>
-                            <div>
-                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Rượu Vang F Negroamaro San Marzano</a>
-                               </div>
-                        </div>
-                       
-                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
-                           
-                        
-                       
-                            <button>By Now</button>
-                            <button onclick="themvaogiohang(this)" 
-                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
+                  
+                        
+                    <p>$<span style="padding: 0;margin: 10px 0px;color: white;">49</span></p>
+                    
+                    
+                    <div>
+                        <div>
+                            <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Rượu Vang F Negroamaro San Marzano</a>
+                           </div>
+                    </div>
+                   
+                         <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                       
+                    
+                   
+                        <button>By Now</button>
+                        <button onclick="themvaogiohang(this)" 
+                       ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
+                </div></a>
                 </div>
                 <div class="drink-item lorem-type">
-                    <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img " style="height: 300px;">
-                            <!-- <div class="img-holder bg-img"> -->
-                                <img src="assets/product/cd-pd8.jpg" alt="" class="img-holder bg-img">
-                          
-                        </div>
+                 <a href="./ds_spN.html">    <div class="item-wrap bottom-up play-on-scroll">
+                    <div class="item-img " style="height: 300px;">
+                        <!-- <div class="img-holder bg-img"> -->
+                            <img src="assets/product/cd-pd8.jpg" alt="" class="img-holder bg-img">
                       
-                            
-                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">140</span></p>
-                        
-                        
-                        <div>
-                            <div>
-                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Rượu Vang M Malvasia Nera – San Marzano</a>
-                               </div>
-                        </div>
-                       
-                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
-                           
-                        
-                       
-                            <button>By Now</button>
-                            <button onclick="themvaogiohang(this)" 
-                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
+                  
+                        
+                    <p>$<span style="padding: 0;margin: 10px 0px;color: white;">140</span></p>
+                    
+                    
+                    <div>
+                        <div>
+                            <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Rượu Vang M Malvasia Nera – San Marzano</a>
+                           </div>
+                    </div>
+                   
+                         <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                       
+                    
+                   
+                        <button>By Now</button>
+                        <button onclick="themvaogiohang(this)" 
+                       ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
+                </div></a>
                 </div>
                 <div class="drink-item ipsum-type">
+                 <a href="./ds_spP.html">
                     <div class="item-wrap bottom-up play-on-scroll">
                         <div class="item-img " style="height: 300px;">
                             <!-- <div class="img-holder bg-img"> -->
@@ -1041,65 +1085,67 @@
                             <button onclick="themvaogiohang(this)" 
                            ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
+                 </a>
                 </div>
 
                 
 
                 <div class="drink-item ipsum-type">
-                    <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img " style="height: 300px;">
-                            <!-- <div class="img-holder bg-img"> -->
-                                <img src="assets/product/a-pd2.jpg" alt="" class="img-holder bg-img">
-                          
-                        </div>
+                  <a href="./ds_spD.html">   <div class="item-wrap bottom-up play-on-scroll">
+                    <div class="item-img " style="height: 300px;">
+                        <!-- <div class="img-holder bg-img"> -->
+                            <img src="assets/product/a-pd2.jpg" alt="" class="img-holder bg-img">
                       
-                            
-                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">30</span></p>
-                        
-                        
-                        <div>
-                            <div>
-                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Rượu Vang Carolina Reserva Chardonnay</a>
-                               </div>
-                        </div>
-                       
-                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
-                           
-                        
-                       
-                            <button>By Now</button>
-                            <button onclick="themvaogiohang(this)" 
-                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
+                  
+                        
+                    <p>$<span style="padding: 0;margin: 10px 0px;color: white;">30</span></p>
+                    
+                    
+                    <div>
+                        <div>
+                            <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Rượu Vang Carolina Reserva Chardonnay</a>
+                           </div>
+                    </div>
+                   
+                         <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                       
+                    
+                   
+                        <button>By Now</button>
+                        <button onclick="themvaogiohang(this)" 
+                       ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
+                </div></a>
                 </div>
                 <div class="drink-item ipsum-type">
-                    <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img " style="height: 300px;">
-                            <!-- <div class="img-holder bg-img"> -->
-                                <img src="assets/product/a-pd3.jpg" alt="" class="img-holder bg-img">
-                          
-                        </div>
+                   <a href="./ds_spP.html">  <div class="item-wrap bottom-up play-on-scroll">
+                    <div class="item-img " style="height: 300px;">
+                        <!-- <div class="img-holder bg-img"> -->
+                            <img src="assets/product/a-pd3.jpg" alt="" class="img-holder bg-img">
                       
-                            
-                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">100</span></p>
-                        
-                        
-                        <div>
-                            <div>
-                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Rượu Vang Montes Classic Series Cabernet Sauvignon</a>
-                               </div>
-                        </div>
-                       
-                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
-                           
-                        
-                       
-                            <button>By Now</button>
-                            <button onclick="themvaogiohang(this)" 
-                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
+                  
+                        
+                    <p>$<span style="padding: 0;margin: 10px 0px;color: white;">100</span></p>
+                    
+                    
+                    <div>
+                        <div>
+                            <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Rượu Vang Montes Classic Series Cabernet Sauvignon</a>
+                           </div>
+                    </div>
+                   
+                         <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                       
+                    
+                   
+                        <button>By Now</button>
+                        <button onclick="themvaogiohang(this)" 
+                       ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
+                </div></a>
                 </div>
                 <div class="drink-item ipsum-type">
+                  <a href="./ds_spN.html">
                     <div class="item-wrap bottom-up play-on-scroll">
                         <div class="item-img " style="height: 300px;">
                             <!-- <div class="img-holder bg-img"> -->
@@ -1125,8 +1171,10 @@
                             <button onclick="themvaogiohang(this)" 
                            ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
+                  </a>
                 </div>
                 <div class="drink-item ipsum-type">
+                   <a href="./ds_spP.html">
                     <div class="item-wrap bottom-up play-on-scroll">
                         <div class="item-img " style="height: 300px;">
                             <!-- <div class="img-holder bg-img"> -->
@@ -1152,8 +1200,10 @@
                             <button onclick="themvaogiohang(this)" 
                            ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
+                   </a>
                 </div>
                 <div class="drink-item ipsum-type">
+                  <a href="./ds_spY.html">
                     <div class="item-wrap bottom-up play-on-scroll">
                         <div class="item-img " style="height: 300px;">
                             <!-- <div class="img-holder bg-img"> -->
@@ -1179,8 +1229,10 @@
                             <button onclick="themvaogiohang(this)" 
                            ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
+                  </a>
                 </div>
                 <div class="drink-item ipsum-type">
+                  <a href="./ds_spN.html">
                     <div class="item-wrap bottom-up play-on-scroll">
                         <div class="item-img " style="height: 300px;">
                             <!-- <div class="img-holder bg-img"> -->
@@ -1206,8 +1258,10 @@
                             <button onclick="themvaogiohang(this)" 
                            ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
+                  </a>
                 </div>
                 <div class="drink-item ipsum-type">
+                   <a href="./ds_spY.html">
                     <div class="item-wrap bottom-up play-on-scroll">
                         <div class="item-img " style="height: 300px;">
                             <!-- <div class="img-holder bg-img"> -->
@@ -1233,10 +1287,12 @@
                             <button onclick="themvaogiohang(this)" 
                            ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
+                   </a>
                 </div>
               
                
                 <div class="drink-item dolor-type">
+                 <a href="./ds_spP.html">
                     <div class="item-wrap bottom-up play-on-scroll">
                         <div class="item-img " style="height: 300px;">
                             <!-- <div class="img-holder bg-img"> -->
@@ -1262,41 +1318,45 @@
                             <button onclick="themvaogiohang(this)" 
                            ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
+                 </a>
                     
                 
                 
                 </div>
                 <div class="drink-item dolor-type">
-                    <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img " style="height: 300px;">
-                            <!-- <div class="img-holder bg-img"> -->
-                                <img src="assets/product/j-pd2.jpg" alt="" class="img-holder bg-img">
+                    <a href="./ds_spN.html">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img " style="height: 300px;">
+                                <!-- <div class="img-holder bg-img"> -->
+                                    <img src="assets/product/j-pd2.jpg" alt="" class="img-holder bg-img">
+                              
+                            </div>
                           
-                        </div>
-                      
+                                
+                            <p>$<span style="padding: 0;margin: 10px 0px;color: white;">40</span></p>
                             
-                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">40</span></p>
-                        
-                        
-                        <div>
+                            
                             <div>
-                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Guilty Pleasure by Anna Ropalo</a>
-                               </div>
-                        </div>
-                       
-                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                                <div>
+                                    <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Guilty Pleasure by Anna Ropalo</a>
+                                   </div>
+                            </div>
                            
-                        
-                       
-                            <button>By Now</button>
-                            <button onclick="themvaogiohang(this)" 
-                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
-                    </div>
+                                 <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                               
+                            
+                           
+                                <button>By Now</button>
+                                <button onclick="themvaogiohang(this)" 
+                               ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
+                        </div>
+                    </a>
                     
                 
                 
                 </div>
                 <div class="drink-item dolor-type">
+                   <a href="./ds_spD.html">
                     <div class="item-wrap bottom-up play-on-scroll">
                         <div class="item-img " style="height: 300px;">
                             <!-- <div class="img-holder bg-img"> -->
@@ -1323,10 +1383,12 @@
                            ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
                     
+                   </a>
                 
                 
                 </div>
                 <div class="drink-item dolor-type">
+                   <a href="./ds_spP.html">
                     <div class="item-wrap bottom-up play-on-scroll">
                         <div class="item-img " style="height: 300px;">
                             <!-- <div class="img-holder bg-img"> -->
@@ -1352,41 +1414,45 @@
                             <button onclick="themvaogiohang(this)" 
                            ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
+                   </a>
                     
                 
                 
                 </div>
                 <div class="drink-item dolor-type">
-                    <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img " style="height: 300px;">
-                            <!-- <div class="img-holder bg-img"> -->
-                                <img src="assets/product/j-pd5.jpg" alt="" class="img-holder bg-img">
+                    <a href="./ds_spY.html">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img " style="height: 300px;">
+                                <!-- <div class="img-holder bg-img"> -->
+                                    <img src="assets/product/j-pd5.jpg" alt="" class="img-holder bg-img">
+                              
+                            </div>
                           
-                        </div>
-                      
+                                
+                            <p>$<span style="padding: 0;margin: 10px 0px;color: white;">40</span></p>
                             
-                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">40</span></p>
-                        
-                        
-                        <div>
+                            
                             <div>
-                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Guilty Pleasure by Anna Ropalo</a>
-                               </div>
-                        </div>
-                       
-                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                                <div>
+                                    <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Guilty Pleasure by Anna Ropalo</a>
+                                   </div>
+                            </div>
                            
-                        
-                       
-                            <button>By Now</button>
-                            <button onclick="themvaogiohang(this)" 
-                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
-                    </div>
+                                 <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                               
+                            
+                           
+                                <button>By Now</button>
+                                <button onclick="themvaogiohang(this)" 
+                               ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
+                        </div>
+                    </a>
                     
                 
                 
                 </div>
                 <div class="drink-item dolor-type">
+                  <a href="./ds_spP.html">
                     <div class="item-wrap bottom-up play-on-scroll">
                         <div class="item-img " style="height: 300px;">
                             <!-- <div class="img-holder bg-img"> -->
@@ -1412,11 +1478,13 @@
                             <button onclick="themvaogiohang(this)" 
                            ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
+                  </a>
                     
                 
                 
                 </div>
                 <div class="drink-item dolor-type">
+                  <a href="./ds_spN.html">
                     <div class="item-wrap bottom-up play-on-scroll">
                         <div class="item-img " style="height: 300px;">
                             <!-- <div class="img-holder bg-img"> -->
@@ -1442,41 +1510,45 @@
                             <button onclick="themvaogiohang(this)" 
                            ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
+                  </a>
                     
                 
                 
                 </div>
                 <div class="drink-item dolor-type">
-                    <div class="item-wrap bottom-up play-on-scroll">
-                        <div class="item-img " style="height: 300px;">
-                            <!-- <div class="img-holder bg-img"> -->
-                                <img src="assets/product/j-pd8.jpg" alt="" class="img-holder bg-img">
+                    <a href="./ds_spP.html">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img " style="height: 300px;">
+                                <!-- <div class="img-holder bg-img"> -->
+                                    <img src="assets/product/j-pd8.jpg" alt="" class="img-holder bg-img">
+                              
+                            </div>
                           
-                        </div>
-                      
+                                
+                            <p>$<span style="padding: 0;margin: 10px 0px;color: white;">40</span></p>
                             
-                        <p>$<span style="padding: 0;margin: 10px 0px;color: white;">40</span></p>
-                        
-                        
-                        <div>
+                            
                             <div>
-                                <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Guilty Pleasure by Anna Ropalo</a>
-                               </div>
-                        </div>
-                       
-                             <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                                <div>
+                                    <a href="#" style="margin-top: 140px;text-decoration: none;color: #000;">Guilty Pleasure by Anna Ropalo</a>
+                                   </div>
+                            </div>
                            
-                        
-                       
-                            <button>By Now</button>
-                            <button onclick="themvaogiohang(this)" 
-                           ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
-                    </div>
+                                 <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">   
+                               
+                            
+                           
+                                <button>By Now</button>
+                                <button onclick="themvaogiohang(this)" 
+                               ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
+                        </div>
+                    </a>
                     
                 
                 
                 </div>
                 <div class="drink-item dolor-type">
+                 <a href="./ds_spN.html">
                     <div class="item-wrap bottom-up play-on-scroll">
                         <div class="item-img " style="height: 300px;">
                             <!-- <div class="img-holder bg-img"> -->
@@ -1502,11 +1574,13 @@
                             <button onclick="themvaogiohang(this)" 
                            ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
+                 </a>
                     
                 
                 
                 </div>
                 <div class="drink-item dolor-type">
+                   <a href="./ds_spY.html">
                     <div class="item-wrap bottom-up play-on-scroll">
                         <div class="item-img " style="height: 300px;">
                             <!-- <div class="img-holder bg-img"> -->
@@ -1533,6 +1607,7 @@
                            ><i class='bx bx-cart-alt' style="font-size: 20px;"></i></button>
                     </div>
                     
+                   </a>
                 
                 
                 </div>
@@ -1639,7 +1714,8 @@
                                                     c0.6-1,1.1-2.1,1.4-3.4C13.6,22.9,11.8,22.9,10.4,23z"></path>
                                             </g>
                                             </svg>
-                                            <span>LOCATIONS</span>
+                                            <span><a href="https://www.google.com/maps/place/313+S+Maclay+Ave,+San+Fernando,+CA+91340,+Hoa+K%E1%BB%B3/@34.2823229,-118.4451155,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2904a5eb192a1:0x73f25f3cf0de68ba!8m2!3d34.2823229!4d-118.4429268">LOCATIONS</a></span>
+
                                         </a>
                                     </div>
                                     <div class="widget-item">

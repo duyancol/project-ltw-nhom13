@@ -11,15 +11,41 @@
     <link rel="stylesheet" href="css/footer.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/sanpham.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/home.css">
     <!-- <link rel="stylesheet" href="css/style_product.css"> -->
 </head>
 
 <body>
+    <div id="showcart" style="margin-top: 400px;margin-right: 200px;z-index: 99;"> 
+        <table>
+            <tr>
+                <th>STT</th>
+                <th>Hình</th>
+                <th>Tên sản phẩm</th>
+                <th>Đơn giá</th>
+                <th>Số lượng</th>
+                <th>Thành tiền ($)</th>
+                <th>Xoa</th>
+            </tr>
+            <tbody id="myCart">
+
+            </tbody>
+        </table>
+        <a  href="cart.html" style="text-decoration: none;margin-left: 180px;">Thanh toán >>></a>
+        <button onclick="xoatatca()" style="border-radius: 5px;float: right; margin: 20px;">Xóa all</button>
+    </div>
+    <div class="search_cake undisplay">
+       
+        <input 
+            type="text" id="search_cake_query" placeholder="Enter name of cake !">
+    </div>
   
         <div class="header boxcenter">
             <div class="header--contact padding-content">
                 <div class="header--contact__phone">
-                    <i class="fas fa-phone-alt " style="font-size: 16px;"></i>
+                   
+                    <i class='bx bx-phone-call'style="font-size: 20px;"></i>
                     call us 03-087-0976
                     <img src="assets/icon/email.png" style="height: 20px;width: 20px;margin-left: 2%;margin-right: 10px;" alt="">
                     nn@gmail.com
@@ -28,23 +54,23 @@
                 <div class="header--contact__">
                     <a href="">
                         <div class="header--contact__about" >
-                        <a href="" style="margin-right: 6px"><i class="fas fa-user" style="font-size: 16px;"></i></a>
-                           <span class="header--contact__span" style="position: relative; top:0px;"> My Account</span>
+                        <a href="" style="margin-right: 6px"><i class='bx bxs-user' style="font-size: 20px;"></i></a>
+                           <a href="about.html" class="header--contact__span" style="position: relative; top:5px;"> My Account</a>
                         </div>
                     </a>
                     <a href="">
                         <div class="header--contact__careers">
-                            <i class="fas fa-file-alt" style="font-size: 16px;margin-right: 6px;"></i>
-                            <span style="position: relative; top:0px;">Orders</span>
+                            <i class='bx bxs-note' style="font-size: 20px;"></i>
+                            <span style="position: relative; top:-3px;margin-left: 10px;">Orders</span>
                         </div>
                     </a>
                     <a class="header--contact__locations"
                        href="">
                        <!-- <i class="fas fa-globe-americas" style="font-size: 16px;"></i> -->
                        <img src="assets/icon/location.png" style="height: 20px; width: 20px;"  alt="">
-                        <span style="position: relative; top: 1px;margin-left: 10px;">
+                        <a href="https://www.google.com/maps/place/313+S+Maclay+Ave,+San+Fernando,+CA+91340,+Hoa+K%E1%BB%B3/@34.2823229,-118.4451155,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2904a5eb192a1:0x73f25f3cf0de68ba!8m2!3d34.2823229!4d-118.4429268" style="position: relative; top: 1px;margin-left: 10px;">
                             location
-                        </span>
+                        </a>
                     </a>
                     
                 </div>
@@ -235,24 +261,19 @@
                             </a>
                             <ul id="main-menu">
                                 <li><a href="index.html">Home</a></li>
-                                <li><a href="">About</a></li>
-                               
-                                <li><a href="">Shop</a></li>
+                                <li><a href="about.html">About</a></li>
+
                                 <li><a href="">Product</a>
                                     <ul class="sub-menu">
-                                        <li><a href="">Rượu vang Ý</a></li>
-                                        <li><a href="">Rượu vang Đức</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="">menu 2.1</a></li>
-                                                <li><a href="">menu 2.2</a></li>
-                                               
-                                            </ul>
+                                        <li><a href="ds_spY.html">Rượu vang Ý</a></li>
+                                        <li><a href="ds_spD.html">Rượu vang Đức</a>
+
                                         </li>
-                                        <li><a href="">Rượu vang Pháp</a></li>
-                                        <li><a href="">Rượu Nhật</a></li>
+                                        <li><a href="ds_spP.html">Rượu vang Pháp</a></li>
+                                        <li><a href="ds_spN.html">Rượu Nhật</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="">Cart</a></li>
+                                <li><a href="cart.html">Cart</a></li>
                             </ul>
                         </nav>
             
@@ -261,9 +282,9 @@
                 
             </div>
        
-        <div class="row mb " style="max-width: 1380px;margin: auto;margin-left: 160px;margin-top: -5px; background-image: linear-gradient( #cccc,#1d1c1c);">
+        <div class="row mb ">
             <div class="boxtrai mr" style=" height: 4100px;border-radius: 6px; ">
-                <div class="row" style="background-color: #1d1c1c;" >
+                <div class="row tst" style="background-color: #1d1c1c;" >
 
                    <!-- <img src="./assets/home/ads/hom3_1.jpg" alt="">
                   <div class="textcontact" style="color: #1d1c1c;">
@@ -276,14 +297,14 @@
                     <div class="bu" style="display: flex;margin-top: 200px;"> <button style="margin: auto;height: 50px;width: 60px;background-color: #402c2766;"><a style="color: red;" href="./index.html">Home</a></button></div>
                   </div> -->
                   <div class="center" style="background-color: #383636;margin:10px ;">
-                    <img src="assets/product/a-pd1.jpg" alt="" style="margin: 40px;width:300px ;height: 350px;">
+                    <img src="assets/product/a-pd1.jpg" alt="" class="img" >
                     <div class="tong">
-                        <h1>Rượu Champagne Armand De Brignac Gold – Champagne Át Bích</h1>
-                        <div class="phai">
+                        <h1 style="margin-left: 50%;">Rượu Champagne Armand De Brignac Gold – Champagne Át Bích</h1>
+                        <div class="phai" style="width: 50%;">
                             <h2>Gia Kham Khao: 120$</h2>
                             <div>
-                              <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">  
-                              <button><i class='bx bx-cart-alt' style="margin: 5px;"></i>Mua Ngay</button>
+                              <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 15%px;margin-left: 25%;margin-top: 10px;">  
+                              <button><i class='bx bx-cart-alt' style=" "></i>Mua Ngay</button>
                             </div>
                             <div class="buttonbuy">
                                 <button>HN</button>
@@ -349,14 +370,14 @@
                       </div>
                       
                   </div>
-                <div class="ttsp">
+                <div class="ttsp" style="position: relative;">
                     <h1>
                         Những dòng Champagne Pháp không bao giờ khiến cho con người ta cảm thấy thất vọng bởi một phong cách đặc biệt có trong hương vị vang của quốc gia này. Xứng danh là một quốc gia hàng đầu về nền công nghiệp sản xuất rượu vang. Bởi vậy cho nên tất cả những chai vang ra đời từ nơi đây đều mang đến cho người dùng có được những trải nghiệm tuyệt vời mới mẻ nhất. Rượu Champagne Armand De Brignac Gold là điển hình tiêu biểu dành cho khách hàng tham khảo.
 
                         Champagne Armand De Brignac Gold Là phiên bản chai rượu đầu tiên từ Hãng Armand de Brignac, Hiện nay chai Champagne này vẫn là chai Champagne mang tính biểu tượng nhất trong phạm vi vùng làm rượu Champagne. Đó là một bộ ba rượu vang được ca ngợi nhất của khu vực Champagne, Là chai rượu mang hương vị của trái cây tươi và sống động với kết cấu mềm mại.
                         
                     </h1>
-                    <img src="assets/product/ttsp-1.jpg" alt="" style="margin-left: 120px;">
+                    <img src="assets/product/ttsp-1.jpg" alt="" style="margin-left: 12%;" id="ctsp">
                     <div class="h2">
                         <h1>Thông Tin Về Rượu Rượu Champagne Armand De Brignac Gold</h1>
                         <h2>► Xuất Xứ: Pháp</h2>
@@ -372,7 +393,7 @@
                         Mô Tả Hương Vị Của Rượu Champagne Armand De Brignac Gold
 
                     </h1>
-                    <img src="assets/product/ttsp-2.jpg" alt="" style="margin-left: 120px;">
+                    <img src="assets/product/ttsp-2.jpg" alt="" style="margin-left: 12%;" id="ctsp2">
                     <h2>
                         Nếu như có cơ hội được thưởng thức rượu Champagne của Pháp nói chung, thì chắc chắn rằng bạn có thể phân biệt được một cách hết sức rõ nét về rượu vang đến từ quốc gia này so với nhiều chai vang Champagne đến từ quốc gia khác trên thế giới. Sở dĩ có sự khác biệt đến như vậy là bởi vì một phong cách rất riêng của vang Pháp nói chung. Đó là một bí quyết sản xuất riêng của nhà làm rượu đồng thời là niềm tự hào, là nét đặc trưng của vang đến từ quốc gia này.
 
@@ -388,7 +409,7 @@
 
                          Medal – 2015 San Francisco International Wine Competition
                     </h2>
-                    <img src="assets/product/ttsp-3.jpg" alt="" style="margin-left: 120px;">
+                    <img src="assets/product/ttsp-3.jpg" alt="" style="margin-left:12%;" id="TTSP">
                     <h1>
                         Hướng Dẫn Cách Thưởng Thức Rượu Champagne Armand De Brignac Gold
                     </h1>
@@ -401,7 +422,7 @@
 
                     <div class="drink-item-wrap all">
                
-                        <div class="drink-item salad-type" style="margin-top: -200px;height: 400px;margin-left: 60px;">
+                        <div class="drink-item salad-type" style="height: 400px;">
                           <a href="./sanpham.html">
                             <div class="item-wrap bottom-up play-on-scroll">
                                 <div class="item-img " style="height: 250px;">
@@ -531,7 +552,7 @@
             </div>
             <div class="boxphai" style="margin-top:10px ;" >
                 <div class="row mb " >
-                    <div class="boxtitle" >TÀI KHOẢN</div>
+                    <div class="boxtitle " style="color: white;">TÀI KHOẢN</div>
                     <div class="boxcontent formtaikhoan">
                         <form action="#" method="post">
                             <div class="row mb10 "style="color: #1d1c1c;" >
@@ -546,7 +567,8 @@
                             <div class="row mb10" style="color: #1d1c1c;">
                                 <input type="checkbox" name="" > Ghi nhớ tài khoản?</div>
                             <div class="row mb10" style="color: #1d1c1c;">
-                                <input type="submit" value="Đăng nhập" style="color: #1d1c1c;margin-bottom: 10px;">
+                              <button><a href="./index.html"></a>Đăng nhập</button>
+                                
                             </div>
                         </form>
                         <li>
@@ -558,20 +580,20 @@
                     </div>
                 </div>
                 <div class="row mb">
-                    <div class="boxtitle">DANH MỤC</div>
+                    <div class="boxtitle"  style="color: white" >DANH MỤC</div>
                     <div class="boxcontent2 menudoc">
                         <ul>
                             <li>
-                                <a href="#">Rượu Vang Ý</a>
+                                <a href="ds_spY.html">Rượu Vang Ý</a>
                             </li>
                             <li>
-                                <a href="#">Rượu Vang Pháp</a>
+                                <a href="ds_spN.html">Rượu Vang Nhật</a>
                             </li>
                             <li>
-                                <a href="#">Rượu Vang Pháp</a>
+                                <a href="ds_spP.html">Rượu Vang Pháp</a>
                             </li>
                             <li>
-                                <a href="#">Rượu Vang Đức</a>
+                                <a href="ds_spD.html">Rượu Vang Đức</a>
                             </li>
                             <li>
                                 <a href="#">Phụ Kiện</a>
@@ -586,7 +608,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="boxtitle">TOP 10 YÊU THÍCH</div>
+                    <div class="boxtitle" style="color: white;">TOP 10 YÊU THÍCH</div>
                     <div class="row boxcontent">
                         <div class="row mb10 top10">
                             <img src="assets/product/cd-pd5.jpg" alt="">
@@ -624,10 +646,12 @@
                 </div>
             </div>
         </div>
+    </div>
+</div>
         <section id="foos" class="foost">
 
-            <footer>
-                <div class="footer-top">
+            <footer style="width: 100%;" >
+                <div class="footer-top"style="margin-left: 0;width: 90%;">
                     <div>
                         <div class="row">
                             <div class="col-3 item1">
@@ -719,7 +743,8 @@
                                                     c0.6-1,1.1-2.1,1.4-3.4C13.6,22.9,11.8,22.9,10.4,23z"></path>
                                             </g>
                                             </svg>
-                                            <span>LOCATIONS</span>
+                                            <span><a href="https://www.google.com/maps/place/313+S+Maclay+Ave,+San+Fernando,+CA+91340,+Hoa+K%E1%BB%B3/@34.2823229,-118.4451155,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2904a5eb192a1:0x73f25f3cf0de68ba!8m2!3d34.2823229!4d-118.4429268">LOCATIONS</a></span>
+
                                         </a>
                                     </div>
                                     <div class="widget-item">
@@ -876,7 +901,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="footer-bottom">
+                <div class="footer-bottom" style="margin-left: 5%;height: 40px; color: black;">
                     <div class="row">
                         <div class="col-6">
                             <ul>
@@ -912,9 +937,9 @@
                                 </a>
                             </ul>
                         </div>
-                        <div class="col-6 note">
+                        <div class="col-6 note " style="margin-top: -10px;" >
                             <a href="#">
-                                <span>© 2019 - Mikado - Themes. All Rights Reserved.</span>
+                                <span style="color: black;font-weight:900 ;">© 2021 - Mikado - Themes. All Rights Reserved.</span>
                             </a>
                         </div>
                     </div>

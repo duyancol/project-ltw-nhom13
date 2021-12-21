@@ -15,7 +15,7 @@
   
 }
 .tong h1{
-    font-size: 20px;
+    font-size: 150%;
 }
 .tong .phai{
     background-color: white;
@@ -36,8 +36,9 @@ font-size: 12px;
     background-color: #1d1c1c;
     border-radius: 4px;
     justify-content: space-between;
-    width: 100px;
+    width: 20%;
     height: 40px;
+    margin-top: -5px;
 }
 .tong .phai button:hover{
 background-color: green;
@@ -154,7 +155,7 @@ element.style {
     transform: translateY(0);
 }
 .bottom-up {
-    transform: translateY(30%);
+    transform: translateY(4%);
     transition: .8s ease-in-out;
 }
 .item-wrap {
@@ -205,4 +206,109 @@ element.style {
 }
 .card_greens{
     background: green;
+}
+/* @media only screen and (min-width: 46.25em) and (max-width: 63.9375em){
+    .boxtrai {
+        width: 100%;
+    }
+    .boxtrai .center{
+        display: none;
+    }
+    .boxtrai .ttsp{
+        width: 100%;
+    }
+    .boxtrai .ttsp h1{
+        display: none;
+    }
+    .boxtrai .ttsp .drink-item{
+        display: none;
+    }
+
+    .boxtrai .center .phai{
+        display: none;
+
+    }
+    .boxphai .row{
+        display: none;
+        margin: 0;
+    }
+} */
+@media only screen  and (max-width: 1200px){
+    .ttsp{
+        margin-top: 600px;
+    }
+}
+@media only screen  and (max-width: 46.25em){
+    .ctsp{
+        width: 25%;
+    }
+    .drink-item{
+        width: 20%;
+        height: 20%;
+    }
+}
+
+.img{
+    margin: 5%;
+    margin-left: -40%;
+    width:40% ;
+    height: 350px;
+    position: absolute;
+    
+    
+}
+.row{
+    max-width: 100%;margin: auto;margin-left: 6%;margin-top: 0px; background-image: linear-gradient( #cccc,#1d1c1c);
+   
+}
+.tst{
+    position: absolute;
+      max-width: 55%;
+   
+   
+}
+.center{
+    position: absolute;
+    width: 97%;
+}
+.tong {
+    
+    width: 80%;
+}
+.phai{
+    position: unset;
+    margin-left: 50%;
+    width: 20%;
+    
+}
+.phai h1{
+    width: 50%;
+    margin-left: 100%;
+    font-weight: 5%    ;
+    font-size: 5%;
+
+}
+#TTSP{
+    max-width: 50%;
+    margin-left: 100%;
+}
+.ttsp{
+    margin-top: 800px;
+}
+#ctsp{
+    width: 50%;
+}
+#ctsp2{
+    width: 50%;
+    
+}
+
+.drink-item{
+    margin-top: -200px;height: -20%px;margin-left: 10%px;
+}
+.footer-bottom .row .col-6 ul a li span{
+    color: #000;
+    font-size: 12px;
+    font-weight: 900;
+    
 }

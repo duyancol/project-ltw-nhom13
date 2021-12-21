@@ -11,14 +11,40 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/spyreponsive.css">
 </head>
 
 <body>
   
+    <div id="showcart" style="margin-top: 400px;margin-right: 200px;z-index: 99;"> 
+        <table>
+            <tr>
+                <th>STT</th>
+                <th>Hình</th>
+                <th>Tên sản phẩm</th>
+                <th>Đơn giá</th>
+                <th>Số lượng</th>
+                <th>Thành tiền ($)</th>
+                <th>Xoa</th>
+            </tr>
+            <tbody id="myCart">
+
+            </tbody>
+        </table>
+        <a  href="cart.html" style="text-decoration: none;margin-left: 180px;">Thanh toán >>></a>
+        <button onclick="xoatatca()" style="border-radius: 5px;float: right; margin: 20px;">Xóa all</button>
+    </div>
+    <div class="search_cake undisplay">
+       
+        <input 
+            type="text" id="search_cake_query" placeholder="Enter name of cake !">
+    </div>
+  
         <div class="header boxcenter">
             <div class="header--contact padding-content">
                 <div class="header--contact__phone">
-                    <i class="fas fa-phone-alt " style="font-size: 16px;"></i>
+                   
+                    <i class='bx bx-phone-call'style="font-size: 20px;"></i>
                     call us 03-087-0976
                     <img src="assets/icon/email.png" style="height: 20px;width: 20px;margin-left: 2%;margin-right: 10px;" alt="">
                     nn@gmail.com
@@ -27,23 +53,23 @@
                 <div class="header--contact__">
                     <a href="">
                         <div class="header--contact__about" >
-                        <a href="" style="margin-right: 6px"><i class="fas fa-user" style="font-size: 16px;"></i></a>
-                           <span class="header--contact__span" style="position: relative; top:0px;"> My Account</span>
+                        <a href="" style="margin-right: 6px"><i class='bx bxs-user' style="font-size: 20px;"></i></a>
+                           <a href="about.html" class="header--contact__span" style="position: relative; top:5px;"> My Account</a>
                         </div>
                     </a>
                     <a href="">
                         <div class="header--contact__careers">
-                            <i class="fas fa-file-alt" style="font-size: 16px;margin-right: 6px;"></i>
-                            <span style="position: relative; top:0px;">Orders</span>
+                            <i class='bx bxs-note' style="font-size: 20px;"></i>
+                            <span style="position: relative; top:-3px;margin-left: 10px;">Orders</span>
                         </div>
                     </a>
                     <a class="header--contact__locations"
                        href="">
                        <!-- <i class="fas fa-globe-americas" style="font-size: 16px;"></i> -->
                        <img src="assets/icon/location.png" style="height: 20px; width: 20px;"  alt="">
-                        <span style="position: relative; top: 1px;margin-left: 10px;">
+                        <a href="https://www.google.com/maps/place/313+S+Maclay+Ave,+San+Fernando,+CA+91340,+Hoa+K%E1%BB%B3/@34.2823229,-118.4451155,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2904a5eb192a1:0x73f25f3cf0de68ba!8m2!3d34.2823229!4d-118.4429268" style="position: relative; top: 1px;margin-left: 10px;">
                             location
-                        </span>
+                        </a>
                     </a>
                     
                 </div>
@@ -233,19 +259,14 @@
                                 <img src="" alt="">
                             </a>
                             <ul id="main-menu">
-                                <li><a href="header.html">Home</a></li>
-                                <li><a href="">About</a></li>
-                               
-                                <li><a href="">Shop</a></li>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+
                                 <li><a href="">Product</a>
                                     <ul class="sub-menu">
                                         <li><a href="ds_spY.html">Rượu vang Ý</a></li>
-                                        <li><a href="">Rượu vang Đức</a>
-                                            <!-- <ul class="sub-menu">
-                                                <li><a href="">menu 2.1</a></li>
-                                                <li><a href="">menu 2.2</a></li>
-                                               
-                                            </ul> -->
+                                        <li><a href="ds_spD.html">Rượu vang Đức</a>
+
                                         </li>
                                         <li><a href="ds_spP.html">Rượu vang Pháp</a></li>
                                         <li><a href="ds_spN.html">Rượu Nhật</a></li>
@@ -264,11 +285,7 @@
             <div class="boxtrai mr" style=" background-image: linear-gradient( rgba(43, 41, 41, 0.8),#1d1c1c);height: 1200px;border-radius: 6px; ">
                 <div class="row" >
                     <h1 style="font-size: 20px;color: #abad0a;margin:20px ;">Rượu VAng Đức</h1>
-                    <table class="thongtinnhanhang">
-                        <tbody id="thongtinnhanhang">
-                        
-                    </tbody>
-                    </table>
+                 
                 </div>
              
                 <div class="drink-item-wrap all "  >
@@ -627,14 +644,20 @@
                             <div class="row mb10" style="color: #1d1c1c;">
                                 <input type="checkbox" name="" > Ghi nhớ tài khoản?</div>
                             <div class="row mb10" style="color: #1d1c1c;">
-                                <input type="submit" value="Đăng nhập" style="color: #1d1c1c;margin-bottom: 10px;">
+                                <a href="index.html" style=" border: none; background: #1d1c1c;border-radius: 12px;
+                                                  color: white;
+                                                  padding: 7px 22px;
+                                                  text-align: center;
+                                                  text-decoration: none;
+                                                  display: inline-block;
+                                                  font-size: 16px; ">Đăng Nhập</a>
                             </div>
                         </form>
                         <li>
                             <a href="#">Quên mật khẩu</a>
                         </li>
                         <li>
-                            <a href="#">Đăng ký thành viên</a>
+                            <a href="signin.html">Đăng ký thành viên</a>
                         </li>
                     </div>
                 </div>
@@ -800,7 +823,8 @@
                                                     c0.6-1,1.1-2.1,1.4-3.4C13.6,22.9,11.8,22.9,10.4,23z"></path>
                                             </g>
                                             </svg>
-                                            <span>LOCATIONS</span>
+                                            <span><a href="https://www.google.com/maps/place/313+S+Maclay+Ave,+San+Fernando,+CA+91340,+Hoa+K%E1%BB%B3/@34.2823229,-118.4451155,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2904a5eb192a1:0x73f25f3cf0de68ba!8m2!3d34.2823229!4d-118.4429268">LOCATIONS</a></span>
+
                                         </a>
                                     </div>
                                     <div class="widget-item">
