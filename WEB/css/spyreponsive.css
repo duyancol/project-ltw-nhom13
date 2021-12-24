@@ -38,6 +38,11 @@
    }
    .item-wrap{
        max-width:100% ;
+   
       
    }
+   .boxphai{
+    width: 20%;
+    margin-left: -0%;    
+}
 }

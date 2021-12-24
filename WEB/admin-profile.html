@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/admin.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+<link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css">
+<link rel="stylesheet" href="css/sanpham.css">
+<link rel="stylesheet" href="cart/css/style.css">
+<link rel="stylesheet" href="css/themsp.css">
+<link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+  <div class="navigation">
+    <ul>
+      <li>
+        <a href="index.html">
+          <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+          <span class="tittle" >Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="admin-profile.html">
+          <span class="icon"><i class="fa fa-user" aria-hidden="true"></i></span>
+          <span class="tittle">Profiles</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="icon"><i class="fas fa-comment-dots"></i></i></span>
+          <span class="tittle">Messages</span>
+        </a>
+      </li>
+      <li>
+        <a href="admin-product.html">
+          <span class="icon"><i class="fab fa-product-hunt" style="font-size: 24px;"></i></span>
+          <span class="tittle">Product</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="icon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+          <span class="tittle">Calendar</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="icon"><i class="fa fa-question" aria-hidden="true"></i></span>
+          <span class="tittle">Help</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+          <span class="tittle">Setting</span>
+        </a>
+      </li>
+      <li>
+        <a href="dangnhap.html">
+          <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+          <span class="tittle">Sign Out</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="toggle" onclick="tog()"><a href=""><i class="fas fa-bars" style="margin:22px;position: absolute;font-size:20px ;color: blanchedalmond;z-index: 1;"></i></a></div>
+  <div class="row mb " style="max-width: 1380px;margin: auto;margin-left: 160px;margin-top: 5px; background-image: linear-gradient( #cccc,#1d1c1c);">
+    <div class="boxtrai mr" style=" background-image: linear-gradient( rgba(43, 41, 41, 0.8),#1d1c1c);height: 1100px;border-radius: 6px;width: 107.5%;margin-left: -7.5%; ">
+        <!-- <div class="row" >
+            <h1 style="font-size: 20px;color: #abad0a;margin:20px ;">THÔNG TIN NHẬN HÀNG</h1>
+            <table class="thongtinnhanhang">
+                <tbody id="thongtinnhanhang">
+                <tr>
+                    <td width="20%" style="color: #1d1c1c;font-weight: 900;">Họ tên</td>
+                    <td><input type="text" name="hoten" style="color: black;"></td>
+                </tr>
+                <tr>
+                    <td  style="color: #1d1c1c;font-weight: 900;">Địa chỉ</td>
+                    <td><input type="text" name="diachi"style="color: black;"></td>
+                </tr>
+                <tr>
+                    <td  style="color: #1d1c1c;font-weight: 900;">Điện thoại</td>
+                    <td><input type="text" name="dienthoai"style="color: black;"></td>
+                </tr>
+                <tr>
+                    <td  style="color: #1d1c1c;font-weight: 900;">Email</td>
+                    <td><input type="text" name="email"style="color: black;"></td>
+                </tr>
+            </tbody>
+            </table>
+        </div> -->
+        <div>
+         
+       
+            <h1  style="color: #1d1c1c;font-size:24px ;margin: 20px;"> Profile</h1>
+            <div class="row" style="margin-left: -0%;"> 
+                <div class="col-lg-12"> 
+                    <div class="profile" style="width: 120%;"> <div class="profile-head">
+                         <div class="photo-content"> <div class="cover-photo" style="margin-left: -1%;">
+
+                         </div> <div class="profile-photo"> <img src="assets/home/ads/home2.jpg" style=" bottom: 95px; left: 100px; max-width: 150px; position: absolute;" class="img-fluid rounded-circle" alt=""> </div>
+                         </div> 
+                         <div class="profile-info"> 
+                             <div class="row12 justify-content-center"> 
+                                 <div class="col-xl-8"> <div class="row12 row1">
+                                      <div class="col-xl-4 col-sm-4 border-right-1 prf-col">
+                                           <div class="profile-name"  >
+                                             <h4 class="text-primary">Admin</h4> <p>UX / UI Designer</p>
+                                             </div>
+                                             </div> 
+                                             <div class="col-xl-4 col-sm-4 border-right-1 prf-col email" style="padding: 20px;">
+                                                 <div class="profile-email"> <h4 class="text-muted">admin@gmail.com</h4> <p>Email</p> </div> </div> <!-- <div class="col-xl-4 col-sm-4 prf-col"> <div class="profile-call"> <h4 class="text-muted">(+1) 321-837-1030</h4> <p>Phone No.</p> </div> </div> --> </div> </div> </div> </div> </div> </div> </div> </div>
+        </div>
+        <!-- <div class="row mb">
+            <button class="dongy" onclick="dongydathang()">ĐỒNG Ý ĐẶT HÀNG</button>
+        </div> -->
+        <div class="row12" style="">
+            <div class="col-lg-4" style="margin-left: 1%;margin-top: 2%;">
+                <div class="card">
+                    <div class="card-body " >
+                        <div class="profile-statistics">
+                            <div class="text-center mt-4 border-bottom-1 pb-3 " style="margin-left: 10%;">
+                                <div class="row12">
+                                    <div class="col">
+                                        <h3 class="m-b-0">150</h3><span>Follower</span>
+                                    </div>
+                                    <div class="col">
+                                        <h3 class="m-b-0">140</h3><span>Place Stay</span>
+                                    </div>
+                                    <div class="col">
+                                        <h3 class="m-b-0">45</h3><span>Reviews</span>
+                                    </div>
+                                </div>
+                                <div class="mt-4" style="margin:10% 15%;"><a href="javascript:void()" class="btn btn-primary pl-5 pr-5 mr-3 mb-4"><button style="padding: 10px 40px;background: #593bdb;border-radius: 4px;border: none;color: #f0f0f0;">Follow</button></a> <a href="javascript:void()" class="btn btn-dark pl-5 pr-5 mb-4"><button style="padding: 10px 40px;background: #ccc;border-radius: 4px;border: none;color: #1d1c1c;">Send Message</button>
+
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="card" style="margin-top: 4.5%;">
+                    <div class="card-body">
+                        <div class="profile-tab">
+                            <div class="custom-tab-1">
+                                <ul class="nav nav-tabs">
+                                    <li class="nav-item"><a href="#my-posts" data-toggle="tab" class="nav-link active show">Posts</a>
+                                    </li>
+                                    <li class="nav-item"><a href="#about-me" data-toggle="tab" class="nav-link">About Me</a>
+                                    </li>
+                                    <li class="nav-item"><a href="#profile-settings" data-toggle="tab" class="nav-link">Setting</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div id="my-posts" class="tab-pane fade active show">
+                                        <div class="my-post-content pt-3">
+                                            <div class="post-input">
+                                                <textarea name="textarea" id="textarea" cols="30" rows="5" class="form-control bg-transparent" placeholder="Please type what you want...."></textarea> <a href="javascript:void()"><i class="fa fa-clipboard" aria-hidden="true"></i></i> </a>
+                                                <a href="javascript:void()"><i class="fas fa-camera-retro"></i></i> </a><a href="" style="text-decoration: none;" class="btn btn-primary">Post</a>
+                                            </div>
+                                            <div class="profile-uoloaded-post border-bottom-1 pb-5">
+                                                <img src="assets/54732207_2309061759420411_7754229395380267702_n.jpg" alt="" class="img-fluid">
+                                                <a class="post-title" href="javascript:void()">
+                                                    <h4>Collection of textile samples lay spread</h4>
+                                                </a>
+                                                <p>A wonderful serenity has take possession of my entire soul like these sweet morning of spare which enjoy whole heart.A wonderful serenity has take possession of my entire soul like these sweet morning
+                                                    of spare which enjoy whole heart.</p>
+                                                <button class="btn btn-primary mr-3"><span class="mr-3"><i class="fa fa-heart"></i></span>Like</button>
+                                                <button class="btn btn-secondary"><span class="mr-3"><i class="fa fa-reply"></i></span>Reply</button>
+                                            </div>
+                                            <div class="profile-uoloaded-post border-bottom-1 pb-5">
+                                                <img src="images/profile/9.jpg" alt="" class="img-fluid">
+                                                <a class="post-title" href="javascript:void()">
+                                                    <h4>Collection of textile samples lay spread</h4>
+                                                </a>
+                                                <p>A wonderful serenity has take possession of my entire soul like these sweet morning of spare which enjoy whole heart.A wonderful serenity has take possession of my entire soul like these sweet morning
+                                                    of spare which enjoy whole heart.</p>
+                                                <button class="btn btn-primary mr-3"><span class="mr-3"><i class="fa fa-heart"></i></span>Like</button>
+                                                <button class="btn btn-secondary"><span class="mr-3"><i class="fa fa-reply"></i></span>Reply</button>
+                                            </div>
+                                            <div class="profile-uoloaded-post pb-5">
+                                                <img src="images/profile/8.jpg" alt="" class="img-fluid">
+                                                <a class="post-title" href="javascript:void()">
+                                                    <h4>Collection of textile samples lay spread</h4>
+                                                </a>
+                                                <p>A wonderful serenity has take possession of my entire soul like these sweet morning of spare which enjoy whole heart.A wonderful serenity has take possession of my entire soul like these sweet morning
+                                                    of spare which enjoy whole heart.</p>
+                                                <button class="btn btn-primary mr-3"><span class="mr-3"><i class="fa fa-heart"></i></span>Like</button>
+                                                <button class="btn btn-secondary"><span class="mr-3"><i class="fa fa-reply"></i></span>Reply</button>
+                                            </div>
+                                          
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="about-me" class="tab-pane fade">
+                                        <div class="profile-about-me">
+                                            <div class="pt-4 border-bottom-1 pb-4">
+                                                <h4 class="text-primary">About Me</h4>
+                                                <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence was created for the
+                                                    bliss of souls like mine.I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.</p>
+                                                <p>A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed
+                                                    in a nice, gilded frame.</p>
+                                            </div>
+                                        </div>
+                                        <div class="profile-skills pt-2 border-bottom-1 pb-2">
+                                            <h4 class="text-primary mb-4">Skills</h4>
+                                            <a href="" class="btn btn-outline-dark btn-rounded pl-4 my-3 my-sm-0 pr-4 mr-3 m-b-10">Admin</a>
+                                            <a href="" class="btn btn-outline-dark btn-rounded pl-4 my-3 my-sm-0 pr-4 mr-3 m-b-10">Dashboard</a>
+                                            <a href="" class="btn btn-outline-dark btn-rounded pl-4 my-3 my-sm-0 pr-4 mr-3 m-b-10">Photoshop</a>
+                                            <a href="" class="btn btn-outline-dark btn-rounded pl-4 my-3 my-sm-0 pr-4 mr-3 m-b-10">Bootstrap</a>
+                                            <a href="" class="btn btn-outline-dark btn-rounded pl-4 my-3 my-sm-0 pr-4 mr-3 m-b-10">Responsive</a>
+                                            <a href="" class="btn btn-outline-dark btn-rounded pl-4 my-3 my-sm-0 pr-4 mr-3 m-b-10">Crypto</a>
+                                        </div>
+                                        <div class="profile-lang pt-5 border-bottom-1 pb-5">
+                                            <h4 class="text-primary mb-4">Language</h4><a href="javascript:void()" class="text-muted pr-3 f-s-16"><i class="flag-icon flag-icon-us"></i> English</a> <a href="javascript:void()" class="text-muted pr-3 f-s-16"><i class="flag-icon flag-icon-fr"></i> French</a>
+                                            <a href="javascript:void()" class="text-muted pr-3 f-s-16"><i class="flag-icon flag-icon-bd"></i> Bangla</a>
+                                        </div>
+                                        <div class="profile-personal-info">
+                                            <h4 class="text-primary mb-4">Personal Information</h4>
+                                            <div class="row12 mb-4">
+                                                <div class="col-3">
+                                                    <h5 class="f-w-500">Name <span class="pull-right">:</span>
+                                                    </h5>
+                                                </div>
+                                                <div class="col-9"><span>Mitchell C.Shay</span>
+                                                </div>
+                                            </div>
+                                            <div class="row12 mb-4">
+                                                <div class="col-3">
+                                                    <h5 class="f-w-500">Email <span class="pull-right">:</span>
+                                                    </h5>
+                                                </div>
+                                                <div class="col-9"><span>example@examplel.com</span>
+                                                </div>
+                                            </div>
+                                            <div class="row12 mb-4">
+                                                <div class="col-3">
+                                                    <h5 class="f-w-500">Availability <span class="pull-right">:</span></h5>
+                                                </div>
+                                                <div class="col-9"><span>Full Time (Free Lancer)</span>
+                                                </div>
+                                            </div>
+                                            <div class="row12 mb-4">
+                                                <div class="col-3">
+                                                    <h5 class="f-w-500">Age <span class="pull-right">:</span>
+                                                    </h5>
+                                                </div>
+                                                <div class="col-9"><span>27</span>
+                                                </div>
+                                            </div>
+                                            <div class="row12 mb-4">
+                                                <div class="col-3">
+                                                    <h5 class="f-w-500">Location <span class="pull-right">:</span></h5>
+                                                </div>
+                                                <div class="col-9"><span>Rosemont Avenue Melbourne,
+                                                        Florida</span>
+                                                </div>
+                                            </div>
+                                            <div class="row12 mb-4">
+                                                <div class="col-3">
+                                                    <h5 class="f-w-500">Year Experience <span class="pull-right">:</span></h5>
+                                                </div>
+                                                <div class="col-9"><span>07 Year Experiences</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="profile-settings" class="tab-pane fade">
+                                        <div class="pt-3">
+                                            <div class="settings-form">
+                                                <h4 class="text-primary">Account Setting</h4>
+                                                <form>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-6">
+                                                            <label>Email</label>
+                                                            <input type="email" placeholder="Email" class="form-control">
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label>Password</label>
+                                                            <input type="password" placeholder="Password" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Address</label>
+                                                        <input type="text" placeholder="1234 Main St" class="form-control">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Address 2</label>
+                                                        <input type="text" placeholder="Apartment, studio, or floor" class="form-control">
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-6">
+                                                            <label>City</label>
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                        <div class="form-group col-md-4">
+                                                            <label>State</label>
+                                                            <select class="form-control" id="inputState">
+                                                                <option selected="">Choose...</option>
+                                                                <option>Option 1</option>
+                                                                <option>Option 2</option>
+                                                                <option>Option 3</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group col-md-2">
+                                                           
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="form-check">
+                                                            <input type="checkbox" class="form-check-input" id="gridCheck">
+                                                           
+                                                        </div>
+                                                    </div>
+                                                   
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <script type="text/javascript"> 
+  function tog(){
+    let na =document.querySelector('.navigation');
+    na.classList.toggle('active');
+  }
+
+  </script>
+</body>
+</html>

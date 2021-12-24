@@ -122,12 +122,17 @@ var giohang = new Array();
        
        }
        ttgh +='<tr>'+
-       '<th colspan="5">Tổng đơn hàng</th>'+
-       '<th>'+
-           '<div>' + tong + '</div>'+
-       '</th>'+
+       '<th colspan="6" style="background-color: #1c1c1c" ><div class="giam " style="background-color: #f0f0f0;width: 80%;margin-left:10% ;border-radius: 5px;"><h2 style="color: rgba(87, 85, 85, 0.8);">Tổng giỏ hàng</h2><ul><li>Tạm tính</li><li>'+tong+'</li></ul><ul><li>Tổng</li><li>'+tong+'</li></ul><button style="text-decoration: none;color: #cccc;font-weight:bold ;"><a href="donhang1.html" style="font-weight: bolder;text-decoration: none;color:#cccc">Thanh toán</a></button><div><h3 style="padding: 10px;">Mã ưu đãi</h3> <br><input type="text" placeholder=""> <br><button style="font-weight: bold;color: #cccc;">Áp dụng</button></div>'
+   +'</div></th>'+
+       
+      
 
    '</tr>';
+  ' <div style=" margin-left: 100px;">'+tong+' </div>'
+
+  
+   ;
+   
         document.getElementById("myCart").innerHTML=ttgh;
 
    }
@@ -137,7 +142,10 @@ var giohang = new Array();
      var dc=ttnh[1].children[1].children[0].value;
      var dt=ttnh[2].children[1].children[0].value;
      var email=ttnh[3].children[1].children[0].value;
-     var nguoinhan=new Array(ht,dc,dt,email);
+     var dcnh =ttnh[4].children[1].children[0].value;
+     var ngaygh =ttnh[5].children[1].children[0].value;
+     var gichu =ttnh[6].children[1].children[0].value;
+     var nguoinhan=new Array(ht,dc,dt,email.dcnh,ngaygh,gichu);
      sessionStorage.setItem("nguoinhan",JSON.stringify(nguoinhan));
      console.log(nguoinhan);
     window.location.assign("donhang.html")
@@ -160,7 +168,20 @@ var giohang = new Array();
    '<tr>'+
        '<td>Email</td>'+
        '<td>'+tt[3]+'</td>'+
-   '</tr>';
+   '</tr>'+
+   '<tr>'+
+       '<td>Địa chit nhận hàng</td>'+
+       '<td>'+tt[4]+'</td>'+
+   '</tr>'+
+   '<tr>'+
+   '<td>Ngày giao hàng</td>'+
+   '<td>'+tt[5]+'</td>'+
+'</tr>'+
+'<tr>'+
+'<td>Gi chú</td>'+
+'<td>'+tt[6]+'</td>'+
+'</tr>'
+   ;
    document.getElementById("thongtinnhanhang").innerHTML=ttin;
   
    }

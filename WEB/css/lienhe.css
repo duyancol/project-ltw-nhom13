@@ -1,0 +1,58 @@
+.row p{
+    margin:5% 10%;
+    color: #1c1c1c;
+    font-weight: bolder;
+}
+.row .input{
+    width: 96.5%;
+    border:1px solid #1c1c1c;
+    color: #1c1c1c;
+}
+.boxtraiinput input{
+margin-left: 10%;
+padding: 5px;
+width: 80%;
+}
+.boxtraiinput textarea{
+    margin-left: 10%;
+    width: 81.5%;
+}
+.boxtraiinput button{
+    margin:5% 12% ;
+    padding: 1% 4%;
+    color: #1c1c1c;
+    font-weight: bolder;
+}
+textarea::placeholder{
+    margin: 100px;
+    text-indent:  10px;
+    text-shadow: 10px;
+   
+}
+textarea{
+    color: #1c1c1c;
+}
+iframe{
+    margin-left: 10%;
+    width: 80%;
+}
+.xemtrang{
+    width: 96.5%;
+    height: 30px;
+    background-color: #f0f0f0;
+    color: #000;
+    border: none;
+    border-radius: 3px;
+}
+.boxcontent{
+    width: 88%;
+}
+@media (max-width:1000px) {
+   
+       
+   .boxcontent{
+      margin-left: 2%;
+      width: 180%;
+   }
+    
+}

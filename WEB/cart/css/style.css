@@ -204,7 +204,7 @@ td div {
 th div {
     width: calc(100% - 10px);
     padding: 0px 5px;
-    text-align: right;
+    text-align: left;
     font-size: 1.5rem;
 }
 
@@ -396,7 +396,50 @@ td img {
     font-weight: bold;
     margin: 20px;
 }
+.giam ul{
+    display:flex;
+    justify-content: space-between;
+    border-top: 1px solid #ccc;
+    
+}
+.giam h2{
+   
+    padding: 10px 20px;
+    
+}
+.giam ul li{
+    font-size: 22px;
+    margin: 10px 20px;
+    list-style: none;
+}
+.giam button{
+    
+   background-color: #d26e4b;;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    width: 90%;
+    margin: 20px 5%;
+}
+.giam input{
+    width: 90%;
+    margin-left: 1.75%;
+    padding: 2%;
+}
+.phuongthuctt{
+    display: flex;
+    justify-content: center;
 
+}
+.phuongthuctt button{
+    width: 20%;
+    
+    padding: 40px 10px;
+    margin-left: 10px;
+}
+.phuongthuctt button i{
+font-size: 22px;
+}
 .dongy:hover {
     background-image: linear-gradient(#ccc, #000);
 }
@@ -406,4 +449,7 @@ td img {
 }
 #showcart table #myCart tr td {
     color: white;
+}
+.thongtin a i{
+    margin-left: 10px;
 }
