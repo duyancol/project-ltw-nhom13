@@ -584,6 +584,21 @@ element.style {
     font-weight: 900;
     
 }
+bdi {
+    unicode-bidi: isolate;
+}
+.price-wrapper span.amount {
+    color: #d60000;
+}
+.price-wrapper{
+    margin: 0 10% ;
+    font-weight: bold;
+}
+.price-wrapper span bdi{ 
+    color: red;
+    font-size: 16px;
+    margin: 10px;
+}
 @media (max-width:1000px) {
     .img{
         margin-top: 20%;
@@ -594,8 +609,8 @@ element.style {
         left: 0px;
         width: 100%;
     }
-    .phai{
-        width: 100%;
+    .tong .phai{
+        width: 110%;
         margin-left: -5%;
         margin-top:20%;
     }
@@ -618,6 +633,15 @@ element.style {
     }
     span{
         margin-left: -50%;
+    }
+    .price-wrapper{
+        margin-left:  60% ;
+        font-weight: bold;
+    }
+    .price-wrapper span bdi{ 
+        color: red;
+        font-size: 16px;
+        margin: -20px;
     }
 }
 

@@ -2,8 +2,9 @@
    .boxtrai{
        height: 1500px !important;
        margin-left: -160px;
-       width:75% ;
+       width:80% ;
    }
+   
    button{
        padding: 0!important;
    }
@@ -43,6 +44,7 @@
    }
    .boxphai{
     width: 20%;
-    margin-left: -0%;    
+    margin-left: 4%;    
+
 }
 }

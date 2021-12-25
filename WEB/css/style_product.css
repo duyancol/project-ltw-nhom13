@@ -431,3 +431,9 @@ margin-bottom: 10px;
     transition: 0.5s;
     transition-delay:0.4s ;
 }
+
+@media screen and (max-width: 1032px) {
+    .item-wrap{
+        height: 120%;
+    }
+}
