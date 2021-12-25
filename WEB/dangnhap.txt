@@ -28,7 +28,7 @@
             </tbody>
         </table>
         <a  href="cart.html" style="text-decoration: none;margin-left: 180px;">Thanh toán >>></a>
-        <button onclick="xoatatca()" style="border-radius: 5px;float: right; margin: 20px;">Xóa all</button>
+        <button onclick="xoatatca()" style="border-radius: 5px;float: right; margin: 5px;">Xóa all</button>
     </div>
     <div class="search_cake undisplay">
        
