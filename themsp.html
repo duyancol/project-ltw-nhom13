@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/admin.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+<link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css">
+<link rel="stylesheet" href="css/sanpham.css">
+<link rel="stylesheet" href="cart/css/style.css">
+<link rel="stylesheet" href="css/themsp.css">
+</head>
+<body>
+  <div class="navigation">
+    <ul>
+      <li>
+        <a href="">
+          <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+          <span class="tittle">Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="icon"><i class="fa fa-user" aria-hidden="true"></i></span>
+          <span class="tittle">Profiles</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="icon"><i class="fas fa-comment-dots"></i></i></span>
+          <span class="tittle">Messages</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="icon"><i class="fab fa-product-hunt" style="font-size: 24px;"></i></span>
+          <span class="tittle">Product</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="icon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+          <span class="tittle">Calendar</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="icon"><i class="fa fa-question" aria-hidden="true"></i></span>
+          <span class="tittle">Help</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+          <span class="tittle">Setting</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+          <span class="tittle">Sign Out</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="toggle" onclick="tog()"><a href=""><i class="fas fa-bars" style="margin:22px;position: absolute;font-size:20px ;color: blanchedalmond;z-index: 1;"></i></a></div>
+  <div class="row mb " style="max-width: 1380px;margin: auto;margin-left: 160px;margin-top: 5px; background-image: linear-gradient( #cccc,#1d1c1c);height: 1500px;">
+    <div class="boxtrai mr" style=" background-image: linear-gradient( rgba(43, 41, 41, 0.8),#1d1c1c);height: 1500px;border-radius: 6px;width: 107.5%;margin-left: -7.5%; ">
+       
+        
+         
+        <div class="row mb" style="margin-top: 10%; width: 60%;margin-left: 20%;border-radius: 5px;">
+            <h1  style="color:white;font-size:24px ;margin: 20px;"> Thêm sản phẩm</h1>
+            <table  class="tabletsp">
+                <div class="div">
+                    <label for="">Mã sản phẩm:</label>
+                    <input type="text"><br>
+                </div>
+                <div  class="div">
+                    <label for="">Tên sản phẩm:</label>
+                    <input type="text"><br>
+                </div>
+                <div class="div"> <label for="">Tên danh mục:</label>
+                    <input type="text"><br></div>
+                <div class="div"><label for="">Giảm giá:</label>
+                    <input type="text"><br></div>
+                <div class="div"><label for="">Xuất sứ:</label>
+                    <input type="text"><br></div>
+                <div class="div"> <label for="">Giá sản phẩm:</label>
+                    <input type="text"><br></div>
+                <div class="div"> <label for="">Số lượng tồn:</label>
+                    <input type="text"><br></div>
+                <div class="div"><label for="">Ảnh:</label>
+                    <input type="submit" value="Thêm ảnh" style="width: 20%;margin-right: 310px;font-weight: bold;"><br></div>
+                <div class="div"><label for="">Mô tả:</label>
+                    <input type="text" style="height: 100px;"><br></div>
+                
+                  <div class="div">
+                    <input type="submit" value="Thêm sản phẩm" style="width: 160px;margin-right: 35%;font-weight: bold;"><br></div>
+                  </div>
+                
+               
+               
+                
+                
+               
+               
+                
+                
+
+            </table>
+        </div>
+        <!-- <div class="row mb">
+            <button class="dongy" onclick="dongydathang()">ĐỒNG Ý ĐẶT HÀNG</button>
+        </div> -->
+    </div>
+  <script type="text/javascript"> 
+  function tog(){
+    let na =document.querySelector('.navigation');
+    na.classList.toggle('active');
+  }
+
+  </script>
+</body>
+</html>
