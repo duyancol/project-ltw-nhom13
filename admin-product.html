@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/admin.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+<link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css">
+<link rel="stylesheet" href="css/sanpham.css">
+<link rel="stylesheet" href="cart/css/style.css">
+<link rel="stylesheet" href="css/admin.css">
+<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="navigation">
+    <ul>
+      <li>
+        <a href="index.html">
+          <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+          <span class="tittle">Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="icon"><i class="fa fa-user" aria-hidden="true"></i></span>
+          <span class="tittle">Profiles</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="icon"><i class="fas fa-comment-dots"></i></i></span>
+          <span class="tittle">Messages</span>
+        </a>
+      </li>
+      <li>
+        <a href="admin-profile.html">
+          <span class="icon"><i class='bx bxl-product-hunt' style="font-size: 28px;"></i></i></span>
+          <span class="tittle">Product</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="icon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+          <span class="tittle">Calendar</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="icon"><i class="fa fa-question" aria-hidden="true"></i></span>
+          <span class="tittle">Help</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+          <span class="tittle">Setting</span>
+        </a>
+      </li>
+      <li>
+        <a href="dangnhap.html">
+          <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+          <span class="tittle">Sign Out</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="toggle" onclick="tog()"><a href=""><i class="fas fa-bars" style="margin:22px;position: absolute;font-size:20px ;color: blanchedalmond;z-index: 1;"></i></a></div>
+  <div class="row mb " style="max-width: 1380px;margin: auto;margin-left: 160px;margin-top: 5px; background-image: linear-gradient( #cccc,#1d1c1c);">
+    <div class="boxtrai mr" >
+        <!-- <div class="row" >
+            <h1 style="font-size: 20px;color: #abad0a;margin:20px ;">THÔNG TIN NHẬN HÀNG</h1>
+            <table class="thongtinnhanhang">
+                <tbody id="thongtinnhanhang">
+                <tr>
+                    <td width="20%" style="color: #1d1c1c;font-weight: 900;">Họ tên</td>
+                    <td><input type="text" name="hoten" style="color: black;"></td>
+                </tr>
+                <tr>
+                    <td  style="color: #1d1c1c;font-weight: 900;">Địa chỉ</td>
+                    <td><input type="text" name="diachi"style="color: black;"></td>
+                </tr>
+                <tr>
+                    <td  style="color: #1d1c1c;font-weight: 900;">Điện thoại</td>
+                    <td><input type="text" name="dienthoai"style="color: black;"></td>
+                </tr>
+                <tr>
+                    <td  style="color: #1d1c1c;font-weight: 900;">Email</td>
+                    <td><input type="text" name="email"style="color: black;"></td>
+                </tr>
+            </tbody>
+            </table>
+        </div> -->
+        <div>
+          <button style="padding: 0.1% 4%;float: right;margin: 5% 50%; background-color: #d26e4b;border-radius: 5px;border: none;font-weight: bold;" class="atsp"><a href="themsp.html" style="text-decoration: none;color: #1c1c1c;" >Thêm sản phẩm</a></button>
+        </div>
+        <div class="row mb spr" style="margin-top: 10%;margin-left: -0%; ">
+            <h1  style="color: #1d1c1c;font-weight: 900;margin: 20px;"> Danh sách sản phẩm</h1>
+            <table class="table"  >
+                <tr >
+                    <th style="color: #1d1c1c;">STT</th>
+                    <th style="color: #1d1c1c;">Hình</th>
+                    <th style="color: #1d1c1c;">Tên sản phẩm</th>
+                    <th style="color: #1d1c1c;">Tên Danh mục sản phẩm</th>
+                    <th style="color: #1d1c1c;">Đơn giá</th>
+                    <th style="color: #1d1c1c;">Giảm giá</th>
+                    <th style="color: #1d1c1c;">Số lượng</th>
+                    <th style="color: #1d1c1c;">Ngày tạo</th>
+                    <th style="color: #1d1c1c;">Ngày cập nhật</th>
+                    <th style="color: #1d1c1c;">Copy</th>
+                    <th style="color: #1d1c1c;">Sửa</th>
+                    <th style="color: #1d1c1c;">Xóa</th>
+                </tr>
+                <tbody  style="width: 50%;">
+                  <tr >
+                    <td colspan="0">1</td>
+                    <td><img src="file:///C:/Users/HP/Desktop/project-ltw-nhom13-nhanh1/WEB/assets/product/y-pd1.jpg" style="" alt=""></td>
+                   
+                    <td>Rượu Champagne Armand De Brignac Gold – Champagne Át Bích</td>
+                    <td>Rượu vang đức</td>
+                    <td>550</td>
+                    <td>10%</td>
+                    <td>1</td>
+                    <td>
+                      <div>1/12/2021</div>
+                    </td>
+                    <td>
+                      12/12/2021
+                    </td>
+                    <td >
+                      <button  onclick="xoasp(this)" style="border-radius: 5px;">Copy</button>
+                  </td>
+                  <td >
+                    <button  onclick="xoasp(this)" style="border-radius: 5px;">Sửa</button>
+                </td>
+                <td >
+                  <button  onclick="xoasp(this)" style="border-radius: 5px;">Xóa</button>
+              </td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- <div class="row mb">
+            <button class="dongy" onclick="dongydathang()">ĐỒNG Ý ĐẶT HÀNG</button>
+        </div> -->
+    </div>
+  <script type="text/javascript"> 
+  function tog(){
+    let na =document.querySelector('.navigation');
+    na.classList.toggle('active');
+  }
+
+  </script>
+</body>
+</html>

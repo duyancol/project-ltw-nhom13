@@ -1,0 +1,50 @@
+@media screen and (max-width: 1032px) {
+   .boxtrai{
+       height: 1500px !important;
+       margin-left: -160px;
+       width:80% ;
+   }
+   
+   button{
+       padding: 0!important;
+   }
+   .bg-img{
+       height:100%;
+   }
+   .bottom-up{
+       height: 250px;
+   }
+   .item-img{
+       height: 30%;
+   }
+   .drink-item{
+    width: 30%;
+    height: 70%;
+   }
+   .boxcontent{
+    width: 275%;
+
+   }
+   .mb{
+       max-width: 100%;
+   }
+   .boxtitle{
+       width: 300%;
+   }
+   .boxcontent2{
+       width: 300%;
+   }
+   .boxfooter{
+       width: 300%;
+   }
+   .item-wrap{
+       max-width:100% ;
+   
+      
+   }
+   .boxphai{
+    width: 20%;
+    margin-left: 4%;    
+
+}
+}
