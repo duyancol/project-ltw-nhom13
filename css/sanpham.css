@@ -790,6 +790,9 @@ textarea {
        .tst{
            width: 155%;
        }
+       span{
+           margin-left: 0;
+       }
       
       
     

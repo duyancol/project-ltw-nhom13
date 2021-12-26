@@ -128,5 +128,8 @@ p{
         width: 130%;
         margin-left:30%;
      }
+     span{
+      margin-left: 0;
+  }
 
 }
