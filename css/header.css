@@ -138,9 +138,7 @@ div[class^="header--contact__"] i{
         height: 70px;
         border-bottom: 1px solid #d8d8d8;
     }
-    .padding-content{
-        padding: 0 10px 0 10px;
-    }
+   
     .margin-content{
         margin: 0 10px 0 10px;
     }

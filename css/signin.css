@@ -66,18 +66,19 @@ button:hover {
     clear: both;
     display: table;
 }
-@media (max-width:400px) {
+
+   @media (max-width:400px) {
     #showcart {
         width: 200%;
-        height:10% ;
+        height:15% ;
     }
     .header--logo_small{
-        width: 150%;
+        width: 185%;
     }
     container .container--banner_content_grid{
        
         width: 180%;
-        margin-left: -20%;
+        margin-left: -10%;
     }
     container .container--banner_feedback_ele{
         margin-left: 20%;
@@ -90,7 +91,7 @@ button:hover {
     }
     .drink-menu{
         width: 150%;
-        margin-left:5%;
+        margin-left:10%;
     } 
     .item-wrap {
         height: 100%;
@@ -99,7 +100,7 @@ button:hover {
         height: 100%;
     }
     footer{
-        width: 160%;
+        width: 190%;
     }
    
     footer .col-3 {
@@ -109,8 +110,9 @@ button:hover {
     }
     .header--contact{
         display: block;
-        width: 180%;
+        width: 170%;
         height: 120%;
+       
 
     }
        .header--contact > div {
@@ -133,9 +135,9 @@ button:hover {
        }
        /* trang dang nhap */
        .container{
-           margin-left: -10%;
-       }
-
+        margin-left: 50%;
+    }
      
    }
+   
    
