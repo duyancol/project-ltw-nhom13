@@ -95,7 +95,7 @@ textarea {
         height: 200%;
     }
     footer{
-        width: 175%;
+        width: 195%;
     }
    
     footer .col-3 {
@@ -134,7 +134,8 @@ textarea {
            margin-left: -10%;
        }
        .boxtrai{
-           width: 365%;
+           width: 350%;
+           margin-left: -140px;
        }
        .boxphai{
         width: 90%;
