@@ -365,6 +365,18 @@ td img {
     width: 20%;
     background-color: #CCC;
 }
+.frmdsloai table th:nth-child(5) {
+    width: 20%;
+    background-color: #CCC;
+}
+.frmdsloai table th:nth-child(6) {
+    width: 20%;
+    background-color: #CCC;
+}
+.frmdsloai table th:nth-child(7) {
+    width: 20%;
+    background-color: #CCC;
+}
 
 .frmdsloai table td {
     padding: 10px 20px;
