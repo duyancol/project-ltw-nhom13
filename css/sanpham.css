@@ -758,16 +758,17 @@ textarea {
     }
     .header--contact{
         display: block;
-        width: 170%;
+        width: 175%;
         height: 120%;
-       
 
     }
-       .header--contact > div {
-           display: inline-flex;
-           margin-top: -2px;
-           margin-left: 10%;
-       }
+    .header--contact {
+        height: 50%;
+       display: flex;
+       justify-content: space-between;
+        
+       
+    }
        .header .header--contact__ span{
            display: none;
        }
@@ -793,7 +794,21 @@ textarea {
        span{
            margin-left: 0;
        }
-      
+       .img{
+           height: 35%;
+           margin-top: 2%;
+       }
+       .price-wrapper {
+        margin-left: 20%;
+        font-weight: bold;
+    }
+    .price-wrapper span{
+        margin-left: 20px;
+       
+    }
+    .tong .buttonbuy{
+        margin-left: 40%;
+    }
       
     
      
