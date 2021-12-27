@@ -1,4 +1,4 @@
-.tabletsp{
+/* .tabletsp{
     background: #f0f0f0;
     width: 100%;
     margin: auto;
@@ -41,4 +41,57 @@
 }
 label{
     color: white;
+}
+@media (max-width:1000px) {
+    span{
+        margin-left: 0;
+    }
+    .table{
+        width: 120px;
+        position: absolute;
+    }
+    .boxtrai{
+        width: 120%;
+        position: relative;
+    }
+    th{
+        padding: 0;
+    }
+}
+@media (max-width:400px) {
+    .navigation{
+        left: -60px;
+
+    }
+    .navigation.active{
+        left: 0px;
+        width: 100%;
+    }
+    .boxtrai{
+        width: 300%;
+    }
+  
+}    */
+@media (max-width:1000px) {
+    .boxtrai{
+        width: 150%;
+    }
+    .toggle{
+        margin-right: -30%;
+    }
+    span{
+        margin-left: 0;
+    }
+    .mb{
+        width: 110%;
+       
+    }
+}
+@media (max-width:400px) {
+    .boxtrai{
+        width: 360%;
+    }
+    .toggle{
+        margin-right: -95%;
+    }
 }

@@ -8,10 +8,11 @@
   <link rel="stylesheet" href="css/admin.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
 <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css">
-<link rel="stylesheet" href="css/sanpham.css">
+
 <link rel="stylesheet" href="cart/css/style.css">
-<link rel="stylesheet" href="css/admin.css">
-<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+<link rel="stylesheet" href="css/profile.css">
+<link rel="stylesheet" href="css/themsp.css">
 </head>
 <body>
   <div class="navigation">
@@ -19,11 +20,11 @@
       <li>
         <a href="index.html">
           <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
-          <span class="tittle">Home</span>
+          <span class="tittle" >Home</span>
         </a>
       </li>
       <li>
-        <a href="">
+        <a href="admin-profile.html">
           <span class="icon"><i class="fa fa-user" aria-hidden="true"></i></span>
           <span class="tittle">Profiles</span>
         </a>
@@ -35,8 +36,8 @@
         </a>
       </li>
       <li>
-        <a href="admin-profile.html">
-          <span class="icon"><i class='bx bxl-product-hunt' style="font-size: 28px;"></i></i></span>
+        <a href="admin-product.html">
+          <span class="icon"><i class="fab fa-product-hunt" style="font-size: 24px;"></i></span>
           <span class="tittle">Product</span>
         </a>
       </li>
@@ -66,78 +67,51 @@
       </li>
     </ul>
   </div>
-  <div class="toggle" onclick="tog()"><a href=""><i class="fas fa-bars" style="margin:22px;position: absolute;font-size:20px ;color: blanchedalmond;z-index: 1;"></i></a></div>
-  <div class="row mb " style="max-width: 1380px;margin: auto;margin-left: 160px;margin-top: 5px; background-image: linear-gradient( #cccc,#1d1c1c);">
-    <div class="boxtrai mr" >
-        <!-- <div class="row" >
-            <h1 style="font-size: 20px;color: #abad0a;margin:20px ;">THÔNG TIN NHẬN HÀNG</h1>
-            <table class="thongtinnhanhang">
-                <tbody id="thongtinnhanhang">
-                <tr>
-                    <td width="20%" style="color: #1d1c1c;font-weight: 900;">Họ tên</td>
-                    <td><input type="text" name="hoten" style="color: black;"></td>
-                </tr>
-                <tr>
-                    <td  style="color: #1d1c1c;font-weight: 900;">Địa chỉ</td>
-                    <td><input type="text" name="diachi"style="color: black;"></td>
-                </tr>
-                <tr>
-                    <td  style="color: #1d1c1c;font-weight: 900;">Điện thoại</td>
-                    <td><input type="text" name="dienthoai"style="color: black;"></td>
-                </tr>
-                <tr>
-                    <td  style="color: #1d1c1c;font-weight: 900;">Email</td>
-                    <td><input type="text" name="email"style="color: black;"></td>
-                </tr>
-            </tbody>
-            </table>
-        </div> -->
-        <div>
-          <button style="padding: 0.1% 4%;float: right;margin: 5% 50%; background-color: #d26e4b;border-radius: 5px;border: none;font-weight: bold;" class="atsp"><a href="themsp.html" style="text-decoration: none;color: #1c1c1c;" >Thêm sản phẩm</a></button>
-        </div>
-        <div class="row mb spr" style="margin-top: 10%;margin-left: -0%; ">
-            <h1  style="color: #1d1c1c;font-weight: 900;margin: 20px;"> Danh sách sản phẩm</h1>
-            <table class="table"  >
+  <div class="toggle" onclick="tog()"><a href=""><i class="fas fa-bars" style="margin:22px;font-size:20px ;color: blanchedalmond;z-index: 1;"></i></a></div>
+  <div class="row mb " style="margin-left: 160px;margin-top: 5px; background-image: linear-gradient( #cccc,#1d1c1c);">
+    <div class="boxtrai mr" style=" height: 1100px;border-radius: 6px;">
+ 
+        <div class="row mb class" >
+          
+            <h1  style="color: #1d1c1c;font-weight: 900;margin: 20px;font-size: 20px;"> GIỎ HÀNG</h1>
+            <button style="padding: 15px 60px;display: flex;justify-content: center;margin-left: 50%;"><a style="text-decoration: none;color: #1d1c1c;" href="themsp.html">
+              Thêm sản phẩm</a></button>
+            <table >
                 <tr >
                     <th style="color: #1d1c1c;">STT</th>
                     <th style="color: #1d1c1c;">Hình</th>
                     <th style="color: #1d1c1c;">Tên sản phẩm</th>
-                    <th style="color: #1d1c1c;">Tên Danh mục sản phẩm</th>
+                    <th style="color: #1d1c1c;">Tên danh mục sản phẩm</th>
                     <th style="color: #1d1c1c;">Đơn giá</th>
-                    <th style="color: #1d1c1c;">Giảm giá</th>
+                    <th style="color: #1d1c1c;">giảm giá</th>
                     <th style="color: #1d1c1c;">Số lượng</th>
                     <th style="color: #1d1c1c;">Ngày tạo</th>
-                    <th style="color: #1d1c1c;">Ngày cập nhật</th>
-                    <th style="color: #1d1c1c;">Copy</th>
-                    <th style="color: #1d1c1c;">Sửa</th>
                     <th style="color: #1d1c1c;">Xóa</th>
+                    <th style="color: #1d1c1c;">Sửa</th>
+                    
                 </tr>
-                <tbody  style="width: 50%;">
-                  <tr >
-                    <td colspan="0">1</td>
-                    <td><img src="file:///C:/Users/HP/Desktop/project-ltw-nhom13-nhanh1/WEB/assets/product/y-pd1.jpg" style="" alt=""></td>
-                   
-                    <td>Rượu Champagne Armand De Brignac Gold – Champagne Át Bích</td>
-                    <td>Rượu vang đức</td>
-                    <td>550</td>
-                    <td>10%</td>
+                <tbody id="">
+                  <tr>
                     <td>1</td>
-                    <td>
-                      <div>1/12/2021</div>
-                    </td>
-                    <td>
-                      12/12/2021
-                    </td>
-                    <td >
-                      <button  onclick="xoasp(this)" style="border-radius: 5px;">Copy</button>
-                  </td>
-                  <td >
-                    <button  onclick="xoasp(this)" style="border-radius: 5px;">Sửa</button>
-                </td>
-                <td >
-                  <button  onclick="xoasp(this)" style="border-radius: 5px;">Xóa</button>
+                     <td><img src="assets/product/a-pd1.jpg" alt=""></td>
+                     <td>Rượu Ác bính</td>
+                     <td>Rượu van y</td>
+                     <td>200$</td>
+                    <td>10%</td>
+                    <td>25</td>
+                    <td>27/12/2021</td>
+                     <td>
+                     <button  onclick="xoasp(this)" style="border-radius: 5px;">Xóa</button>
+                 </td>
+                 <td>
+                  <button  onclick="xoasp(this)" style="border-radius: 5px;">Sửa</button>
               </td>
-                  </tr>
+                 </tr>
+                 
+                 
+                
+         
+             '</tr>';
                 </tbody>
             </table>
         </div>
@@ -145,11 +119,13 @@
             <button class="dongy" onclick="dongydathang()">ĐỒNG Ý ĐẶT HÀNG</button>
         </div> -->
     </div>
-  <script type="text/javascript"> 
-  function tog(){
-    let na =document.querySelector('.navigation');
-    na.classList.toggle('active');
-  }
+    
+    
+        </div>
+    </div>
+</div>
+    
+  
 
   </script>
 </body>
