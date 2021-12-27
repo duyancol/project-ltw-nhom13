@@ -66,6 +66,32 @@ button:hover {
     clear: both;
     display: table;
 }
+@media (max-width:1030px) {
+    .container{
+        margin-left: -7%;
+    }
+    
+    
+    .header--contact{
+        display: block;
+        width: 80%;
+        height: 120%;
+    
+    }
+    .header--contact {
+        height: 50%;
+       display: flex;
+       justify-content: space-between;
+        
+       
+    }
+    .header--contact__careers{
+        display: none;
+    }
+    .header--logo_small{
+        margin-left: 10px;
+    }
+}
 
    @media (max-width:400px) {
     #showcart {
@@ -144,5 +170,5 @@ button:hover {
     }
      
    }
-   
+ 
    

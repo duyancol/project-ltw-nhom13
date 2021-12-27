@@ -47,5 +47,21 @@
     margin-left: 4%;    
 
 }
+.header--contact{
+    display: block;
+    width: 80%;
+    height: 120%;
+
+}
+.header--contact {
+    height: 50%;
+   display: flex;
+   justify-content: space-between;
+    
+   
+}
+.header--contact__careers{
+    display: none;
+}
 
 }
