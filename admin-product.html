@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/admin.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+<link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css">
+
+<link rel="stylesheet" href="cart/css/style.css">
+
+<link rel="stylesheet" href="css/profile.css">
+<link rel="stylesheet" href="css/themsp.css">
+</head>
+<body>
+  <div class="navigation">
+    <ul>
+      <li>
+        <a href="index.html">
+          <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+          <span class="tittle" >Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="admin-profile.html">
+          <span class="icon"><i class="fa fa-user" aria-hidden="true"></i></span>
+          <span class="tittle">Profiles</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="icon"><i class="fas fa-comment-dots"></i></i></span>
+          <span class="tittle">Messages</span>
+        </a>
+      </li>
+      <li>
+        <a href="admin-product.html">
+          <span class="icon"><i class="fab fa-product-hunt" style="font-size: 24px;"></i></span>
+          <span class="tittle">Product</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="icon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+          <span class="tittle">Calendar</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="icon"><i class="fa fa-question" aria-hidden="true"></i></span>
+          <span class="tittle">Help</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+          <span class="tittle">Setting</span>
+        </a>
+      </li>
+      <li>
+        <a href="dangnhap.html">
+          <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+          <span class="tittle">Sign Out</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="toggle" onclick="tog()"><a href=""><i class="fas fa-bars" style="margin:22px;font-size:20px ;color: blanchedalmond;z-index: 1;"></i></a></div>
+  <div class="row mb " style="margin-left: 160px;margin-top: 5px; background-image: linear-gradient( #cccc,#1d1c1c);">
+    <div class="boxtrai mr" style=" height: 1100px;border-radius: 6px;">
+ 
+        <div class="row mb class" >
+          
+            <h1  style="color: #1d1c1c;font-weight: 900;margin: 20px;font-size: 20px;"> GIỎ HÀNG</h1>
+            <button style="padding: 15px 60px;display: flex;justify-content: center;margin-left: 50%;"><a style="text-decoration: none;color: #1d1c1c;" href="themsp.html">
+              Thêm sản phẩm</a></button>
+            <table >
+                <tr >
+                    <th style="color: #1d1c1c;">STT</th>
+                    <th style="color: #1d1c1c;">Hình</th>
+                    <th style="color: #1d1c1c;">Tên sản phẩm</th>
+                    <th style="color: #1d1c1c;">Tên danh mục sản phẩm</th>
+                    <th style="color: #1d1c1c;">Đơn giá</th>
+                    <th style="color: #1d1c1c;">giảm giá</th>
+                    <th style="color: #1d1c1c;">Số lượng</th>
+                    <th style="color: #1d1c1c;">Ngày tạo</th>
+                    <th style="color: #1d1c1c;">Xóa</th>
+                    <th style="color: #1d1c1c;">Sửa</th>
+                    
+                </tr>
+                <tbody id="">
+                  <tr>
+                    <td>1</td>
+                     <td><img src="assets/product/a-pd1.jpg" alt=""></td>
+                     <td>Rượu Ác bính</td>
+                     <td>Rượu van y</td>
+                     <td>200$</td>
+                    <td>10%</td>
+                    <td>25</td>
+                    <td>27/12/2021</td>
+                     <td>
+                     <button  onclick="xoasp(this)" style="border-radius: 5px;">Xóa</button>
+                 </td>
+                 <td>
+                  <button  onclick="xoasp(this)" style="border-radius: 5px;">Sửa</button>
+              </td>
+                 </tr>
+                 
+                 
+                
+         
+             '</tr>';
+                </tbody>
+            </table>
+        </div>
+        <!-- <div class="row mb">
+            <button class="dongy" onclick="dongydathang()">ĐỒNG Ý ĐẶT HÀNG</button>
+        </div> -->
+    </div>
+    
+    
+        </div>
+    </div>
+</div>
+    
+  
+
+  </script>
+</body>
+</html>
