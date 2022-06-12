@@ -143,7 +143,7 @@ section.detail-product .container .description {
 }
 section.detail-product .container .description input,
 section.box-des > div {
-    display: none;
+    /*display: none;*/
 }
 section.detail-product .container .description #box1:checked ~ section.box-des .box1,
 section.detail-product .container .description #box2:checked ~ section.box-des .box2,

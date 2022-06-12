@@ -141,7 +141,7 @@ section.detail-product .container .detail .image{
 section.detail-product .container .description {
     padding: 50px 0;
 }
-section.detail-product .container .description input,
+section.detail-product .container .description .input,
 section.box-des > div {
     display: none;
 }

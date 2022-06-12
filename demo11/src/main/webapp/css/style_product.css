@@ -124,11 +124,10 @@
     background-color: var(--white);
     border-radius: 2rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 90%;
 }
 
-.drink-menu h1 {
-    color: var(--grey);
-}
+
 
 .drink-menu p {
     margin: 0.5rem 0;
@@ -163,6 +162,7 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     margin-top: 3rem;
+
 
 }
 
@@ -214,9 +214,7 @@
     padding: 0 1rem;
 }
 
-.item-info h3 {
-    color: var(--grey);
-}
+
 
 .item-info>div:first-child {
     text-align: left;

@@ -36,7 +36,9 @@
     <link rel="stylesheet" href="cart/css/style.css">
     <link rel="stylesheet" href="css/repoint.css">
     <link rel="stylesheet" href="css/cssfile.css">
+    <link rel="stylesheet" href="css/profile.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <%--<body>--%>
@@ -62,6 +64,52 @@
 <%--    </div>--%>
 
 <%--</div>--%>
+<a class="dialog-btn" href="#my-dialog" >Click me!</a>
+<input alt="#my-dialog" class="dialog-btn" value="input" type="button">
+
+<div class="dialog overlay" id="my-dialog">
+    <a href="#" class="overlay-close"></a>
+
+    <div class="dialog-body">
+
+
+
+        <div class="id" >
+
+            <div class="img-container">
+                <img src="${auth.avata}" style="margin-right: 190px;" alt="">
+                <div class="title" style="font-size: 17px;
+    font-weight: 700;
+    color: #292525;">
+                    <h2>${auth.username}</h2>
+                </div>
+            </div>
+            <div class="maincontainer">
+                <p><i class="infor far fa-file-signature">${auth.name}-------${auth.age}</i></p>
+
+                <p><i class="fal fa-envelope infor">${auth.email}</i></p>
+                <p><i class="infor fal fa-phone-alt">${auth.phone}</i></p>
+                <hr>
+                <p><b><i class="infor">SKill</i></b></p>
+                <p>Fonend</p>
+                <div class="skill">
+                    <div class="bar" style="width: 70%;">70%</div>
+                </div>
+                <button class="btn">More</button>
+                <div class="folow">fOLOW ME</div>
+                <div class="soc">
+                    <id class="fa"><i class="fab fa-youtube"></i></id>
+                    <id class="fa"><i class="fab fa-instagram"></i></id>
+                    <id class="fa"><i class="fab fa-twitter"></i></id>
+                    <id class="fa"><i class="fab fa-facebook-f"></i></id>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
 <div id="showcart" class="list_cart" style="margin-top: 400px;margin-right: 200px;z-index: 99;background: #f0f0f0">
     <table id="cart1" class=" table table-hover"  style="" >
         <thead class="thead-dark">
@@ -150,8 +198,8 @@
             <a class="header--contact__locations"
                href="">
                 <!-- <i class="fas fa-globe-americas" style="font-size: 16px;"></i> -->
-
-                <a href="" style="margin-right: 6px"><i class='bx bxs-user' style="font-size: 20px;"></i></a>
+<%--                class="dialog-btn" href="#my-dialog"--%>
+                <a href="#my-dialog" style="margin-right: 6px"><i class='bx bxs-user' style="font-size: 20px;"></i></a>
                 <a href="#" class="header--contact__span" style="position: relative; top:5px;"><c:set var="auth" value="${sessionScope.auth}"/>
                     <c:if test="${auth == null}">
                         <div class="login">
@@ -324,37 +372,95 @@
 
         <div class="wrapper header--navbar_item">
             <div class="header1">
-                <nav class="container1">
-                    <a href="" id="logo">
-                        <img src="" alt="">
-                    </a>
-                    <ul id="main-menu">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="about.html">Shop</a></li>
+                <nav>
+                    <div class="navbar">
+                        <i class='bx bx-menu'></i>
 
-                        <li><a href="">Product</a>
-                            <ul class="sub-menu">
-<%--                                <li><a href="ds_spY.html">Rượu vang Ý</a></li>--%>
-<%--                                <li><a href="ds_spD.html">Rượu vang Đức</a>--%>
-
-<%--                                </li>--%>
-<%--                                <li><a href="ds_spP.html">Rượu vang Pháp</a></li>--%>
-<%--                                <li><a href="ds_spN.html">Rượu Nhật</a></li>--%>
-                                <c:forEach items="${pdlistcc}" var="p">
-<%--                                    <a href="ADMIN-P?idcategogy=${p.idcategogy}">--%>
-<%--                                        <button data-food-type="salad">--%>
-<%--                                            <!-- <span data-food-type="salad" class="text_product"> Từ 120$-300$</span> -->--%>
-<%--                                                ${p.namecategogy}--%>
-<%--                                        </button>--%>
-<%--                                    </a>--%>
-                                    <li><a href="CategogyPServlet?idcategogy=${p.idcategogy}">${p.namecategogy}</a></li>
-                                </c:forEach>
+                        <div class="nav-links">
+                            <ul class="links">
+                                <li><a href="#">HOME</a></li>
+                                <li>
+                                    <a href="#">HTML & CSS</a>
+                                    <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+                                    <ul class="htmlCss-sub-menu sub-menu">
+                                        <li><a href="#">Web Design</a></li>
+                                        <li><a href="#">Login Forms</a></li>
+                                        <li><a href="#">Card Design</a></li>
+                                        <li class="more">
+                <span><a href="#">More</a>
+                <i class='bx bxs-chevron-right arrow more-arrow'></i>
+              </span>
+                                            <ul class="more-sub-menu sub-menu">
+                                                <li><a href="#">Neumorphism</a></li>
+                                                <li><a href="#">Pre-loader</a></li>
+                                                <li><a href="#">Glassmorphism</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">JAVASCRIPT</a>
+                                    <i class='bx bxs-chevron-down js-arrow arrow '></i>
+                                    <ul class="js-sub-menu sub-menu">
+                                        <li><a href="#">Dynamic Clock</a></li>
+                                        <li><a href="#">Form Validation</a></li>
+                                        <li><a href="#">Card Slider</a></li>
+                                        <li><a href="#">Complete Website</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">ABOUT US</a></li>
+                                <li><a href="#">CONTACT US</a></li>
                             </ul>
-                        </li>
-                        <li><a href="cart.html">Cart</a></li>
-                    </ul>
+                        </div>
+                        <div class="search-box">
+                            <i class='bx bx-search' style="color: #1c1c1c"></i>
+                            <div class="input-box" style="z-index: 99" >
+                                <form action="SearchControl?index=1#drink-menu-section" method="post">
+                                    <input oninput="searchByName(this)" value="${txtSearch}" name="txtSearch"
+                                           type="text"   placeholder="Search...">
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
                 </nav>
+                <script src="script.js"></script>
+<%--                <nav class="container1">--%>
+<%--                    <a href="" id="logo">--%>
+<%--                        <img src="" alt="">--%>
+<%--                    </a>--%>
+<%--                    <ul id="main-menu">--%>
+<%--                        <li><a href="index.html">Trang chủ</a></li>--%>
+<%--                        <li><a href="about.html">Tin tức</a></li>--%>
+<%--                        <li><a href="about.html">Shop</a></li>--%>
+<%--                        <li><a href="about.html">Rượu Tây</a></li>--%>
+<%--                        <li><a href="about.html">Rượu Vang</a></li>--%>
+
+<%--                        <li><a href="">Rượu ngoại</a>--%>
+<%--                            <ul class="sub-menu">--%>
+<%--&lt;%&ndash;                                <li><a href="ds_spY.html">Rượu vang Ý</a></li>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                <li><a href="ds_spD.html">Rượu vang Đức</a>&ndash;%&gt;--%>
+
+<%--&lt;%&ndash;                                </li>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                <li><a href="ds_spP.html">Rượu vang Pháp</a></li>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                <li><a href="ds_spN.html">Rượu Nhật</a></li>&ndash;%&gt;--%>
+<%--                                <c:forEach items="${pdlistcc}" var="p">--%>
+<%--&lt;%&ndash;                                    <a href="ADMIN-P?idcategogy=${p.idcategogy}">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                        <button data-food-type="salad">&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                            <!-- <span data-food-type="salad" class="text_product"> Từ 120$-300$</span> -->&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                                ${p.namecategogy}&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                        </button>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                    </a>&ndash;%&gt;--%>
+<%--                                    <li><a href="CategogyPServlet?idcategogy=${p.idcategogy}">${p.namecategogy}</a></li>--%>
+<%--                                </c:forEach>--%>
+
+<%--                            </ul>--%>
+<%--                        <li><a href="about.html">Phụ kiện</a></li>--%>
+<%--                        <li><a href="about.html">Gi thiệu</a></li>--%>
+<%--                        </li>--%>
+<%--                        <li><a href="cart.html">Cart</a></li>--%>
+<%--                    </ul>--%>
+<%--                </nav>--%>
 
             </div>
         </div>
@@ -531,7 +637,7 @@
 
                 <%--                        <a href="cart-add1?id=${p.id}"><button>Xem</button></a>--%>
             <button onclick="themvaogiohang(this)"
-            ><a href="PDDetailsServlet?id=${o.id}" style="text-decoration: none"><i class="fas fa-eye"></i></a></button>
+            ><a href="PDDetailsServlet?id=${o.id}"  style="text-decoration: none"><i class="fas fa-eye"></i></a></button>
             <a href="cart-add1?id=${o.id}" style="text-decoration: none"><button><i class="fas fa-cart-plus"></i></button></a>
 
         </div>
@@ -539,27 +645,19 @@
 
     </div>
 </c:forEach>
-    <c:forEach items="${pdlist}" var="p">
-                        <div class="drink-item salad-type"  >
+    <c:forEach items="${load8sp}" var="p">
+                        <div class="drink-item salad-type product"  >
                             <c:if test="${p.saleprice!=0.0}">
                                 <div>
                                     <span style="position: absolute;background-color: red;width: 100px;height: 50px;z-index: 99;border-radius: 5px;margin-top:15%;font-weight: bold ;color: white;;">Giảm ${p.saleprice}  !</span>
                                 </div>
                             </c:if>
 
-                                <%--                    <div>--%>
-                                <%--                        <span style="position: absolute;background-color: red;width: 100px;height: 50px;z-index: 99;border-radius: 5px;margin-top:15%;font-weight: bold ;color: white;;">Giảm 20% !</span>--%>
-                                <%--                    </div>--%>
-
                             <div class="item-wrap bottom-up play-on-scroll">
                                 <div class="item-img " style="height: 65%;" >
-                                    <!-- <div class="img-holder bg-img"> -->
+
                                     <img src="${p.img}" alt="" class="img-holder bg-img">
-                                    <!-- </div> -->
-                                    <!-- <div class="item-img " style="height: 300px;">
-                                        <div class="img-holder bg-img"
-                                            style="background-image: url('assets/home/ads/home11_1.jpg');"></div>
-                                    </div> -->
+
 
 
                                 </div>
@@ -585,14 +683,10 @@
                                     </div>
                                 </div>
 
-<%--                                <input type="number" name="soluong" min="1" max="10" value="1" style="border-radius: 5px;width: 40px;">--%>
-
-
-
-                                    <%--                        <a href="cart-add1?id=${p.id}"><button>Xem</button></a>--%>
                                 <button onclick="themvaogiohang(this)"
-                                ><a href="PDDetailsServlet?id=${p.id}" style="text-decoration: none"><i class="fas fa-eye"></i></a></button>
+                                ><a onclick="" href="PDDetailsServlet?id=${p.id}" style="text-decoration: none"><i class="fas fa-eye"></i></a></button>
                                 <a  href="cart-add1?id=${p.id}#drink-menu-section" style="text-decoration: none"><button><i class="fas fa-cart-plus" ></i></button></a>
+                                <button onclick="getBinhLuan('${p.id}')">lay if</button>
 
                             </div>
 
@@ -613,7 +707,9 @@
                         </c:forEach>
 
                     </div>
+
                 </div>
+                <button style="margin-top: 10%;border-radius: 10px;padding: 20px;background: #272d40;color: #f0f0f0" onclick="Loadmore()">Load</button>
             </div>
 
         </div>
@@ -919,6 +1015,8 @@
         </footer>
     </section>
 </container>
+
+
 <script src="js/home.js"></script>
 <script src="js/header.js"></script>
 <script src="js/index.js"></script>
@@ -929,10 +1027,10 @@
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-    function loadMore() {
+    function Loadmore() {
         var amount = document.getElementsByClassName("product").length;
         $.ajax({
-            url: "/demo11/load",
+            url: "/demo11/Load4nextSP",
             type: "get", //send it through get method
             data: {
                 exits: amount
@@ -941,6 +1039,28 @@
                 var row = document.getElementById("content");
                 row.innerHTML += data;
             },
+            error: function (xhr) {
+                //Do Something to handle error
+            }
+        });
+    }
+    function getBinhLuan(id) {
+
+        var amount = document.getElementsByClassName("product").length;
+
+
+           alert(id)
+
+        $.ajax({
+            url: "/demo11/Comment",
+            type: "get", //send it through get method
+            data: {
+                exits: id
+            },
+            // success: function (data) {
+            //     var row = document.getElementById("content");
+            //     row.innerHTML += data;
+            // },
             error: function (xhr) {
                 //Do Something to handle error
             }
@@ -963,6 +1083,46 @@
             }
         });
     }
+    // search-box open close js code
+    let navbar = document.querySelector(".navbar");
+    let searchBox = document.querySelector(".search-box .bx-search");
+    // let searchBoxCancel = document.querySelector(".search-box .bx-x");
+
+    searchBox.addEventListener("click", ()=>{
+        navbar.classList.toggle("showInput");
+        if(navbar.classList.contains("showInput")){
+            searchBox.classList.replace("bx-search" ,"bx-x");
+        }else {
+            searchBox.classList.replace("bx-x" ,"bx-search");
+        }
+    });
+
+    // sidebar open close js code
+    let navLinks = document.querySelector(".nav-links");
+    let menuOpenBtn = document.querySelector(".navbar .bx-menu");
+    let menuCloseBtn = document.querySelector(".nav-links .bx-x");
+    menuOpenBtn.onclick = function() {
+        navLinks.style.left = "0";
+    }
+    menuCloseBtn.onclick = function() {
+        navLinks.style.left = "-100%";
+    }
+
+
+    // sidebar submenu open close js code
+    let htmlcssArrow = document.querySelector(".htmlcss-arrow");
+    htmlcssArrow.onclick = function() {
+        navLinks.classList.toggle("show1");
+    }
+    let moreArrow = document.querySelector(".more-arrow");
+    moreArrow.onclick = function() {
+        navLinks.classList.toggle("show2");
+    }
+    let jsArrow = document.querySelector(".js-arrow");
+    jsArrow.onclick = function() {
+        navLinks.classList.toggle("show3");
+    }
+
 </script>
 </body>
 </html>

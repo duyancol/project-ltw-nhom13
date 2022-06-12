@@ -14,6 +14,7 @@
 .slider{
 	position: relative;
 	width: 100%;
+	margin-left: 0.5%;
 	background: #2c3e50; /* darckblue */
 }
 .myslide{

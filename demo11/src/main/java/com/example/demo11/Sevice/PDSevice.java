@@ -28,6 +28,14 @@ public class PDSevice {
 
         return ProductDao.getInstance().getAll();
     }
+    public List<Product> get8product(){
+
+        return ProductDao.getInstance().get8Product();
+    }
+    public List<Product> get8nextproduct(int amont){
+
+        return ProductDao.getInstance().get8nextProduct(amont);
+    }
     public List<Product> count(String text){
 
         return ProductDao.getInstance().count(text);
@@ -42,6 +50,9 @@ public class PDSevice {
     }
     public Product getByID(String id){
        return ProductDao.getInstance().getByID(id);
+    }
+    public Product getByIDP(String id){
+        return ProductDao.getInstance().getByIDP(id);
     }
     public List<Product> serchByName(String name){
         return ProductDao.getInstance().serchbynam(name);

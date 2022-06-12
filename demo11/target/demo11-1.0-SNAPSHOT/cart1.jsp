@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="css/repointcart.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap4.min.css" >
+    <link href="product_app/css/style.css" rel="stylesheet">
 </head>
 <body>
 <jsp:include page="header.jsp"></jsp:include>
@@ -122,104 +123,88 @@
         </div> -->
     </div>
 
-    <div class="boxphai" >
-        <div class="row mb " >
+    </div>
+</div>
 
-        </div>
-        <div class="row mb thongtin" >
-            <div class="boxtitle" >THÔNG TIN</div>
-            <div class="boxcontent2 menudoc ">
-                <ul>
-                    <li>
-                        <a href="ds_spY.html"> <i class="fas fa-caret-right"></i>  Hướng dẫn mua hàng</a>
-                    </li>
-                    <li>
-                        <a href="lienhe.html"><i class="fas fa-caret-right"></i>   Liên hệ</a>
-                    </li>
-                    <li>
-                        <a href="lienhe-map.html"><i class="fas fa-caret-right"></i>  Gửi câu hỏi tư vấn</a>
-                    </li>
-                    <li>
-                        <a href="lienhe-map.html"><i class="fas fa-caret-right"></i>  Câu hỏi thường gặp</a>
-                    </li>
+<section class="page-section">
+    <div class="container">
+        <div class="row">
 
 
-                </ul>
-            </div>
+            <!--END  <div class="col-lg-3 blog-form">-->
 
-        </div>
-        <div class="row mb danhmuc">
-            <div class="boxtitle" >DANH MỤC</div>
-            <div class="boxcontent2 menudoc">
-                <ul>
-                    <li>
-                        <a href="ds_spY.html">Rượu Vang Ý</a>
-                    </li>
-                    <li>
-                        <a href="ds_spN.html">Rượu Vang Nhật</a>
-                    </li>
-                    <li>
-                        <a href="ds_spP.html">Rượu Vang Pháp</a>
-                    </li>
-                    <li>
-                        <a href="ds_spD.html">Rượu Vang Đức</a>
-                    </li>
-                    <li>
-                        <a href="#">Phụ Kiện</a>
-                    </li>
+            <div class="col-lg-9" style="padding-left: 30px;">
+                <div class="row">
 
-                </ul>
-            </div>
-<%--            <div class="boxfooter searbox">--%>
-<%--                <form action="#" method="post">--%>
-<%--                    <input type="text" name="" id="">--%>
-<%--                </form>--%>
-<%--            </div>--%>
-        </div>
-        <div class="top10sp">
-            <div class="boxtitle1">TOP 10 YÊU THÍCH</div>
-            <div class="row boxcontent1">
-                <div class=" mb10 top10">
-                    <img src="assets/product/cd-pd5.jpg" alt="">
-                    <a href="#">Sir Rodney's Marmalade</a>
+                        <div class="col-sm-3 col-md-6 col-lg-4">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <img src="assets/product/a-pd1.jpg" class="product-image">
+                                    <h5 class="card-title"><b>Accessory</b></h5>
+                                    <p class="card-text small">ghhg</p>
+                                    <p class="tags">fgdfgdgf</p>
+                                    <a href="https://api.whatsapp.com/send?phone=2348162667912" target="_blank" class="btn btn-success button-text"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="col-sm-3 col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <img src="assets/product/a-pd1.jpg" class="product-image">
+                                <h5 class="card-title"><b>Accessory</b></h5>
+                                <p class="card-text small">ghhg</p>
+                                <p class="tags">fgdfgdgf</p>
+                                <a href="https://api.whatsapp.com/send?phone=2348162667912" target="_blank" class="btn btn-success button-text"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <img src="assets/product/a-pd1.jpg" class="product-image">
+                                <h5 class="card-title"><b>Accessory</b></h5>
+                                <p class="card-text small">ghhg</p>
+                                <p class="tags">fgdfgdgf</p>
+                                <a href="https://api.whatsapp.com/send?phone=2348162667912" target="_blank" class="btn btn-success button-text"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <img src="assets/product/a-pd1.jpg" class="product-image">
+                                <h5 class="card-title"><b>Accessory</b></h5>
+                                <p class="card-text small">ghhg</p>
+                                <p class="tags">fgdfgdgf</p>
+                                <a href="https://api.whatsapp.com/send?phone=2348162667912" target="_blank" class="btn btn-success button-text"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <img src="assets/product/a-pd1.jpg" class="product-image">
+                                <h5 class="card-title"><b>Accessory</b></h5>
+                                <p class="card-text small">ghhg</p>
+                                <p class="tags">fgdfgdgf</p>
+                                <a href="https://api.whatsapp.com/send?phone=2348162667912" target="_blank" class="btn btn-success button-text"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
-                <div class=" mb10 top10">
-                    <img src="assets/product/cd-pd8.jpg" alt="">
-                    <a href="#">Cate de Blaye</a>
-                </div>
-                <div class=" mb10 top10">
-                    <img src="assets/product/d-pd2.jpg" alt="">
-                    <a href="#">Tharinger Rostbratwurst</a>
-                </div>
-                <div class=" mb10 top10">
-                    <img src="assets/product/a-pd5.jpg" alt="">
-                    <a href="#">Mishi Kobe Niku</a>
-                </div>
-                <div class=" mb10 top10">
-                    <img src="assets/product/cd-pd4.jpg" alt="">
-                    <a href="#">Sir Rodney's Marmalade</a>
-                </div>
-                <div class=" mb10 top10">
-                    <img src="assets/product/a-pd6.jpg" alt="">
-                    <a href="#">Cate de Blaye</a>
-                </div>
-                <div class=" mb10 top10">
-                    <img src="assets/product/cd-pd4.jpg" alt="">
-                    <a href="#">Tharinger Rostbratwurst</a>
-                </div>
-                <div class=" mb10 top10">
-                    <img src="assets/product/y-pd1.jpg" alt="">
-                    <a href="#">Mishi Kobe Niku niku</a>
-                </div>
+                <!-- Sorting by <div class="row"> -->
+
+
 
             </div>
+            <!--END  <div class="col-lg-9">-->
+
         </div>
     </div>
+</section>
 
-</div>
-
-
-</div>
 <div style="margin-top: 1200px">
     <jsp:include page="fooder.jsp"></jsp:include>
 </div>

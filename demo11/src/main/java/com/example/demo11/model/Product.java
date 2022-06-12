@@ -179,6 +179,7 @@ public class Product {
         return price-(price*saleprice)/100;
     }
 
+
     public String getImg1() {
         return img1;
     }

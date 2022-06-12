@@ -26,4 +26,9 @@ public class dmdao {
 //            return handle.createQuery("select * from product1 where id=?").bind(0,id).mapToBean(Product.class).first();
 //        });
 //    }
+public static void main(String[] args) {
+    dmdao dm = new dmdao();
+    int c =dm.getAll().size();
+    System.out.println(c);
+}
 }

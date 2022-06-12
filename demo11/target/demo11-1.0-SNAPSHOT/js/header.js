@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
     button_close.addEventListener('click', function(){
         navbar.classList.toggle('nav-active');
     });
-    
+
     var search_icon_button = document.querySelector('#search_icon_button');
     search_icon_button.addEventListener('click', function(){
         search_cake.classList.toggle('undisplay');

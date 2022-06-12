@@ -222,6 +222,7 @@
             <div class="top-sales box">
                 <div class="title">Top Seling Product</div>
                 <c:forEach items="${pdlist}" var="p">
+                    <c:if test="${p.saleprice!=0}">
                     <ul class="top-sales-details">
                         <li>
                             <a href="#">
@@ -232,6 +233,7 @@
                         </li>
 
                     </ul>
+                    </c:if>
                 </c:forEach>
 
 

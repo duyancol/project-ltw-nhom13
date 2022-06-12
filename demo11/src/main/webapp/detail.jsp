@@ -10,33 +10,27 @@
 <html>
 <head>
     <title>Title</title>
-    <link rel="stylesheet" href="detail.css">
     <link rel="stylesheet" href="css/detail.css">
+
 </head>
 <body>
-<jsp:include page="header.jsp"></jsp:include>
+
 <section class="detail-product">
     <div class="container">
-        <div class="detail">
-            <div class="text">
-                <h3>${details.name}</h3>
-                <p>${details.price-(details.price*details.saleprice/100)}</p>
-                <button>add to cart</button>
-                <button>detail</button>
-            </div>
-            <div class="image">
-                <img src="${details.img}" alt="">
-            </div>
-        </div>
+
         <div class="description">
-            <input type="radio" checked name="box" id="box1">
-            <input type="radio" name="box" id="box2">
-            <input type="radio" name="box" id="box3">
+            <input class="input" type="radio" checked name="box" id="box1">
+            <input class="input" type="radio" name="box" id="box2">
+<%--            <input class="input" type="radio" name="box" id="box3" onclick="commentList()">--%>
+            <input class="input" type="radio" name="box" id="box3" onclick="commentList()">
             <nav>
                 <ul>
                     <li><label for="box1" class="check1">Detail</label></li>
                     <li><label for="box2" class="check2">Detail2</label></li>
-                    <li><label for="box3" class="check3">Detail3</label></li>
+
+                        <li><label  for="box3" class="check3"><a href="Comment?id=${o.id}">Detail3</a></label></li>
+
+
                 </ul>
             </nav>
             <section class="box-des">
@@ -47,22 +41,81 @@
                 </div>
                 <div class="box2">
                     <h2>Description 2</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, facere dolorem eius vel ullam numquam,
-                        temporibus labore ipsa, dolorum deserunt dolor! Minima asperiores corrupti
-                        consequatur cupiditate? Repudiandae, reiciendis corrupti! Itaque?
-                    </p>
+                    <ul>
+                        <li>
+                            tet
+                        </li>
+                    </ul>
                 </div>
                 <div class="box3">
                     <h2>Description 3</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, facere dolorem eius vel ullam numquam,
-                        temporibus labore ipsa, dolorum deserunt dolor! Minima asperiores corrupti
-                        consequatur cupiditate? Repudiandae, reiciendis corrupti! Itaque?
-                    </p>
+                    <form name="myform">
+                        <input type="text" name="username"><br>
+
+                        <textarea style="width: 300px;height: 100px" name="content">
+
+                   </textarea>
+                        <input type="button" value="post" onclick="comment()">
+                    </form>
+                    <div id="mycomment">
+
+                    </div>
+
                 </div>
             </section>
         </div>
     </div>
 </section>
-<jsp:include page="fooder.jsp"></jsp:include>
+<script type="text/javascript">
+    function comment(){
+        var xhttp;
+        var username =document.myform.username.value;
+        var content=document.myform.content.value;
+
+
+        <%--var id=document.myform.id.valueOf(${o.id});--%>
+        var url ="Comment?content="+content+"&username="+username;
+        if(window.XMLHttpRequest){
+            xhttp= new XMLHttpRequest();
+        }else{
+            xhttp= new ActiveXObject("Microsoft.XMLHTTP")
+        }
+        xhttp.onreadystatechange=function ()
+        {
+            if (xhttp.readyState==4){
+                var data =xhttp.responseText;
+                document.getElementById("mycomment").innerHTML=data;
+            }
+
+        }
+        xhttp.open("POST",url,true);
+        xhttp.send();
+    }
+    function commentList(){
+        var xhttp;
+        var content=document.myform.id.value;
+
+        var url ="listComent?content="+"&username="+"&id="
+        if(window.XMLHttpRequest){
+            xhttp= new XMLHttpRequest();
+        }else{
+            xhttp= new ActiveXObject("Microsoft.XMLHTTP")
+        }
+        xhttp.onreadystatechange=function ()
+        {
+            if (xhttp.readyState==4){
+                var data =xhttp.responseText;
+                document.getElementById("mycomment").innerHTML=data;
+            }
+
+        }
+        xhttp.open("POST",url,false);
+        xhttp.send();
+    }
+
+
+</script>
+
+
 </body>
 </html>

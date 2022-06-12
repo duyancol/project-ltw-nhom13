@@ -9,6 +9,7 @@ import com.example.demo11.model.Product;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
+
 import java.io.IOException;
 import java.util.List;
 
@@ -29,4 +30,5 @@ request.setAttribute("details",product);
         request.getRequestDispatcher("dentail_product.jsp").forward(request,response);
 
     }
+
 }

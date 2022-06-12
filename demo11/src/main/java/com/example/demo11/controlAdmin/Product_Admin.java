@@ -14,6 +14,6 @@ doPost(request,response);
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("admin_web/product_add.jsp").forward(request,response);
+        request.getRequestDispatcher("CommentList.jsp").forward(request,response);
     }
 }

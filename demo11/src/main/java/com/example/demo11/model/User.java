@@ -6,23 +6,27 @@ public class User implements Serializable {
     private static final long serialVersionUID = 1L;
     private String username;
     private String password;
-    private String fullname;
+    private String name;
+    private String age;
     private String email;
     private String phone;
     private String address;
     private int role;
+    private String avata;
 
     public User() {
     }
 
-    public User(String username, String password, String fullname, String email, String phone, String address, int role) {
+    public User(String username, String password, String name, String age, String email, String phone, String address, int role, String avata) {
         this.username = username;
         this.password = password;
-        this.fullname = fullname;
+        this.name = name;
+        this.age = age;
         this.email = email;
         this.phone = phone;
         this.address = address;
         this.role = role;
+        this.avata = avata;
     }
 
     public String getUsername() {
@@ -41,12 +45,20 @@ public class User implements Serializable {
         this.password = password;
     }
 
-    public String getFullname() {
-        return fullname;
+    public String getName() {
+        return name;
     }
 
-    public void setFullname(String fullname) {
-        this.fullname = fullname;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getAge() {
+        return age;
+    }
+
+    public void setAge(String age) {
+        this.age = age;
     }
 
     public String getEmail() {
@@ -79,5 +91,13 @@ public class User implements Serializable {
 
     public void setRole(int role) {
         this.role = role;
+    }
+
+    public String getAvata() {
+        return avata;
+    }
+
+    public void setAvata(String avata) {
+        this.avata = avata;
     }
 }
